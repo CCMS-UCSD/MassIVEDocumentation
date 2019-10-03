@@ -1,0 +1,7 @@
+site_name: MassIVE Documentation
+pages:
+    - MassIVE Introduction: index.md
+theme:
+    name: material
+
+google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
