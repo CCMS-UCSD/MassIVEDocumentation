@@ -3,6 +3,7 @@ pages:
     - MassIVE Introduction: index.md
     - Share Reanalyses: share_reanalyses.md
     - Reanalyze Spectra: reanalyze_spectra.md
+    - Submit Data: submit_data.md
 theme:
     name: material
 
