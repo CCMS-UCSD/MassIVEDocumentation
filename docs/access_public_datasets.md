@@ -8,7 +8,7 @@ On the datasets page, you will see a list of all current public datasets in the 
 
 You can page through the list using the controls at the top, and you can also sort and filter by any column using the controls in the column headers. To filter, simply enter your search term in the box at the top of the relevant column, and then click “Filter”; multiple filters can be combined in this manner. Alternatively, you can select specific datasets by checking the boxes next to them, then check the “checked only” box, and then hit “Filter”, to reduce the list to only those rows that you want to see.
 
-When you are ready to view the details of a particular dataset, just click on its green “MassIVE ID” link to load the [status page](access-public-datasets) for that dataset.
+When you are ready to view the details of a particular dataset, just click on its green “MassIVE ID” link to load the [status page](#viewing-a-dataset) for that dataset.
 
 ![](img/access_public_datasets/MassIVE_dataset_list.png)
 
@@ -18,7 +18,7 @@ Once a dataset has been successfully submitted, its status page will update to a
 
 ![](img/access_public_datasets/MassIVE_dataset_page.png)
 
-This page is usually reached from a MassIVE [public dataset search](access-public-datasets), although it can technically be viewed by anyone with a direct link to its URL. In fact, if a dataset is still private, then direct linking is the only way to view it, since private datasets will never show up in public searches. In this way, private datasets can still be shared with relevant users (such as publication reviewers), while still maintaining reasonable privacy from the general public. See [here](submit-data) for more information about dataset privacy.
+This page is usually reached from a MassIVE [public dataset search](#browsing-submitted-result-files), although it can technically be viewed by anyone with a direct link to its URL. In fact, if a dataset is still private, then direct linking is the only way to view it, since private datasets will never show up in public searches. In this way, private datasets can still be shared with relevant users (such as publication reviewers), while still maintaining reasonable privacy from the general public. See [here](submit_data.md#make-public) for more information about dataset privacy.
 
 ### Reviewer Access
 
@@ -48,7 +48,7 @@ Try entering “a” as the dataset’s password if you want to view a public da
 
 ### Browsing Submitted Result Files
 
-If a dataset is considered [“complete“](submit-data), then its result files (spectrum identifications, peptides, proteins, etc.) are provided in a standardized format that MassIVE can parse and summarize for you. To browse these results, start by clicking on the “Browse Submitted Result Files” link on the dataset’s status page.
+If a dataset is considered [“complete“](submit_data.md#MassIVEDatasetSubmission-SubmissionTypes), then its result files (spectrum identifications, peptides, proteins, etc.) are provided in a standardized format that MassIVE can parse and summarize for you. To browse these results, start by clicking on the “Browse Submitted Result Files” link on the dataset’s status page.
 
 ![](img/access_public_datasets/MassIVE_browse_results.png)
 
@@ -56,7 +56,7 @@ This will present a tabular summary of the dataset’s various result files. Her
 
 ![](img/access_public_datasets/MassIVE_result_files.png)
 
-Click on a link to view the results of the desired type, then all the usual [features of ProteoSAFe tabular result views](access-public-datasets) are available – filtering, sorting, showing/hiding columns, etc.
+Click on a link to view the results of the desired type, then all the usual [features of ProteoSAFe tabular result views](#filtering-and-sorting-datasets) are available – filtering, sorting, showing/hiding columns, etc.
 
 ![](img/access_public_datasets/MassIVE_result_view.png)
 
