@@ -1,32 +1,24 @@
-<html><head></head><body>
-<p style="text-align: left;">There are two steps to submit a dataset to the MassIVE repository:</p>
-<ol>
-<li style="text-align: left;">Upload your data files to the MassIVE web server.</li>
-<li style="text-align: left;">Run the MassIVE dataset submission workflow on those files.</li>
-</ol>
-<h2><a name="MassIVEDatasetSubmission-1UploadDatatoMassIVE"></a> <em><ins>1</ins></em> &#8211; Upload Data to MassIVE</h2>
-<p><a name="MassIVEDatasetSubmission-AccountCreation"></a></p>
-<h3><a name="MassIVEDatasetSubmission-CreateMassIVEAccount"></a><a href="http://proteomics.ucsd.edu/service/massive/documentation/account-registration/">Register MassIVE Account</a></h3>
-<p style="text-align: left;">MassIVE dataset submission is only available to registered users &#8211; anonymous submissions are not supported. See <a title="MassIVE Account Registration" href="http://proteomics.ucsd.edu/service/massive/documentation/account-registration/">here</a> for detailed instructions on how to register an account.</p>
-<p><a name="MassIVEDatasetSubmission-Uploading"></a></p>
-<h3><a name="MassIVEDatasetSubmission-UploadData"></a><a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">Upload Data to Your Account</a></h3>
-<p style="text-align: left;">Start by uploading your data files to your private MassIVE account. Doing this will not create an official dataset in the MassIVE repository. Your files will remain private in your account&#8217;s FTP directory until you are ready to submit them to the MassIVE repository in step 2.</p>
-<h3><a name="MassIVEDatasetSubmission-UploadDataUsingFTP"></a>FTP File Upload</h3>
-<p style="text-align: left;">Once you have a MassIVE web site account, you can upload files to your account easily using FTP. See <a title="MassIVE FTP" href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">here</a> for detailed instructions on how to do this.</p>
-<p><a name="MassIVEDatasetSubmission-UploadCategories"></a></p>
-<h3><a name="MassIVEDatasetSubmission-DatasetFileOrganization"></a>Dataset File Organization</h3>
-<p style="text-align: left;">See <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/#MassIVEDatasetSubmission-FileCategories">here</a> for a detailed explanation of the various file categories within a MassIVE dataset submission.</p>
-<div class="table-wrap">
-<table class="confluenceTable">
-<tbody>
-<tr>
-<td class="confluenceTd"><b>A recommended procedure for simplifying the MassIVE submission process is to use FTP to upload and organize your files into separate folders, each named for one of the dataset&#8217;s main file categories. This way, when you are ready to make your submission, all you need to do is select each folder and assign it to its proper category, without having to fumble through a large number of individual file assignments.</b></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><a name="MassIVEDatasetSubmission-Submitting"></a></p>
-<h2><a name="MassIVEDatasetSubmission-2SubmitDatatoMassIVE"></a><em><ins>2</ins></em> &#8211; Submit Data to MassIVE</h2>
+There are two steps to submit a dataset to the MassIVE repository:
+
+1. Upload your data files to the MassIVE web server.
+2. Run the MassIVE dataset submission workflow on those files.</li>
+
+##1 - Upload Data to MassIVE
+###[Register MassIVE Account](http://proteomics.ucsd.edu/service/massive/documentation/account-registration/")
+MassIVE dataset submission is only available to registered users - anonymous submissions are not supported. See [here](http://proteomics.ucsd.edu/service/massive/documentation/account-registration/) for detailed instructions on how to register an account.
+
+###[Upload Data to Your Account](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/)
+Start by uploading your data files to your private MassIVE account. Doing this will not create an official dataset in the MassIVE repository. Your files will remain private in your account's FTP directory until you are ready to submit them to the MassIVE repository in step 2.
+
+###FTP File Upload
+Once you have a MassIVE web site account, you can upload files to your account easily using FTP. See [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/) for detailed instructions on how to do this.
+
+###Dataset File Organization
+See [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/#MassIVEDatasetSubmission-FileCategories) for a detailed explanation of the various file categories within a MassIVE dataset submission.
+
+A recommended procedure for simplifying the MassIVE submission process is to use FTP to upload and organize your files into separate folders, each named for one of the dataset&#8217;s main file categories. This way, when you are ready to make your submission, all you need to do is select each folder and assign it to its proper category, without having to fumble through a large number of individual file assignments.
+
+##Submit Data to MassIVE
 <h3><a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/">Run Submission Workflow</a></h3>
 <p style="text-align: left;">Once your files are fully uploaded to your user account directory at MassIVE, you must then run the dataset submission workflow on those files in order to create an official dataset in the MassIVE repository. See <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/">here</a> for detailed instructions on how to set up and run this workflow.</p>
 <p><a name="MassIVEDatasetSubmission-Submitted"></a></p>
@@ -41,4 +33,3 @@
 <p style="text-align: left;">See <a href="http://proteomics.ucsd.edu/service/massive/documentation/add-update-metadata/">here</a> for detailed instructions on how to add or update the metadata associated with an existing dataset.</p>
 <h3><a name="MassIVEDatasetSubmission-AddPublication"></a><a href="http://proteomics.ucsd.edu/service/massive/documentation/add-publication/">Add Publication</a></h3>
 <p style="text-align: left;">See <a href="http://proteomics.ucsd.edu/service/massive/documentation/add-publication/">here</a> for detailed instructions on how to update the set of publications associated with an existing dataset.</p>
-</body></html>
