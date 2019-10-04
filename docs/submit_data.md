@@ -45,6 +45,6 @@ See [here](http://proteomics.ucsd.edu/service/massive/documentation/make-public/
 
 See [here](http://proteomics.ucsd.edu/service/massive/documentation/add-update-metadata/) for detailed instructions on how to add or update the metadata associated with an existing dataset.
 
-### [Add Publication](http://proteomics.ucsd.edu/service/massive/documentation/add-publication/)
+### [Add Publication](add-publication.md)
 
 See [here](http://proteomics.ucsd.edu/service/massive/documentation/add-publication/) for detailed instructions on how to update the set of publications associated with an existing dataset.
