@@ -7,11 +7,11 @@ After you've successfully reanalyzed spectrum data from MassIVE, share your find
 
 If you reanalyzed a MassIVE dataset's spectrum files using a [ProteoSAFe workflow](reanalyze_spectra.md), then once that workflow has finished you can attach its results to the original dataset by clicking the "Attach Reanalysis Results to Dataset" link on the job's status page:
 
-![reanalysis_attachment_button](img/share_reanalysesreanalysis_attachment_button.png)
+![reanalysis_attachment_button](img/share_reanalyses/reanalysis_attachment_button.png)
 
 This brings you to the MassIVE reanalysis attachment workflow input form, with your analysis task's result files pre-selected:
 
-![reanalysis_setup](img/share_reanalysesreanalysis_setup-1.png)
+![reanalysis_setup](img/share_reanalyses/reanalysis_setup-1.png)
 
 In this case, MassIVE will do the work of determining which dataset(s) to attach your results to, based on the source spectrum data of your analysis job. Since you ran your ProteoSAFe analysis workflow on spectra from a MassIVE dataset, the system will automatically trace that connection back to find the proper home for your reanalysis.
 
@@ -21,7 +21,7 @@ If you attempt to do this with an analysis job that was not run on dataset spect
 
 If you reanalyzed a MassIVE dataset's spectrum files using offline analysis tools, then you can still attach those results to the proper dataset. Start by [uploading your result files](upload_data.md) to your MassIVE account. Then navigate to the [dataset's web page](access_public_datasets.md#MassIVEDatasetBrowsing-ViewingaDataset) and click the "Add Reanalysis" button:
 
-![add_reanalysis_button](img/share_reanalysesadd_reanalysis_button.png)
+![add_reanalysis_button](img/share_reanalyses/add_reanalysis_button.png)
 
 This brings you to a blank MassIVE reanalysis attachment workflow input form. From here, you can select all the files for your reanalysis by clicking any of the "Select Input Files" buttons:
 
