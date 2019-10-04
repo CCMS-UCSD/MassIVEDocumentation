@@ -1,6 +1,6 @@
 # MassIVE Documentation
 
-![img](img/index/massive_logo.png)
+![massive logo](img/index/massive_logo.png)
 
 MassIVE is a worldwide mass spectrometry data repository integrated into a flexible, scalable, user-friendly framework offering a diverse set of data analysis algorithms.
 
