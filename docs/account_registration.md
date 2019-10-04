@@ -6,11 +6,11 @@ Account registration is a simple process, and completely private – MassIVE wil
 
 To register an account, navigate to the MassIVE web site – [http://massive.ucsd.edu/ProteoSAFe/](http://massive.ucsd.edu/ProteoSAFe/). Here you will find a registration link in the upper right corner of the page, just below the login box.
 
-![](https://bix-lab.ucsd.edu/download/attachments/17924957/MassIVE_login_box.png?version=1&modificationDate=1426176266000)
+![](img/account_registration/MassIVE_login_box.png)
 
 Click on the registration link to bring up the account registration form.
 
-![](https://bix-lab.ucsd.edu/download/attachments/17924957/MassIVE_registration_form.png?version=1&modificationDate=1426176266000)
+![](img/account_registration/MassIVE_registration_form.png)
 
 Just fill out and submit this simple form, and your account is ready to use. You can then use this account to connect to MassIVE in two different ways:
 
