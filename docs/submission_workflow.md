@@ -29,88 +29,13 @@ Use the available controls to remove unwanted terms, or add custom ones:
 
 For more help on each of the individual metadata categories, see here:
 
-<div class="table-wrap">
-
-<table id="TBL1471501804245" class="confluenceTable">
-
-<tbody>
-
-<tr>
-
-<th class="confluenceTh">Metadata Category</th>
-
-<th class="confluenceTh">Required</th>
-
-<th class="confluenceTh">Notes</th>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Species</td>
-
-<td class="confluenceTd"><span class="image-wrap">Y</span></td>
-
-<td class="confluenceTd">Enter custom text if the correct species for your dataset is not supported in the list.</td>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Instrument</td>
-
-<td class="confluenceTd"><span class="image-wrap">Y</span></td>
-
-<td class="confluenceTd">Enter custom text if the correct instrument for your dataset is not supported in the list.</td>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Post-Translational Modifications</td>
-
-<td class="confluenceTd"><span class="image-wrap">Y</span></td>
-
-<td class="confluenceTd">If your dataset does not include any known post-translational modifications, then there is an appropriate entry in the list to reflect this  
-(“PRIDE:0000398”, “No PTMs are included in the dataset”).</td>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Keywords</td>
-
-<td class="confluenceTd"><span class="image-wrap">Y</span></td>
-
-<td class="confluenceTd">Your dataset must be tagged with at least one keyword. You can add as many as you wish. Because keywords are always custom text, you **must** click the “Add” button to assign them to your dataset!</td>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Principal Investigator</td>
-
-<td class="confluenceTd"><span class="image-wrap">Y</span></td>
-
-<td class="confluenceTd"></td>
-
-</tr>
-
-<tr>
-
-<td class="confluenceTd">Description</td>
-
-<td class="confluenceTd"></td>
-
-<td class="confluenceTd"></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
+| Metadata Category                | Required | Notes |
+| -------------------------------- | -------- | ----- |
+| Species                          | Y        | Enter custom text if the correct species for your dataset is not supported in the list. |
+| Instrument                       | Y        | Enter custom text if the correct instrument for your dataset is not supported in the list. |
+| Post-Translational Modifications | Y        | If your dataset does not include any known post-translational modifications, then there is an appropriate entry in the list to reflect this (“PRIDE:0000398”, “No PTMs are included in the dataset”) |
+| Keywords                         | Y        | Your dataset must be tagged with at least one keyword. You can add as many as you wish. Because keywords are always custom text, you **must** click the “Add” button to assign them to your dataset! |
+| Principal Investigator           | Y        ||
 
 ### Dataset File Selection
 
