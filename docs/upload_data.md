@@ -6,7 +6,7 @@ To connect to your MassIVE user account via FTP, simply log on to the FTP server
 
 | MassIVE FTP Server                   |
 | ------------------------------------ |
-| [massive.ucsd.edu](massive.ucsd.edu) |
+| [massive.ucsd.edu](https://massive.ucsd.edu) |
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
