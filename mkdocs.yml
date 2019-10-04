@@ -1,6 +1,14 @@
 site_name: MassIVE Documentation
 pages:
     - MassIVE Introduction: index.md
+    - Account Registration: account_registration.md
+    - Data Upload: upload_data.md
+    - Submit Data to MassIVE: submit_data.md
+        - Dataset Submission Workflow: submission_workflow.md
+        - Reviewer Access: reviewer_access.md
+        - Make Public: make_public.md
+        - Add/Update Public: add_update_metadata.md
+        - Add Publication: add_publication.md
     - Share Reanalyses: share_reanalyses.md
     - Reanalyze Spectra: reanalyze_spectra.md
 theme:
