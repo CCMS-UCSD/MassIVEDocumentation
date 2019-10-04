@@ -1,0 +1,721 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>Submit Data - MassIVE Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#1-upload-data-to-massive" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="MassIVE Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MassIVE Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Submit Data
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="MassIVE Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MassIVE Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="MassIVE Introduction" class="md-nav__link">
+      MassIVE Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../account_registration/" title="Account Registration" class="md-nav__link">
+      Account Registration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../upload_data/" title="Data Upload" class="md-nav__link">
+      Data Upload
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Submit Data to MassIVE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Submit Data to MassIVE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Submit Data
+      </label>
+    
+    <a href="./" title="Submit Data" class="md-nav__link md-nav__link--active">
+      Submit Data
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-upload-data-to-massive" class="md-nav__link">
+    1 - Upload Data to MassIVE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-massive-account" class="md-nav__link">
+    Register MassIVE Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-data-to-your-account" class="md-nav__link">
+    Upload Data to Your Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ftp-file-upload" class="md-nav__link">
+    FTP File Upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-file-organization" class="md-nav__link">
+    Dataset File Organization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-submit-data-to-massive" class="md-nav__link">
+    2 - Submit Data to MassIVE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-submission-workflow" class="md-nav__link">
+    Run Submission Workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-submission" class="md-nav__link">
+    After Submission
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reviewer-access" class="md-nav__link">
+    Reviewer Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-public" class="md-nav__link">
+    Make Public
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addupdate-metadata" class="md-nav__link">
+    Add/Update Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-publication" class="md-nav__link">
+    Add Publication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../submission_workflow/" title="Dataset Submission Workflow" class="md-nav__link">
+      Dataset Submission Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reviewer_access/" title="Reviewer Access" class="md-nav__link">
+      Reviewer Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../make_public/" title="Make Public" class="md-nav__link">
+      Make Public
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../add_update_metadata/" title="Add/Update Public" class="md-nav__link">
+      Add/Update Public
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../add_publication/" title="Add Publication" class="md-nav__link">
+      Add Publication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../share_reanalyses/" title="Share Reanalyses" class="md-nav__link">
+      Share Reanalyses
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../reanalyze_spectra/" title="Reanalyze Spectra" class="md-nav__link">
+      Reanalyze Spectra
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-upload-data-to-massive" class="md-nav__link">
+    1 - Upload Data to MassIVE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-massive-account" class="md-nav__link">
+    Register MassIVE Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-data-to-your-account" class="md-nav__link">
+    Upload Data to Your Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ftp-file-upload" class="md-nav__link">
+    FTP File Upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-file-organization" class="md-nav__link">
+    Dataset File Organization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-submit-data-to-massive" class="md-nav__link">
+    2 - Submit Data to MassIVE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-submission-workflow" class="md-nav__link">
+    Run Submission Workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-submission" class="md-nav__link">
+    After Submission
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reviewer-access" class="md-nav__link">
+    Reviewer Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-public" class="md-nav__link">
+    Make Public
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addupdate-metadata" class="md-nav__link">
+    Add/Update Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-publication" class="md-nav__link">
+    Add Publication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Submit Data</h1>
+                
+                <p>There are two steps to submit a dataset to the MassIVE repository:</p>
+<ol>
+<li>Upload your data files to the MassIVE web server.</li>
+<li>Run the MassIVE dataset submission workflow on those files.</li>
+</ol>
+<h2 id="1-upload-data-to-massive">1 - Upload Data to MassIVE</h2>
+<h3 id="register-massive-account"><a href="http://proteomics.ucsd.edu/service/massive/documentation/account-registration/">Register MassIVE Account</a></h3>
+<p>MassIVE dataset submission is only available to registered users – anonymous submissions are not supported. See <a href="http://proteomics.ucsd.edu/service/massive/documentation/account-registration/" title="MassIVE Account Registration">here</a> for detailed instructions on how to register an account.</p>
+<h3 id="upload-data-to-your-account"><a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">Upload Data to Your Account</a></h3>
+<p>Start by uploading your data files to your private MassIVE account. Doing this will not create an official dataset in the MassIVE repository. Your files will remain private in your account’s FTP directory until you are ready to submit them to the MassIVE repository in step 2.</p>
+<h3 id="ftp-file-upload">FTP File Upload</h3>
+<p>Once you have a MassIVE web site account, you can upload files to your account easily using FTP. See <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/" title="MassIVE FTP">here</a> for detailed instructions on how to do this.</p>
+<h3 id="dataset-file-organization">Dataset File Organization</h3>
+<p>See <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/#MassIVEDatasetSubmission-FileCategories">here</a> for a detailed explanation of the various file categories within a MassIVE dataset submission.</p>
+<p><strong>A recommended procedure for simplifying the MassIVE submission process is to use FTP to upload and organize your files into separate folders, each named for one of the dataset’s main file categories. This way, when you are ready to make your submission, all you need to do is select each folder and assign it to its proper category, without having to fumble through a large number of individual file assignments.</strong></p>
+<h2 id="2-submit-data-to-massive">2 - Submit Data to MassIVE</h2>
+<h3 id="run-submission-workflow"><a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/">Run Submission Workflow</a></h3>
+<p>Once your files are fully uploaded to your user account directory at MassIVE, you must then run the dataset submission workflow on those files in order to create an official dataset in the MassIVE repository. See <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/submission-workflow/">here</a> for detailed instructions on how to set up and run this workflow.</p>
+<h2 id="after-submission">After Submission</h2>
+<p>Once a dataset is successfully submitted, it will become a private dataset in the MassIVE repository. Authorized users (those who have been given the dataset’s status page URL and password) will be able to <a href="http://proteomics.ucsd.edu/service/massive/documentation/access-public-datasets/#MassIVEDatasetBrowsing-Viewing">view the dataset</a> in the MassIVE web interface, but it will not show up in any <a href="http://proteomics.ucsd.edu/service/massive/documentation/access-public-datasets/#MassIVEDatasetBrowsing-Searching">public dataset searches</a>. At that point, a few more options become available to further manage the dataset:</p>
+<h3 id="reviewer-access"><a href="http://proteomics.ucsd.edu/service/massive/documentation/reviewer-access/">Reviewer Access</a></h3>
+<p>See <a href="http://proteomics.ucsd.edu/service/massive/documentation/reviewer-access/">here</a> for detailed instructions on how to share your private dataset with journal reviewers and other trusted colleagues.</p>
+<h3 id="make-public"><a href="http://proteomics.ucsd.edu/service/massive/documentation/make-public/">Make Public</a></h3>
+<p>See <a href="http://proteomics.ucsd.edu/service/massive/documentation/make-public/">here</a> for detailed instructions on how to make a private dataset public.</p>
+<h3 id="addupdate-metadata"><a href="http://proteomics.ucsd.edu/service/massive/documentation/add-update-metadata/">Add/Update Metadata</a></h3>
+<p>See <a href="http://proteomics.ucsd.edu/service/massive/documentation/add-update-metadata/">here</a> for detailed instructions on how to add or update the metadata associated with an existing dataset.</p>
+<h3 id="add-publication"><a href="http://proteomics.ucsd.edu/service/massive/documentation/add-publication/">Add Publication</a></h3>
+<p>See <a href="http://proteomics.ucsd.edu/service/massive/documentation/add-publication/">here</a> for detailed instructions on how to update the set of publications associated with an existing dataset.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../upload_data/" title="Data Upload" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Data Upload
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../submission_workflow/" title="Dataset Submission Workflow" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Dataset Submission Workflow
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
