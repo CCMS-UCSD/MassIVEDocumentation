@@ -28,12 +28,12 @@ The more of these fields you fill out, the more your search results will be narr
 
 When you are ready to search, click one of the seven query buttons:
 
-[![search_query_buttons](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_buttons.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_buttons.png)
+![search_query_buttons](img/search_identifications/search_query_buttons.png)
 
 *   Search PSMs – find all spectrum identifications matching your query terms
     *   Displays the source files (spectrum data and search result) from which each PSM came
     *   Displays a link back to the submission or reanalysis attachment job for full provenance
-    *   Click the spectrum icon [ [![spectrum_icon](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/spectrum_icon.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/spectrum_icon.png) ] on the left end of each row to render and image of the PSM
+    *   Click the spectrum icon ![spectrum_icon](img/search_identifications/spectrum_icon.png) on the left end of each row to render and image of the PSM
 *   Search Peptides – find all unmodified peptides from identifications matching your query terms
 *   Search Variants – find all modified peptides from identifications matching your query terms
 *   Search Modifications – find all post-translational modifications from identifications matching your query terms
@@ -44,4 +44,4 @@ When you are ready to search, click one of the seven query buttons:
 
 Example query: PSMs from dataset [MSV000079852](http://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=120ab12f58594dd29c5a71de529a9686) (“CPTAC, TCGA Cancer Proteome Study of Colorectal Tissue”) with deamidated (UNIMOD:7) peptide sequence NWQDYGVR matched to protein [sp|Q8WU39|MZB1_HUMAN](http://www.uniprot.org/uniprot/Q8WU39) (“Marginal zone B- and B1-cell-specific protein”)
 
-[![search_result](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_result.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_result.png)
+![search_result](img/search_identifications/search_result.png)
