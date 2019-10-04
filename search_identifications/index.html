@@ -36,7 +36,7 @@
     
     
       
-        <title>Search identifications - MassIVE Documentation</title>
+        <title>Search Identifications - MassIVE Documentation</title>
       
     
     
@@ -100,6 +100,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#search-identifications" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -122,7 +126,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Search identifications
+                Search Identifications
               
             </span>
           
@@ -353,6 +357,27 @@
   </li>
 
     
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Search Identifications" class="md-nav__link md-nav__link--active">
+      Search Identifications
+    </a>
+    
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -360,15 +385,80 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Search identifications</h1>
-                
-                
+                <h1 id="search-identifications">Search Identifications</h1>
+<p>Start searching MassIVE identifications by clicking the search icon on the MassIVE home page:</p>
+<p><a href="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_entry.png"><img alt="search_entry" src="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_entry.png" /></a></p>
+<p>You will then see a search interface with five query fields at the top:</p>
+<p><a href="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_fields.png"><img alt="search_query_fields" src="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_fields.png" /></a></p>
+<p>Enter terms into these query fields to refine your search. Or leave them empty to search all of MassIVE.</p>
+<ul>
+<li>Peptide Sequence – unmodified amino acid sequence of the peptide you wish to search<ul>
+<li>Example: DDDIAALVVDNGSGMCK</li>
+</ul>
+</li>
+<li>Modified (Variant) Peptide Sequence – modified amino acid sequence of the peptide you wish to search<ul>
+<li>Enter the “+/-” modification masses directly into the sequence</li>
+<li>N-terminal modifications should be written before the first amino acid</li>
+<li>Example: +42.010565DDDIAALVVDNGSGM+15.994915C+57.021464K</li>
+</ul>
+</li>
+<li>Post-Translational Modification – UNIMOD or PSI-MOD accession for the modification you wish to search<ul>
+<li>Start typing the modification name and a list of matching accessions will appear from which to select</li>
+<li>Example: UNIMOD:35 <em>(Oxidation)</em></li>
+</ul>
+</li>
+<li>Protein Name – Protein database accession (usually UniProt) of the protein you wish to search<ul>
+<li>Example: sp|P60709|ACTB_HUMAN</li>
+</ul>
+</li>
+<li>MassIVE Dataset Accession – the full 9-digit MSV accession of the MassIVE dataset you wish to search<ul>
+<li>Example: MSV000079852</li>
+</ul>
+</li>
+</ul>
+<p>The more of these fields you fill out, the more your search results will be narrowed, since all of the terms you enter will be applied simultaneously to the query.</p>
+<p>When you are ready to search, click one of the seven query buttons:</p>
+<p><a href="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_buttons.png"><img alt="search_query_buttons" src="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_buttons.png" /></a></p>
+<ul>
+<li>Search PSMs – find all spectrum identifications matching your query terms<ul>
+<li>Displays the source files (spectrum data and search result) from which each PSM came</li>
+<li>Displays a link back to the submission or reanalysis attachment job for full provenance</li>
+<li>Click the spectrum icon [ <a href="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/spectrum_icon.png"><img alt="spectrum_icon" src="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/spectrum_icon.png" /></a> ] on the left end of each row to render and image of the PSM</li>
+</ul>
+</li>
+<li>Search Peptides – find all unmodified peptides from identifications matching your query terms</li>
+<li>Search Variants – find all modified peptides from identifications matching your query terms</li>
+<li>Search Modifications – find all post-translational modifications from identifications matching your query terms</li>
+<li>Search Proteins – find all proteins from identifications matching your query terms<ul>
+<li>Proteins with the “remapped_” prefix are matched to PSMs without regard to distinctions between amino acids “I” (isoleucine) and “L” (leucine) in the peptide sequence. This is because these amino acids are functionally indistinguishable, so they are treated as identical for the purpose of protein mapping.</li>
+</ul>
+</li>
+<li>Search mzTabs – find all submitted result files containing identifications matching your query terms</li>
+<li>Search Datasets – find all MassIVE datasets containing identifications matching your query terms</li>
+</ul>
+<p>Example query: PSMs from dataset <a href="http://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=120ab12f58594dd29c5a71de529a9686">MSV000079852</a> (“CPTAC, TCGA Cancer Proteome Study of Colorectal Tissue”) with deamidated (UNIMOD:7) peptide sequence NWQDYGVR matched to protein <a href="http://www.uniprot.org/uniprot/Q8WU39">sp|Q8WU39|MZB1_HUMAN</a> (“Marginal zone B- and B1-cell-specific protein”)</p>
+<p><a href="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_result.png"><img alt="search_result" src="http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_result.png" /></a></p>
                 
                   
                 
@@ -385,6 +475,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../access_public_datasets/" title="Access Public Datasets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Access Public Datasets
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
