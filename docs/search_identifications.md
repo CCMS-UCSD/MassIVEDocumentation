@@ -2,11 +2,11 @@
 
 Start searching MassIVE identifications by clicking the search icon on the MassIVE home page:
 
-[![search_entry](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_entry.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_entry.png)
+![search_entry](img/search_identifications/search_entry.png)
 
 You will then see a search interface with five query fields at the top:
 
-[![search_query_fields](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_fields.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/search_query_fields.png)
+![search_query_fields](img/search_identifications/search_query_fields.png)
 
 Enter terms into these query fields to refine your search. Or leave them empty to search all of MassIVE.
 
