@@ -11,6 +11,7 @@ pages:
         - Add Publication: add_publication.md
     - Share Reanalyses: share_reanalyses.md
     - Reanalyze Spectra: reanalyze_spectra.md
+    - Submit Data: submit_data.md
 theme:
     name: material
 
