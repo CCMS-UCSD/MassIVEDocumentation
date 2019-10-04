@@ -1,4 +1,5 @@
 site_name: MassIVE Documentation
+edit_uri: 'https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/'
 pages:
     - MassIVE Introduction: index.md
     - Account Registration: account_registration.md
