@@ -18,7 +18,7 @@ Once a dataset has been successfully submitted, its status page will update to a
 
 ![](img/access_public_datasets/MassIVE_dataset_page.png)
 
-This page is usually reached from a MassIVE [public dataset search](access-public-datasets), although it can technically be viewed by anyone with a direct link to its URL. In fact, if a dataset is still private, then direct linking is the only way to view it, since private datasets will never show up in public searches. In this way, private datasets can still be shared with relevant users (such as publication reviewers), while still maintaining reasonable privacy from the general public. See [here](submit-data) for more information about dataset privacy.
+This page is usually reached from a MassIVE [public dataset search](access_public_datasets.md), although it can technically be viewed by anyone with a direct link to its URL. In fact, if a dataset is still private, then direct linking is the only way to view it, since private datasets will never show up in public searches. In this way, private datasets can still be shared with relevant users (such as publication reviewers), while still maintaining reasonable privacy from the general public. See [here](submit-data) for more information about dataset privacy.
 
 ### Reviewer Access
 
