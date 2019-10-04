@@ -1,10 +1,10 @@
 Start reanalyzing MassIVE datasets by clicking the “Reanalyze Spectra” button on the dataset page:
 
-![](img/reanalyze_spectra/reanalyze_button.png)
+![Image showing reanalyze button for MassIVE](img/reanalyze_spectra/reanalyze_button.png)
 
 This brings you to the ProteoSAFe data analysis workflow input form, with the dataset’s spectrum files pre-selected. From here you can configure and run your search on these files:
 
-![](img/reanalyze_spectra/reanalysis_setup.png)
+![Image showing complete reanalysis setup for MassIVE](img/reanalyze_spectra/reanalysis_setup.png)
 
 ProteoSAFe offers a variety of analysis tools to derive meaningful knowledge from a dataset’s spectrum files:
 
