@@ -1,6 +1,6 @@
 ## Development Setup
 
-1. Install Anaconda (https://docs.anaconda.com/anaconda/install/)
+1. Install miniconda3 (https://docs.conda.io/en/latest/miniconda.html)
 2. Create conda environment
 
 ```conda create -n mkdocs```
