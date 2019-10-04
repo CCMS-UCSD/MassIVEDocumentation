@@ -2,6 +2,7 @@ site_name: MassIVE Documentation
 pages:
     - MassIVE Introduction: index.md
     - Share Reanalyses: share_reanalyses.md
+    - Reanalyze Spectra: reanalyze_spectra.md
 theme:
     name: material
 
