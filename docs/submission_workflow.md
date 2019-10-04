@@ -1,28 +1,26 @@
 To submit a dataset, first navigate to the official MassIVE repository web site – [http://massive.ucsd.edu/](http://massive.ucsd.edu/). You will then need to log in to your registered MassIVE account.
 
-[![MassIVE_splash_submission](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_splash_submission.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_splash_submission.png)
+![MassIVE_splash_submission](img/submission_workflow/MassIVE_splash_submission.png)
 
 Once logged in, click on “Submit Data” to load the MassIVE submission input page. There are a number of useful workflows available on this page, but to submit a dataset, just be sure that the “MassIVE Dataset Submission” workflow is highlighted in the “Workflow” drop-down menu near the top of the page.
 
-[![MassIVE_workflow_selection](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_workflow_selection.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_workflow_selection.png)
+![MassIVE_workflow_selection](img/submission_workflow/MassIVE_workflow_selection.png)
 
 With this workflow selected, you will see an input form including all file and metadata fields relevant to your submission.
 
-<a name="MassIVEDatasetSubmission-Metadata"></a>
-
-### <a name="MassIVEDatasetSubmission-DatasetMetadata"></a>Dataset Metadata
+### Dataset Metadata
 
 The first section of the submission form pertains to the dataset’s metadata.
 
-[![MassIVE_metadata](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_metadata.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_metadata.png)
+![MassIVE_metadata](img/submission_workflow/MassIVE_metadata.png)
 
 The first three fields (“Species”, “Instrument” and “Post-Translational Modifications”) are backed by lists of standardized controlled vocabulary (“CV”) terms, maintained by organizations such as the [HUPO Proteomics Standards Initiative](http://www.psidev.info/). To search these terms, simply type at least 3 characters into any of these text boxes, and you will be shown a drop-down list of supported terms that match your query. To select a term, simply click it in the drop-down list, and it will be added to your dataset:
 
-[![MassIVE_species](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_species.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_species.png)
+![MassIVE_species](img/submission_workflow/MassIVE_species.png)
 
 Use the available controls to remove unwanted terms, or add custom ones:
 
-![MassIVE_species_selected](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_species_selected.png)
+![MassIVE_species_selected](img/submission_workflow/MassIVE_species_selected.png)
 
 
 **If the correct CV term for your dataset is present in the list, then it is strongly recommended that you select the official term, rather than entering your own custom text version of it. Using the official controlled vocabulary to tag your dataset greatly increases the likelihood that it will be found and processed correctly by any automated software that may interface with the MassIVE repository.**
@@ -41,7 +39,7 @@ For more help on each of the individual metadata categories, see here:
 
 The second section of the submission form pertains to the dataset’s files.
 
-![MassIVE_file_selection](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_file_selection.png)
+![MassIVE_file_selection](img/submission_workflow/MassIVE_file_selection.png)
 
 ### Submission File Categories
 
@@ -81,7 +79,7 @@ A MassIVE dataset is considered “complete” by the standards of the [Proteome
         *   The identified spectrum can be found within one of the spectrum files submitted within the “Peak List Files” category described above.
         *   The peptide sequence and declared post-translational modifications for the identification can be found and reconstructed with no ambiguity.
 
-The MassIVE dataset submission workflow includes a [file mapping interface](#MassIVEDatasetSubmission-FileMapping), to ensure that submitted peak list files can be mapped to spectrum references from within the submitted result files. This is how MassIVE is able to find a spectrum in the source file, even if the result file uses a different filename to refer to that source.
+The MassIVE dataset submission workflow includes a [file mapping interface](#mapping-peak-list-and-result-files), to ensure that submitted peak list files can be mapped to spectrum references from within the submitted result files. This is how MassIVE is able to find a spectrum in the source file, even if the result file uses a different filename to refer to that source.
 
 If a dataset does not meet the above requirements, then it will be considered “partial” by ProteomeXchange.
 
@@ -91,11 +89,11 @@ To select files for any of the listed categories, just click on one of the “Se
 
 To add any of your uploaded files to the dataset, simply click individual files or whole folders in the left-hand folder view, and then click on the appropriate file button (in the middle, with the green arrows) to assign them to the relevant category. Files and folders that have been added so far can be seen in the right-hand “Selected Files” view.
 
-![MassIVE_file_selector](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_file_selector.png)
+![MassIVE_file_selector](img/submission_workflow/MassIVE_file_selector.png)
 
 When you are done selecting files, you can either click on “Finish Selection” or simply close the popup window, and the file selections will be noted in blue on the main input form. You can always mouse over this blue text to verify exactly which files have been assigned to that file category.
 
-![MassIVE_selected_files](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_selected_files.png)
+![MassIVE_selected_files](img/submission_workflow/MassIVE_selected_files.png)
 
 ### Mapping Peak List and Result Files
 
@@ -103,7 +101,7 @@ To satisfy the requirements of a “[complete](#MassIVEDatasetSubmission-Submiss
 
 Once you have [selected](#MassIVEDatasetSubmission-FileAssignment) all of your dataset’s “Result” and “Peak List” files, then you can click on “Start Associating Files” to populate the mapper. The server may need a moment to search through all of your selected “Result” files, collecting all of the spectrum files that they reference, to populate the mapper interface. Once it’s done, you will see a list of your selected “Peak List” files on the left, and all found spectrum file references from within your “Result” files on the right:
 
-![MassIVE_file_mapper](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_file_mapper.png)
+![MassIVE_file_mapper](img/submission_workflow/MassIVE_file_mapper.png)
 
 The file references on the right are formatted to display the name of the result file, followed by a hash character (“#”), followed by the name of the spectrum file as specified within the result file. As you might imagine, the names of peak list files uploaded for submission might have changed since they were searched to produce this result file, or the result file may use a different path or file name syntax. This is why manual mapping is often necessary.
 
@@ -111,11 +109,11 @@ The file references on the right are formatted to display the name of the result
 
 To link up the file references with the peak list files that they correspond to, simply click on an associated pair, and then click “Associate Selected Files with Each Other”. You can only map one pair of files at a time. As you add each mapping, the corresponding file reference on the right will disappear and the mapping will be added to the box at the bottom. As with metadata, you can remove an unwanted mapping by clicking the red “X”.
 
-![MassIVE_file_mapper_mapping](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_file_mapper_mapping.png)
+![MassIVE_file_mapper_mapping](img/submission_workflow/MassIVE_file_mapper_mapping.png)
 
 Once all mappings are done, the mapper will indicate completion with a green check mark.
 
-![MassIVE_file_mapper_mapped](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_file_mapper_mapped.png)
+![MassIVE_file_mapper_mapped](img/submission_workflow/MassIVE_file_mapper_mapped.png)
 
 Mapping these files is required for all “[complete](#MassIVEDatasetSubmission-SubmissionTypes)” datasets, which includes any dataset with at least one file in the “Result” category. If you submit files in this category, but do not complete the mapping in the submission form, then the submission will fail.
 
@@ -133,7 +131,7 @@ Once a dataset is submitted, its owner (the ProteoSAFe user who launched the sub
 
 If you check the “Submit to ProteomeXchange” checkbox, then as soon as your dataset becomes public, a ProteomeXchange announcement message will automatically be generated and submitted for your dataset. When this happens, your dataset will show up in the list of publicly accessible datasets at [ProteomeCentral](http://proteomecentral.proteomexchange.org/).
 
-![MassIVE_PX_submission](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_PX_submission.png)
+![MassIVE_PX_submission](img/submission_workflow/MassIVE_PX_submission.png)
 
 ProteomeXchange, as its name suggests, is a coordination service for the dissemination of proteomics datasets. If your dataset is does not fall within the domain of proteomics, then you probably don’t want to announce it there.
 
@@ -143,10 +141,10 @@ ProteomeXchange, as its name suggests, is a coordination service for the dissemi
 
 When you are ready to submit your dataset, click on the “Submit” button at the bottom of the form, and your dataset will be sent to the MassIVE web server for validation.
 
-![MassIVE_dataset_submission](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_dataset_submission.png)
+![MassIVE_dataset_submission](img/submission_workflow/MassIVE_dataset_submission.png)
 
 If any problems are found with your input, then you will be notified. Otherwise, you will see the job status page, which will be periodically updated with the current status of your dataset submission workflow. Blue boxes represent activities that have not yet started, orange boxes represent currently running activities, and green boxes represent activities that have completed successfully.
 
-![MassIVE_workflow_progress](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_workflow_progress.png)
+![MassIVE_workflow_progress](img/submission_workflow/MassIVE_workflow_progress.png)
 
 The dataset submission workflow includes steps to process and validate the dataset files, record the details of the dataset in a database, and then securely copy the files to the MassIVE repository. If there is a problem in any step of the workflow, the job will fail and the relevant error messages will be displayed on the status page.
