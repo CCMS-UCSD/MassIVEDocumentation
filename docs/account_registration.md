@@ -18,4 +18,4 @@ First, you can log into the MassIVE web site by entering your username and passw
 
 Secondly, you can log into the MassIVE FTP server (_massive.ucsd.edu_) using the same username and password, giving you full FTP access to your account’s personal data space. This is the recommended method to upload and organize your data files for repository submission.
 
-See [here](https://bix-lab.ucsd.edu/display/PS/MassIVE+FTP "MassIVE FTP") for instructions on how to connect to and use FTP with your registered MassIVE account.
+See [here](upload_data.md) for instructions on how to connect to and use FTP with your registered MassIVE account.
