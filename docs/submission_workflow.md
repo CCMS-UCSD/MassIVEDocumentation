@@ -49,7 +49,7 @@ MassIVE dataset files are organized into the following categories when making a 
 
 *   Peak List Files – Processed mass spectrum files in a standardized format. The following formats are recognized by MassIVE as valid for this category: mzXML, mzML, and MGF.
 *   Result Files – Spectrum identifications in a standardized format. The following formats are recognized by MassIVE as valid for this category: mzIdentML and mzTab.
-    *   Most tab-separated spectrum identification file formats can be converted to mzTab using our convenient [TSV conversion workflow](https://bix-lab.ucsd.edu/display/PS/Tab-Separated+Result+File+to+mzTab+Conversion "Tab-Separated Result File to mzTab Conversion").
+    *   Most tab-separated spectrum identification file formats can be converted to mzTab using our convenient [TSV conversion workflow](insert tsv to mztab link).
 
 #### Recommended for All Submissions
 
