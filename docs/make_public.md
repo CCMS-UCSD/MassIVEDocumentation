@@ -3,7 +3,7 @@
 
 Any time after a dataset is submitted, the submitter can choose to make it public by clicking on the “Make Public” link near the top of the dataset page.
 
-[![MassIVE_make_public](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_make_public.png)](http://proteomics.ucsd.edu/wp-content/uploads/2017/06/MassIVE_make_public.png)
+![MassIVE_make_public](img/make_public/MassIVE_make_public.png)
 
 When this happens, the dataset is affected in the following ways:
 
