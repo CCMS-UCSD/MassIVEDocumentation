@@ -1,6 +1,7 @@
 site_name: MassIVE Documentation
 pages:
     - MassIVE Introduction: index.md
+    - Share Reanalyses: share_reanalyses.md
 theme:
     name: material
 
