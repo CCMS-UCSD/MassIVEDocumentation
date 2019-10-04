@@ -12,6 +12,7 @@ pages:
         - Add Publication: add_publication.md
     - Share Reanalyses: share_reanalyses.md
     - Reanalyze Spectra: reanalyze_spectra.md
+    - Access Public Datasets: access_public_datasets.md
 theme:
     name: material
 
