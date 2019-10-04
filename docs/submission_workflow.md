@@ -67,7 +67,7 @@ MassIVE dataset files are organized into the following categories when making a 
 *   Methods and Protocols – Any open-format files containing explanations or discussions of the experimental procedures used to obtain or analyze this dataset.
 *   Supplementary Files – All remaining files belonging to this dataset that do not properly fit into any of the other listed file categories.
 
-**Most of these file categories are not strictly required. The only official file requirement for a MassIVE dataset is that you must submit at least one file in either the “Raw Spectrum Files” or “Peak List Files” categories. However, if your dataset does not meet the additional requirements for a “[complete](#complete-vs.-partial-datasets)” submission, then it will be considered only “partial”.**
+**Most of these file categories are not strictly required. The only official file requirement for a MassIVE dataset is that you must submit at least one file in either the “Raw Spectrum Files” or “Peak List Files” categories. However, if your dataset does not meet the additional requirements for a “[complete](#complete-vs-partial-datasets)” submission, then it will be considered only “partial”.**
 
 ### Complete vs. Partial Datasets
 
