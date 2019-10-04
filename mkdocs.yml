@@ -8,7 +8,7 @@ pages:
         - Dataset Submission Workflow: submission_workflow.md
         - Reviewer Access: reviewer_access.md
         - Make Public: make_public.md
-        - Add/Update Public: add_update_metadata.md
+        - Add/Update Metadata: add_update_metadata.md
         - Add Publication: add_publication.md
     - Share Reanalyses: share_reanalyses.md
     - Reanalyze Spectra: reanalyze_spectra.md
