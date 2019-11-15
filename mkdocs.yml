@@ -17,8 +17,8 @@ nav:
     - Search Identifications: search_identifications.md
     - Analysis of Post-Translational Modifications: ptm_analysis.md
     - Data Analysis Workflows: workflows.md
-        - Maestro workflow: maestro.md
-        - ModDecode workflow: moddecode.md
+        - Maestro workflow: workflows/maestro.md
+        - ModDecode workflow: workflows/moddecode.md
 theme:
     name: material
 
