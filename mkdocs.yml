@@ -15,6 +15,7 @@ nav:
     - Reanalyze Spectra: reanalyze_spectra.md
     - Access Public Datasets: access_public_datasets.md
     - Search Identifications: search_identifications.md
+    - Nuno test documentation page: NunoTest.md
 theme:
     name: material
 
