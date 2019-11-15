@@ -1,13 +1,12 @@
 name: Auto Deploy
 
-on: push
-      branches:
-        - master
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-  
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
