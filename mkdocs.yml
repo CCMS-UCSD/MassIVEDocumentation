@@ -15,7 +15,10 @@ nav:
     - Reanalyze Spectra: reanalyze_spectra.md
     - Access Public Datasets: access_public_datasets.md
     - Search Identifications: search_identifications.md
-    - Nuno test documentation page: NunoTest.md
+    - Analysis of Post-Translational Modifications: ptm_analysis.md
+    - Data Analysis Workflows: workflows.md
+        - Maestro workflow: maestro.md
+        - ModDecode workflow: moddecode.md
 theme:
     name: material
 
