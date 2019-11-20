@@ -1,6 +1,6 @@
 # Account Registration
 
-The MassIVE public data repository can be freely browsed and accessed by anonymous users, without having to register a user account. However, in order to actually submit datasets to the repository, a user account must be registered.
+The MassIVE data repository can be freely browsed and accessed by anonymous users, without having to register a user account. However, in order to actually submit datasets to the repository, a user account must be registered.
 
 Account registration is a simple process, and completely private – MassIVE will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows.
 
