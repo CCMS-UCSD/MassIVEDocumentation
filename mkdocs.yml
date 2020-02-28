@@ -4,7 +4,7 @@ nav:
     - MassIVE Introduction: index.md
     - Account Registration: account_registration.md
     - Data Upload: upload_data.md
-    - Submit Data to MassIVE: 
+    - Submit Data to MassIVE:
         - Submit Data: submit_data.md
         - Dataset Submission Workflow: submission_workflow.md
         - Reviewer Access: reviewer_access.md
@@ -16,6 +16,6 @@ nav:
     - Access Public Datasets: access_public_datasets.md
     - Search Identifications: search_identifications.md
 theme:
-    name: material
+    name: windmill
 
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
