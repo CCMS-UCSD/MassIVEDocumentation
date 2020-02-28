@@ -1,4 +1,4 @@
-# MassIVE
+# MassIVE Documentation
 
 ![massive logo](img/index/massive_logo.png)
 
