@@ -1,27 +1,27 @@
 # Submit quantification using offline analysis tool and statistical analysis result
 
-After you've successfully reanalyzed **public data** from MassIVE, share your findings with the community by attaching your results (**quantification and statistical analysis result**) back to the dataset. 
+After you've successfully reanalyzed **public data** from MassIVE, share your findings with the community by attaching your results (**quantification and statistical analysis result**) back to the dataset.
 
-If you reanalyzed a MassIVE dataset's spectrum files and their quantification **using offline analysis tools** (such as Skyline, MaxQuant, Proteome Discoverer, Spectronaut, etc for data processing and R packages, Perseus, etc for statistical analysis), then you can attach those results to the proper dataset. 
+If you reanalyzed a MassIVE dataset's spectrum files and their quantification **using offline analysis tools** (such as Skyline, MaxQuant, Proteome Discoverer, Spectronaut, etc for data processing and R packages, Perseus, etc for statistical analysis), then you can attach those results to the proper dataset.
 
 **Note: If submit new datasets, check [submit new dataset to MassIVE](https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/) and follow this documentation for submitting quantification and statistical analysis result.**
 
 ## Step 1: Upload your results files to your MassIVE account
-Start by [uploading your result files](upload_data.md) to your MassIVE account. 
+Start by [uploading your result files](../upload_data.md) to your MassIVE account.
 
 
 ## Step 2: Add Reanalysis
-Then navigate to the [dataset's web page](access_public_datasets.md#MassIVEDatasetBrowsing-ViewingaDataset) and click the "Add Reanalysis" button:
+Then navigate to the [dataset's web page](../access_public_datasets.md#MassIVEDatasetBrowsing-ViewingaDataset) and click the "Add Reanalysis" button:
 
 ![](img/submit_quant_reanalyses/add_reanalysis_button_iprg.png)
 
-This brings you to a MassIVE reanalysis attachment workflow input form. 
+This brings you to a MassIVE reanalysis attachment workflow input form.
 
 ![](img/submit_quant_reanalyses/add_title_description_iprg.png)
 
 
 #### Workflow Selection
-Automatically, 'MassIVE Dataset: Add Reanalysis Results' should be selected as workflow. You should add the title for this reanalysis in `Title`, such as 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' 
+Automatically, 'MassIVE Dataset: Add Reanalysis Results' should be selected as workflow. You should add the title for this reanalysis in `Title`, such as 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'
 
 
 #### Reanalysis Metadata section
@@ -33,7 +33,7 @@ From here, you can select all the files for your reanalysis by clicking any of t
 
 ![](img/submit_quant_reanalyses/add_reanalysis_file_iprg.png)
 
-Then, file selection window should be popped up. From the file selection pop-up window, browse your account to select the result files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked "Add Reanalysis" back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV repository are already selected. 
+Then, file selection window should be popped up. From the file selection pop-up window, browse your account to select the result files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked "Add Reanalysis" back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV repository are already selected.
 
 ![](img/submit_quant_reanalyses/file_selection_popup_iprg.png)
 
@@ -73,7 +73,7 @@ Here are the examples of quantification files and the output of MSstats for stat
 | Skyline              | .sky.zip                 | Supplementary files                         |
 
 
-Once you've selected valid reanalysis files and proper categories, click "finish selection" buttons. You will be back to reanalysis attachment workflow input form. 
+Once you've selected valid reanalysis files and proper categories, click "finish selection" buttons. You will be back to reanalysis attachment workflow input form.
 
 ![](img/submit_quant_reanalyses/file_selection_popup_done_iprg.png)
 
@@ -89,7 +89,7 @@ For example, `Reanalysis Container` shows all containers for the source dataset.
 
 #### Mapping Spectrum Files to Identfication Files section
 
-If you submitted new identification files, you should [map your result files to the dataset's peak list files](submission_workflow.md#MassIVEDatasetSubmission-MappingPeakListandResultFiles).
+If you submitted new identification files, you should [map your result files to the dataset's peak list files](../submission_workflow.md#MassIVEDatasetSubmission-MappingPeakListandResultFiles).
 
 
 #### Workflow Submission section
