@@ -19,10 +19,9 @@ nav:
     - MassIVE.quant:
       - Introduction: quant/massive_quant.md
       - Submit Quant Reanalyses: quant/submit_quant_reanalyses.md
-      - Submit Quant Dataset: quant/submit_quant_dataset.md
-      - Accessing Quant Reanalysis: quant/access_quant_reanalyses.md
-      - Running MSstats Workflow: quant/running_msstats_workflow.md
-      - Submit Quant Reanalyses: quant/viewing_msstats_workflow_result.md
+      - Access Quant Reanalysis: quant/access_quant_reanalyses.md
+      - Run MSstats Workflow: quant/run_msstats_workflow.md
+          - Submit MSstats Workflow result: quant/view_msstats_workflow_result.md
 
 theme:
     name: windmill
