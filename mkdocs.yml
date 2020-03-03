@@ -18,9 +18,10 @@ nav:
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
       - Introduction: quant/massive_quant.md
-      - Submit Quant Reanalyses: quant/submit_quant_reanalyses.md
-      - Access Quant Reanalysis: quant/access_quant_reanalyses.md
-      - Run MSstats Workflow: quant/run_msstats_workflow.md
+      - Submit Quant Reanalysis: quant/submit_quant_reanalysis.md
+      - Access Quant Reanalysis: quant/access_quant_reanalysis.md
+      - Run MSstats Workflow:
+          - MSstats Workflow: quant/run_msstats_workflow.md
           - Submit MSstats Workflow result: quant/view_msstats_workflow_result.md
 
 theme:
