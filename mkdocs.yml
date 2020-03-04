@@ -2,24 +2,25 @@ site_name: MassIVE Documentation
 edit_uri: 'https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/'
 nav:
     - MassIVE Introduction: index.md
-    - Account Registration: account_registration.md
-    - Data Upload: upload_data.md
-    - Submit Data to MassIVE: 
-        - Submit Data: submit_data.md
-        - Dataset Submission Workflow: submission_workflow.md
-        - Reviewer Access: reviewer_access.md
-        - Make Public: make_public.md
-        - Add/Update Metadata: add_update_metadata.md
-        - Add Publication: add_publication.md
-    - Share Reanalyses: share_reanalyses.md
-    - Reanalyze Spectra: reanalyze_spectra.md
-    - Access Public Datasets: access_public_datasets.md
-    - Search Identifications: search_identifications.md
-    - Analysis of Post-Translational Modifications: ptm_analysis.md
-    - Data Analysis Workflows:
-        - Maestro workflow: workflows/maestro.md
-        - ModDecode workflow: workflows/moddecode.md
+    - MassIVE:
+        - Account Registration: account_registration.md
+        - Data Upload: upload_data.md
+        - Submit Data to MassIVE: 
+            - Submit Data: submit_data.md
+            - Dataset Submission Workflow: submission_workflow.md
+            - Reviewer Access: reviewer_access.md
+            - Make Public: make_public.md
+            - Add/Update Metadata: add_update_metadata.md
+            - Add Publication: add_publication.md
+        - Share Reanalyses: share_reanalyses.md
+        - Reanalyze Spectra: reanalyze_spectra.md
+        - Access Public Datasets: access_public_datasets.md
+        - Search Identifications: search_identifications.md
+        - Analysis of Post-Translational Modifications: ptm_analysis.md
+        - Data Analysis Workflows:
+            - Maestro workflow: workflows/maestro.md
+            - ModDecode workflow: workflows/moddecode.md
 theme:
-    name: material
+    name: windmill
 
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
