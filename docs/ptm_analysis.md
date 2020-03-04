@@ -26,6 +26,14 @@ Other considerations for the inspection of modifications
 * Different modifications can have very similar mass; for example, several modifications and amino acid polymorphisms have [integer mass of 14 Da](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_knownmod#%7B%22main.mass_lowerinput%22%3A%2214%22%2C%22main.mass_upperinput%22%3A%2214%22%7D) and very close or indistinguishable mono-isotopic masses.
 * The same modification can occur on multiple different amino acids and sites: for example, the first 3 modified peptidoforms for peptide VGAHAGEYGAEALER [shown on this list](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_spectrum#%7B%22modFragNum_lowerinput%22%3A%222%22%2C%22calcPV_lowerinput%22%3A%2210%22%2C%22minRatio_lowerinput%22%3A%22.5%22%2C%22table_sort_history%22%3A%22curatedPept_asc%3BunmodPept_asc%3BminRatio_dsc%22%2C%22numMod_upperinput%22%3A%221%22%2C%22unmodPept_input%22%3A%22.VGAHAGEYGAEALER.%22%2C%22ModAnnotation_input%22%3A%22%2B16%2C%22%7D) localize the +15.995 Da mass offset to 3 different sites (once as an oxidation on Y and twice as polymorphisms of A to S, all resulting from teh exact same change in elemental composition), each supported by multiple site-localizing b and y ions at mass error <= 10 ppm.
 
+<ol>
+   <li> Item 1 </li>
+      <ol>
+         <li> Item 1.1 </li>
+      </ol>
+   <li> Item 2 </li>
+</ol>
+
 ### Analyzing peptide variants and peptidoforms
 
 Analyzing peptide variants
