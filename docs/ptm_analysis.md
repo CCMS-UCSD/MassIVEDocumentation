@@ -12,12 +12,31 @@ The following sections focus on different aspects of the analysis of modificatio
 
 ### Analyzing known modifications
 
-* Start with ModDecode list of [UniMod modifications](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_knownmod); the default sorting order is by decreasing number of distinct peptides identified with each modification. 
-* Additional important criteria for inspection of modifications:
-    1. test sub-item in numbered lists 1
-   
+1. Start with ModDecode list of [UniMod modifications](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_knownmod); the default sorting order is by decreasing number of distinct peptides identified with each modification (**"#Pepts"**). 
+1. Additional important criteria for inspection of modifications:
+    * **"% Explained"** >= 0.5: filter for modifications with at least one PSM with >= 50% intensity explained by theoretical ions derived from the modified peptidoform sequence
+    * **"MaxModFrags"** >= 2: filter for modifications with at least one PSM with >= 2 spectrum peaks assigned to modified ion fragments
+    * **"PValue"** >= 10: filter for modifications with at least one PSM matching a differently-modified (e.g., unmodified) PSM of the same peptide with an AlignGF p-value <= 1e-10
+    
+#### Other considerations for the inspection of modifications
+* The identification of a modification in a sample is only as good as the best PSM evidence that can be provided for that modification. See below for considerations for identification of modified peptidoforms.
+* Different modifications can have very similar mass; for example, several modifications and amino acid polymorphisms have [integer mass of 14 Da](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_knownmod#%7B%22main.mass_lowerinput%22%3A%2214%22%2C%22main.mass_upperinput%22%3A%2214%22%7D) and very close or indistinguishable mono-isotopic masses.
+    * Example peptide [ATAASSSSLE+13.979K](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_spectrum#%7B%22Index_lowerinput%22%3A%221337854%22%2C%22Index_upperinput%22%3A%221337854%22%7D), with Carbonyl modification on E10; note mass of highest-intensity modified y-ion ion y7 at 751.35, matching the theoretical mass 751.347 with mass error < 5 ppm. Other modified y ion masses further confirm this assignment.
+    * Example peptide [ATAASSSSLE+14.016K](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_spectrum#%7B%22Index_lowerinput%22%3A%221660252%22%2C%22Index_upperinput%22%3A%221660252%22%7D), with Methylation modification on E10; note mass of highest-intensity modified y-ion ion y7 at 751.387, matching the theoretical mass 751.387 with mass error < 5 ppm. Other modified y ion masses further confirm this assignment.
+* The same modification can occur on multiple different amino acids and sites:  
 
-### Analyzing peptidoforms
+#### next level
+
+### Analyzing peptide variants and peptidoforms
+
+1. Analyzing peptide variants
+    * First establish that it's the correct peptide - inspect the fragmentation pattern and compare it to that of related (possibly unmodified) variants of the same peptide
+1. Analyzing peptide modification masses
+    * Are there are other, higher-reliability modifications of similar mass identified on the same peptide? If yes, is there enough evidence to call an additional modification?
+1. Analyzing modification sites
+    * Is the same modification (or a different modification of the same mass) identified elsewhere on the same peptide? If yes, are there enough site-assignment peaks between the two sites to call an additional modification site?
+    * Filter the PSMs view for **"DtFlrPeaks"** >= 2: 
+    
 
 ### Analyzing hypermodified regions
 
