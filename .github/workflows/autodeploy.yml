@@ -1,13 +1,12 @@
 name: Auto Deploy
 
-on: push
-      branches:
-        - master
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-  
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -30,5 +29,6 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: site
