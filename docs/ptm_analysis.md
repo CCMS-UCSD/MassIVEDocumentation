@@ -8,9 +8,17 @@ We use two different workflows for identification of modifications
 * [ModDecode workflow](workflows/moddecode.md): post-processing of modified PSMs for i) resolution of delta-masses into known UniMod modifications for PSMs with unexpected modifications, ii) site assignment at fixed false localization rate and iii) calculation of AlignGF p-values between differently-modified versions of the same peptide.
    * ModDecode primarily identifies modified **peptidoforms**: peptide sequences with site-resolved modifications whose masses were matched to known UniMod entries for putative resolution into (possibly combinations of) known modifications or amino acid polymorphisms.
 
-The following sections focus on different aspects of the analysis of modifications and modified peptides.
+The following sections focus on different aspects of the analysis of modifications and modified peptides. All links below use two example jobs whose results will be reported soon: a [Maestro job](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=de809a3717cc4d96a3a5257e290351d5) co-analyzing colon samples from the draft proteomes and a colon cancer dataset and the corresponding [ModDecode](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=790e82c2ef1541748521db1e94b24fe0) job with resolved modifications and peptidoforms.
 
-### Analyzing modifications
+### Analyzing known modifications
 
-### Analyzing variants
+1. Start 
+
+### Analyzing peptidoforms
+
+### Analyzing hypermodified regions
+
+### Analyzing putative novel modifications
+
+
 
