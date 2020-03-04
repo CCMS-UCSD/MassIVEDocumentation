@@ -15,6 +15,10 @@ nav:
     - Reanalyze Spectra: reanalyze_spectra.md
     - Access Public Datasets: access_public_datasets.md
     - Search Identifications: search_identifications.md
+    - Analysis of Post-Translational Modifications: ptm_analysis.md
+    - Data Analysis Workflows:
+        - Maestro workflow: workflows/maestro.md
+        - ModDecode workflow: workflows/moddecode.md
 theme:
     name: material
 
