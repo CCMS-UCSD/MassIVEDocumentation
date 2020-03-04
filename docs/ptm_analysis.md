@@ -14,7 +14,7 @@ The following sections focus on different aspects of the analysis of modificatio
 
 1. Start with ModDecode list of [UniMod modifications](https://proteomics2.ucsd.edu/ProteoSAFe/result.jsp?task=790e82c2ef1541748521db1e94b24fe0&view=t_group_by_knownmod); the default sorting order is by decreasing number of distinct peptides identified with each modification. 
 1. Additional important criteria for inspection of modifications:
-    1. test sub-item in numbered lists 1
+    1.1. test sub-item in numbered lists 1
    
 
 ### Analyzing peptidoforms
