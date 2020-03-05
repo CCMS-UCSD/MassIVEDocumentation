@@ -36,7 +36,7 @@ You should select all the files for your reanalysis by clicking any of **Select 
 </center>
 
 
-Then, file selection window should be popped up. The file selection pop-up window (below) browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked "Add Reanalysis" back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.
+Then, file selection window should be popped up. The file selection pop-up window (below) browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked `Add Reanalysis` back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.
 
 
 <center>
