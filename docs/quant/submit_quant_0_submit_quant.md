@@ -1,4 +1,4 @@
-#### Submit reanalysis for quantification and/or statistical analysis result
+
 
 After you've successfully reanalyzed **public data** from MassIVE, share your findings with the community by attaching your results (**quantification and statistical analysis result**) back to the dataset.
 

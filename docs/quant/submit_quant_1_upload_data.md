@@ -1,5 +1,4 @@
 
-## Upload your data files to your MassIVE account
 
 Start by uploading your quantification and/or statistical analysis result files to your MassIVE account.
 
