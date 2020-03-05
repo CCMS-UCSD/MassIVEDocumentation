@@ -31,16 +31,16 @@ There is the summary box on the left of this page. It shows the simple summary a
     - **Quantified proteins**: Number of distinct proteins quantified in this reanalysis. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this reanalysis. For this reanalysis, 2,875 proteins were quantified and tested by MSstats. The table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category (_Choi2017_DDA_MaxQuant_testResult_byMSstats.csv_) includes the result for 2.875 proteins.
     
 
-### [Button : FTP Download](download_files.md)
+### [Button : FTP Download](2_download_files.md)
 
 All the submitted files in the reanalysis are available for downloading from FTP. See [here](download_files.md) for detailed instructions on how to download the files in any category.
 
 
-### [Button : Browse Quantification Results](browse_files.md)
+### [Button : Browse Quantification Results](2_browse_files.md)
 
 You can browse the quantification results for the reanalysis by clicking on **Browse Quantification Results** from the reanalysis page. See [here](browse_files.md) for detailed instructions on how to browse the files in the `Quantification Result` or `Statistical Analysis of Quantified Analytes` categories.
 
 
-### [Button : Browse Metadata](browse_files.md)
+### [Button : Browse Metadata](2_browse_files.md)
 
 You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis page. See [here](browse_files.md) for detailed instructions on how to browse the files in the `Metadata` category.
