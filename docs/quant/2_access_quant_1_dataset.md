@@ -4,5 +4,5 @@
 
 Once the attachment job is finished, both the container and the reanalysis will now show up on the dataset page:
 
-![](img/submit_quant_reanalyses/datasetpage_show_list_reanalysis_iprg.png)
+![](img/access_quant_reanalyses/datasetpage_show_list_reanalysis_iprg.png)
 
