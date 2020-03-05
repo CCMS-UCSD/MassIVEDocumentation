@@ -1,6 +1,4 @@
 
-
-#### Container view
 As well as on the page for the container itself (which is always accessible from the dataset):
 
 What the container is : xxx

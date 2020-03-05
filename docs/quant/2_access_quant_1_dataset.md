@@ -1,7 +1,5 @@
 
 
-## Step 3: Reanalysis now shows up on the dataset page
-
 Once the attachment job is finished, both the container and the reanalysis will now show up on the dataset page:
 
 **_todo : 1) new capture for whole page**
@@ -10,6 +8,11 @@ Once the attachment job is finished, both the container and the reanalysis will 
 title, description. there are some containers and reanalyses.
 
 **_todo : 2) new capture for summary table**
+Owner column
+
+Reanalysis column
+
+
 experimental design part : Condition, Bioreplicate, TechReplicate part
 
 Condition : Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the "Metadata" category having a "Condition" column in this dataset.

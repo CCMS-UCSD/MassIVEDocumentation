@@ -1,6 +1,4 @@
 
-
-#### Reanalysis view
 Each individual reanalysis has its own page, as well (accessible from either the dataset or the container):
 
 **_todo : 1) new capture for whole page**
