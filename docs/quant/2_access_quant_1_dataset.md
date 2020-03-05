@@ -42,22 +42,19 @@ There is the summary box on the left of this page. It shows the simple summary a
 
 - **Owner** column : 'Owner' means the submitter who designed the experiments, set up this dataset, and submitted files, including raw.files, for the first time. The column of 'Owner' shows the summary of what the owner submitted.
 
-- **Reanalysis** column : First, it shows how many reanalyses are included in this dataset. The column of 'Reanalyses' is the summary of all reanalyses in this dataset.
+- **Reanalysis** column : First, it shows how many reanalyses are included in this dataset. The column of 'Reanalyses' is the summary of all reanalyses in this dataset. For this example, 51 reanalyses are available in this dataset. The column of '51 Reanalyses' is the summary of 51 reanalyses.
 
-- **N/A** : Not available. For example, MassIVE.quant can't count the number of Conditions, Biological Replicates, or Technical Replicates if the owner didn't submit any files in `Metadata` category. Then, 'N/A' will be shown. 
+- **N/A** : Not available. The information corresponding to the summary is not submitted. For example, MassIVE.quant can't count the number of Conditions, Biological Replicates, or Technical Replicates if the owner didn't submit any files in `Metadata` category. Then, 'N/A' will be shown in the 'Owner' column for 'Experimental Design'. 
 
 
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
 
-    - **Condition**: Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this dataset. 
-    For this container, there are four conditions across all files in the `Metadata` category in this container's reanalyses.
+    - **Condition**: Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this dataset. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. There are four conditions across all files in the `Metadata` category in this dataset's reanalyses.
 
-    - **Biological Replicates**: Number of distinct biological replicates across all analyses (original submission and reanalyses) associated with this dataset. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this dataset.
-    For this container, four unique IDs for biological replicates are available across all 'annotation.csv' files in the `Metadata` category in this container's reanalyses.
+    - **Biological Replicates**: Number of distinct biological replicates across all analyses (original submission and reanalyses) associated with this dataset. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this dataset. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. Four unique IDs for biological replicates are available across all 'annotation.csv' files in the `Metadata` category in this dataset's reanalyses.
 
-    - **Technical Replicates**: Number of distinct technical replicates across all analyses (original submission and reanalyses) associated with this dataset. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered.
-    For this container, maximum three technical replicates for the corresponding biological replicate are available across all reanalyses in this container.
+    - **Technical Replicates**: Number of distinct technical replicates across all analyses (original submission and reanalyses) associated with this dataset. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. The Maximum three technical replicates for the corresponding biological replicate are available across all reanalyses in this dataset.
 
 2. **Identification Result**: The summary of the result for identification searching from `xx` category.
 
@@ -73,11 +70,9 @@ There is the summary box on the left of this page. It shows the simple summary a
     
 3. **Quantification Result**: The summary of the result for statistical analysis from `Statistical Analysis of Quantified Analytes` category.
 
-    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison across all analyses (original submission and reanalyses) associated with this dataset. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this dataset. 
-    For this container, there are xx reanalyses including the table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category. Ten proteins are significantly different for at least one pairwise comparisons across xx reanalyses.
+    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison across all analyses (original submission and reanalyses) associated with this dataset. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this dataset. For this dataset, the owner didn't submit any file including adjusted p-value column in the `Statistical Analysis of Quantified Analytes` category ('N/A' shown). However, reanalyses submitted this information. 97 distinct protein accessions are significantly different for at least one pairwise comparisons across 51 reanalyses.
 
-    - **Quantified proteins**: Number of distinct proteins quantified across all analyses (original submission and reanalyses) associated with this dataset. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this dataset.
-    For this container, 2,875 proteins were quantified and tested by MSstats across xx reanalyses in this container.
+    - **Quantified proteins**: Number of distinct proteins quantified across all analyses (original submission and reanalyses) associated with this dataset. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this dataset. For this dataset, the owner didn't submit any file including adjusted p-value column in the `Statistical Analysis of Quantified Analytes` category ('N/A' shown). However, reanalyses submitted this information. 6,981 distinct protein accessions were quantified and tested by MSstats across 51 reanalyses.
     
 
 
