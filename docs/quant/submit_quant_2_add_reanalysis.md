@@ -1,4 +1,4 @@
-## Step 2: Add Reanalysis workflow for quantification data
+## Add Reanalysis workflow for quantification data
 
 Once your files are fully uploaded to your user account directory at MassIVE, then you must run the **Add Reanalysis** workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).
 
