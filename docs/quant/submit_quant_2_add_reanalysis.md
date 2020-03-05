@@ -10,7 +10,7 @@ First, go to the webpage for the dataset you reanalyzed. You can search dataset 
 click the **Add Reanalysis** button:
 
 <center>
-![](img/submit_quant_reanalyses/add_reanalysis_button_iprg.png){width=60%}
+![](img/submit_quant_reanalyses/add_reanalysis_button_iprg.png)
 </center>
 
 
@@ -20,11 +20,11 @@ click the **Add Reanalysis** button:
 Automatically, **'MassIVE Dataset: Add Reanalysis Results'** should be selected in `Workflow`. `Species`, `Instrument`, `Post-Translation Modifications` should be filled automatically from original submission. You should add 
 
 1. the title in `Title` (at least 30 characters)
-2. the description for this reanalysis in `Description` (at least 50 characters).
+2. the description for this reanalysis in `Description` (at least 50 characters)
 
 
 <center>
-![](img/submit_quant_reanalyses/add_title_description_iprg.png){width=75%}
+![](img/submit_quant_reanalyses/add_title_description_iprg.png)
 </center>
 
 For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' can be the `Title`. The short summary about the steps for reanalysis can be the `Description`, like 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'
@@ -34,7 +34,7 @@ For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' ca
 You should select all the files for your reanalysis by clicking any of **Select Input Files** buttons:
 
 <center>
-![](img/submit_quant_reanalyses/add_reanalysis_file_iprg.png){width=75%}
+![](img/submit_quant_reanalyses/add_reanalysis_file_iprg.png)
 </center>
 
 
@@ -42,7 +42,7 @@ Then, file selection window should be popped up. The file selection pop-up windo
 
 
 <center>
-![](img/submit_quant_reanalyses/file_selection_popup_iprg_full.png){width=70%}
+![](img/submit_quant_reanalyses/file_selection_popup_iprg_full.png)
 </center>
 
 
@@ -101,7 +101,7 @@ The reanalysis attachment workflow will determine which source datasets were rea
 For example, `Reanalysis Container` shows all containers for the source dataset. You can choose one of them or make **New reanalysis container**. If you select 'New reanalysis container', then you should put the title for this container in `Reanalysis Container Title`.
 
 <center>
-![](img/submit_quant_reanalyses/reanalysis_container_iprg.png){width=75%}
+![](img/submit_quant_reanalyses/reanalysis_container_iprg.png)
 </center>
 
 ### Mapping Spectrum Files to Identfication Files section
@@ -114,6 +114,6 @@ If you submitted new identification files, you should [map your result files to 
 Finally, you are ready to submit. Please type your email to get progress notice and click 'submit' buttom.
 
 <center>
-![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png){width=75%}
+![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png)
 </center>
 
