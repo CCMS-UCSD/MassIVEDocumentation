@@ -1,5 +1,6 @@
 # Analysis of Post-Translational Modifications using CCMS tools
-no comma
+
+,
 We use two different workflows for identification of modifications
 
 * [Maestro workflow](workflows/maestro.md): identification of peptide-spectrum matches (PSMs) by i) spectral library search (MSPLIT) for detection of known reference peptides, followed by ii) restricted database search with known modifications (MSGF+), and finally followed by iii) open-modification search (MODa) for identification of peptides with unexpected modifications.
