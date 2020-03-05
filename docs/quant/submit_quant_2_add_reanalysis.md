@@ -44,7 +44,7 @@ Then, file selection window should be popped up. The file selection pop-up windo
 </center>
 
 
-### Categories for Quant files (important!!)
+### Categories for Quant files (IMPORTANT!!)
 You should select valid reanalysis files in this step. Please choose the proper category for each file. Here are more help on each of individual categories for quantification and statistical analysis results.
 
 
@@ -95,7 +95,6 @@ If you know which category should be selected for each file, let's start. Here i
 ![](img/submit_quant_reanalyses/file_selection_popup_iprg_intermediate_step.png)
 </center>
 
-&nbsp;
 
 Repeat the same steps for other files.
 
@@ -106,9 +105,10 @@ Once you've selected valid reanalysis files and proper categories, click **Finis
 ![](img/submit_quant_reanalyses/file_selection_popup_done_iprg.png)
 </center>
 
-&nbsp;
-
 Then, you will be back to reanalysis attachment workflow input form.
+
+**_!! NOTE: To browse the dataset in MassIVE.quant, the three categories, 1) Quantification Results, 2) Metadata, 3) Statistical Analysis of Quantified Analytes, should have the file(s)._**
+
 
 ### 2.4 Reanalysis Container Selection section
 
@@ -129,7 +129,6 @@ Finally, you are ready to submit. Please type your email to get progress notice 
 ![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png)
 </center>
 
-&nbsp;
 
 Then, you will move to new page, which shows the progress. Please wait. It will take few minutes. After the job is done, you will get the notification email.
 
