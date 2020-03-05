@@ -18,7 +18,10 @@ nav:
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
       - Introduction: quant/massive_quant.md
-      - Submit Quant Reanalysis: quant/submit_quant_reanalysis.md
+      - Submit Quant Reanalysis:
+          - Submit Quant Reanalysis: quant/submit_quant_0_submit_quant.md
+          - Step1 - Upload Data : quant/submit_quant_1_upload_data.md
+          - Step2 - Add Reanalysis : quant/submit_quant_2_add_reanalysis.md
       - Access Quant Reanalysis: quant/access_quant_reanalysis.md
       - Run MSstats Workflow:
           - MSstats Workflow: quant/run_msstats_workflow.md
