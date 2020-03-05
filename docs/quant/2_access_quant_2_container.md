@@ -58,14 +58,14 @@ There is the summary box on the left of this page. It shows the simple summary a
 
 ### [Button : FTP Download](2_download_files.md)
 
-All the submitted files in the reanalysis are available for downloading from FTP. See [here](download_files.md) for detailed instructions on how to download the files in any category.
+All the submitted files in the reanalysis are available for downloading from FTP. See [here](2_download_files.md) for detailed instructions on how to download the files in any category.
 
 
 ### [Button : Browse Quantification Results](2_browse_files.md)
 
-You can browse the quantification results for the reanalysis by clicking on **Browse Quantification Results** from the reanalysis page. See [here](browse_files.md) for detailed instructions on how to browse the files in the `Quantification Result` or `Statistical Analysis of Quantified Analytes` categories.
+You can browse the quantification results for the reanalysis by clicking on **Browse Quantification Results** from the reanalysis page. See [here](2_browse_files.md) for detailed instructions on how to browse the files in the `Quantification Result` or `Statistical Analysis of Quantified Analytes` categories.
 
 
 ### [Button : Browse Metadata](2_browse_files.md)
 
-You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis page. See [here](browse_files.md) for detailed instructions on how to browse the files in the `Metadata` category.
+You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis page. See [here](2_browse_files.md) for detailed instructions on how to browse the files in the `Metadata` category.
