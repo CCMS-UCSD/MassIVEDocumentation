@@ -44,20 +44,21 @@ Then, file selection window should be popped up. The file selection pop-up windo
 </center>
 
 
-#### Select reanalysis files (The most important steps!!)
-Then you can select valid reanalysis files in this step. Please choose the proper file selection. Here are more help on each of individual categories for quantification and statistical analysis results.
+### Categories for Quant files (The most important steps!!)
+You should select valid reanalysis files in this step. Please choose the proper category for each file. Here are more help on each of individual categories for quantification and statistical analysis results.
 
 
 | Category                                     | Notes                                                                                    |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Quantification results                       | Quantification result files from data processing tools/quantification tools. It should be used for downstream statistical analysis. For example, PSM-level or transition-level or protein-level quantified peak intensities data should be in this category.  |
-| Metadata                                     | Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels. |
-| Statisitical analysis of quantified analytes | Result files for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section. |
+| Quantification results                       | Quantification result files (reports) from data processing tools/quantification tools. It should be used for downstream statistical analysis. For example, PSM-level, transition-level, or protein-level quantified peak intensities data should be saved in this category.  |
+| Metadata                                     | Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.|
+| Statisitical analysis of quantified analytes | Files including the results for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section. |
+| Methods and Protocols                        | Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files or txt or xml files to record version of tool/software or parameters used in tool/software. Even the pdf including experimental procedure in the publication.
 | Supplementary                                | Any other type of information. For example, the software-specific files from processing software can be shared in this section (sky, skyd, sky.zip, blib, irtdb, protdb, optdb, and midas for Skyline, .pdresult for Proteome Discoverer, .sne for Spectronaut).|
 
-#### Examples : input and output using MSstats 
+### Examples: input and output using MSstats 
 
-Here are the examples of quantification files and the output of MSstats for statistical analysis and their corresponding categories to submit.
+Here are the examples of quantification files as the input of MSstats, the output of MSstats for statistical analysis, and their corresponding categories to submit.
 
 | Data processing tool | File type                | File Selection Category                     |
 | -------------------- | ------------------------ | ------------------------------------------- |
@@ -67,21 +68,25 @@ Here are the examples of quantification files and the output of MSstats for stat
 |                      | msstats.log              | Methods and protocols                       |
 |                      | Rscript.R                | Methods and protocols                       |
 |                      | Description.pdf          | Methods and protocols                       |
+| -------------------- | ------------------------ | ------------------------------------------- |
 | MaxQuant             | evidence.txt             | Quantification results                      |
 |                      | proteinGroups.txt        | Quantification results                      |
 |                      | parameters.txt           | Quantification results                      |
 |                      | mqpar.xml                | Methods and protocols                       |
 |                      | fasta                    | Sequence database                           |
+| -------------------- | ------------------------ | ------------------------------------------- |
 | Spectronaut          | input.xls                | Quantification results                      |
 |                      | SpectronautAnalysis.sne  | Supplementary files                         |
+| -------------------- | ------------------------ | ------------------------------------------- |
 | DIA-Umpire           | FragSummary.xls          | Quantification results                      |
 |                      | PeptideSummary.xls       | Quantification results                      |
 |                      | ProtSummary.xls          | Quantification results                      |
+| -------------------- | ------------------------ | ------------------------------------------- |
 | OpenSWATH            | input.tsv or input.txt   | Quantification results                      |
 | Skyline              | .sky.zip                 | Supplementary files                         |
 
 
-#### How to select file and selection
+### How to select file and selection
 **!! new capture with number of selection**
 
 
