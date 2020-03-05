@@ -55,7 +55,7 @@ Then you can select valid reanalysis files in this step. Please choose the prope
 | Statisitical analysis of quantified analytes | Result files for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section. |
 | Supplementary                                | Any other type of information. For example, the software-specific files from processing software can be shared in this section (sky, skyd, sky.zip, blib, irtdb, protdb, optdb, and midas for Skyline, .pdresult for Proteome Discoverer, .sne for Spectronaut).|
 
-#### Examples : input and output using MSstats for differential abundance analysis
+#### Examples : input and output using MSstats 
 
 Here are the examples of quantification files and the output of MSstats for statistical analysis and their corresponding categories to submit.
 
@@ -101,10 +101,6 @@ For example, `Reanalysis Container` shows all containers for the source dataset.
 <center>
 ![](img/submit_quant_reanalyses/reanalysis_container_iprg.png)
 </center>
-
-### Mapping Spectrum Files to Identfication Files section
-
-If you submitted new identification files, you should [map your result files to the dataset's peak list files](../submission_workflow.md#MassIVEDatasetSubmission-MappingPeakListandResultFiles).
 
 
 ### Workflow Submission section
