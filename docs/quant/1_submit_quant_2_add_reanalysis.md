@@ -95,7 +95,6 @@ If you know which category should be selected for each file, let's start. Here i
 ![](img/submit_quant_reanalyses/file_selection_popup_iprg_intermediate_step.png)
 </center>
 
-
 Repeat the same steps for other files.
 
 

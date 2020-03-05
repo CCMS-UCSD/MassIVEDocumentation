@@ -17,12 +17,17 @@ nav:
       - Access Public Datasets: access_public_datasets.md
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
-      - Introduction: quant/massive_quant.md
+      - Introduction: quant/0_massive_quant.md
       - Submit Quant Reanalysis:
-          - Submit Quant Reanalysis: quant/submit_quant_0_submit_quant.md
-          - Step1 - Upload Data : quant/submit_quant_1_upload_data.md
-          - Step2 - Add Reanalysis : quant/submit_quant_2_add_reanalysis.md
-      - Access Quant Reanalysis: quant/access_quant_reanalysis.md
+          - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
+          - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
+          - Step2 - Add Reanalysis : quant/1_submit_quant_2_add_reanalysis.md
+      - Access Quant Reanalysis:
+          - Access submitted reanalysis : quant/2_access_quant_1_dataset.md
+          - Container webpage : quant/2_access_quant_2_container.md
+          - Reanalysis webpage : quant/2_access_quant_3_reanalysis.md
+          - Browse files : quant/2_browse_files.md
+          - Download files : quant/2_download_files.md
       - Run MSstats Workflow:
           - MSstats Workflow: quant/run_msstats_workflow.md
           - Submit MSstats Workflow result: quant/view_msstats_workflow_result.md
