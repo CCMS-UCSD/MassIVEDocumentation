@@ -26,8 +26,8 @@ nav:
           - Reanalysis webpage : quant/2_access_quant_3_reanalysis.md
           - Container webpage : quant/2_access_quant_2_container.md
           - Dataset webpage : quant/2_access_quant_1_dataset.md
-          - Download files : quant/2_download_files.md
           - Browse files : quant/2_browse_files.md
+          - Download files : quant/2_download_files.md
       - Run MSstats Workflow:
           - MSstats Workflow: quant/run_msstats_workflow.md
           - Submit MSstats Workflow result: quant/view_msstats_workflow_result.md
