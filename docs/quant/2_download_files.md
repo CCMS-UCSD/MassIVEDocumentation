@@ -1,11 +1,10 @@
 
 
-All the submitted files in the reanalysis are available for downloading from FTP:
-
-**_todo : 1) new capture for summary table+red box mark_**
-![](img/access_quant_reanalyses/datasetpage_reanalysis_ftp_link_iprg.png)
+All the submitted files in the reanalysis are available for downloading from FTP.
 
 Click **FTP Download** button.
+
+![](img/access_quant_reanalyses/download_ftp_step1.png)
 
 It browse the FTP.
 **_todo: , 2) Then, capture FTP location_**
