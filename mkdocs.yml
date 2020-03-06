@@ -29,8 +29,9 @@ nav:
           - Browse files : quant/2_browse_files.md
           - Download files : quant/2_download_files.md
       - Run MSstats Workflow:
-          - MSstats Workflow: quant/run_msstats_workflow.md
-          - Submit MSstats Workflow result: quant/view_msstats_workflow_result.md
+          - Step1 - Upload Data : quant/3_msstats_workflow_1_upload_data.md
+          - Step2 - MSstats Workflow: quant/3_msstats_workflow_2_run.md
+          - Step3 - Submit Result: quant/3_msstats_workflow_3_submit.md
 
 theme:
     name: windmill

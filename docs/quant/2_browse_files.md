@@ -1,5 +1,4 @@
 
-
 ### Browse Metadata
 
 You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in the `Metadata` category.

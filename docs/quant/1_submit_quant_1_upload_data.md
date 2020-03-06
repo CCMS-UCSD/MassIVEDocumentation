@@ -1,3 +1,8 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
 
 
 Start by uploading your quantification and/or statistical analysis result files to your MassIVE account.
