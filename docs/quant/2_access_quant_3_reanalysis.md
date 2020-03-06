@@ -1,14 +1,14 @@
 
-Each individual reanalysis has its own page. Here is the example of one reanalysis, RMSV000000248.29.
+Each individual reanalysis has its own page. Here is the example of one reanalysis, RMSV000000249.1.
 
 ### Reanalysis page
-If you know the reanalysis ID, such as RMSV000000248.29, you can search in the main MassIVE webpage. Also you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.
+If you know the reanalysis ID, such as RMSV000000249.1, you can search in the main MassIVE webpage. Also you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.
 
 ![](img/access_quant_reanalyses/reanalysis_webpage.png)
 
 ### Title
 
-It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this reanalysis, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'.
+It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.
 
 
 ### Description
@@ -18,14 +18,14 @@ It shows the description that submitter wrote in `Add Reanalysis Results` workfl
 
 ### Reanalyzed Datasets
 
-It shows the datasets reanalyzed for this reanalysis. This reanalysis is belonged to this dataset. This reanalysis, RMSV000000248.29, is used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
+It shows the datasets reanalyzed for this reanalysis. This reanalysis is belonged to this dataset. This reanalysis, RMSV000000249.1, is used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
 
 
-### Summary table for one reanalysis
+### Summary table for this reanalysis
 
 There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.
 
-**_todo : 2) new capture for summary table_**
+![](img/access_quant_reanalyses/reanalysis_summary_table.png)
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
 
@@ -38,9 +38,9 @@ There is the summary box on the left of this page. It shows the simple summary a
 
 2. **Quantification Result**: The summary of the result for statistical analysis from `Statistical Analysis of Quantified Analytes` category.
 
-    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison in this reanalysis. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this reanalysis. For this reanalysis, there is one table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category (_Choi2017_DDA_MaxQuant_testResult_byMSstats.csv_). In this table, ten proteins are signigicantly different for at least one pairwise comparions. There are 'adj.pvalue' column and 'issue' column. The proteins ('Protein' column) and comparisons ('Label' column) with 'adj.pvalue' <= 0.05 and 'issue' = NA are detected as statistically significant.
+    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison in this reanalysis. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this reanalysis. For this reanalysis, there is one table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category (_Choi2017_DDA_Skyline_testResult_byMSstats.csv_). In this table, seven proteins are signigicantly different for at least one pairwise comparions. There are 'adj.pvalue' column and 'issue' column. The proteins ('Protein' column) and comparisons ('Label' column) with 'adj.pvalue' <= 0.05 and 'issue' = NA are detected as statistically significant.
 
-    - **Quantified proteins**: Number of distinct proteins quantified in this reanalysis. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this reanalysis. For this reanalysis, 2,875 proteins were quantified and tested by MSstats. The table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category (_Choi2017_DDA_MaxQuant_testResult_byMSstats.csv_) includes the result for 2.875 proteins.
+    - **Quantified proteins**: Number of distinct proteins quantified in this reanalysis. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this reanalysis. For this reanalysis, 3,027 proteins were quantified and tested by MSstats. The table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category (_Choi2017_DDA_Skyline_testResult_byMSstats.csv_) includes the result for 3,027 proteins.
     
 
 ### [Button : FTP Download](2_download_files.md)
