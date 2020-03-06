@@ -2,7 +2,7 @@
 
 ### Browse Metadata
 
-You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis webpage **(??? only from reanalysis webpage)**:
+You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis webpage **(??? only from reanalysis webpage)**. This button is activated only when any tabular-type file(s) is available in `Metadata` category.
 
 **_todo : 1) new capture for summary table+ only red box mark_**
 ![](img/access_quant_reanalyses/reanalysis_annotation_iprg.png)
@@ -29,13 +29,12 @@ If you want to remove filter and to see the whole table, remove 'Condition1' tha
 
 ### Browse Quantification Results
 
-You can browse the quantification results for the reanalysis by clicking on "Browse Quantification Results" from the reanalysis page:
+You can browse the quantification results for the reanalysis by clicking on **Browse Quantification Results** from the reanalysis webpage **(??? only from reanalysis webpage)**. This button is activated only when any tabular-type file(s) is available in `Quantification Results` or `Statistical Analysis of Quantified Analytes` categories.
 
-**_todo : 1) new capture for summary table+red box mark_**
-![](img/access_quant_reanalyses/reanalysis_testing_result_iprg.png)
+![](img/access_quant_reanalyses/browse_quantresult_step1.png)
 
 You will move to the new webpage to show the list of files under `Quantification Results` or `Statistical Analysis of Quantified Analytes` categories.
-**_todo : 2) new capture for metadata page : list of files_**
+![](img/access_quant_reanalyses/browse_quantresult_step2.png)
 
 Select one file, named xxx. It is under `Quantification Results`. This is the example of quantification result (MSstats reports) from MaxQuant. 
 

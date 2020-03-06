@@ -4,8 +4,7 @@ Each individual reanalysis has its own page. Here is the example of one reanalys
 ### Reanalysis page
 If you know the reanalysis ID, such as RMSV000000248.29, you can search in the main MassIVE webpage. Also you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.
 
-**_todo : 1) new capture for whole page_**
-![](img/access_quant_reanalyses/datasetpage_show_reanalysis_iprg.png)
+![](img/access_quant_reanalyses/reanalysis_webpage.png)
 
 ### Title
 

@@ -5,8 +5,7 @@ Each dataset has its own page. Here is the example of one dataset, MSV000079843.
 ### Dataset page
 If you know the dataset MSV ID or PXD ID, such as MSV000079843 or PXD015300, you can search in the main MassIVE webpage. 
 
-**_todo : 1) new capture for whole page_**
-![](img/access_quant_reanalyses/datasetpage_show_container_iprg.png)
+![](img/access_quant_reanalyses/dataset_webpage.png)
 
 
 ### Title
@@ -38,7 +37,7 @@ At the bottom of this page, there is the table to show the list of reanalyses in
 
 There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.
 
-**_todo : 2) new capture for summary table_**
+![](img/access_quant_reanalyses/dataset_summary_table.png)
 
 - **Owner** column : 'Owner' means the submitter who designed the experiments, set up this dataset, and submitted files, including raw.files, for the first time. The column of 'Owner' shows the summary of what the owner submitted.
 
@@ -46,6 +45,7 @@ There is the summary box on the left of this page. It shows the simple summary a
 
 - **N/A** : Not available. The information corresponding to the summary is not submitted. For example, MassIVE.quant can't count the number of Conditions, Biological Replicates, or Technical Replicates if the owner didn't submit any files in `Metadata` category. Then, 'N/A' will be shown in the 'Owner' column for 'Experimental Design'. 
 
+- **i** in the blue circle : Detailed information for each row.
 
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
@@ -62,11 +62,11 @@ There is the summary box on the left of this page. It shows the simple summary a
     
     - **Proteins (Reported)**: Number of distinct protein accessions reported by originally submitted search results.
     
-    - **Peptides**: 
+    - **Peptides**: Number of distinct unmodified peptide sequences reported across all analyses (original submission and reanalyses) associated with this dataset.
     
-    - **Variant Peptides**:
+    - **Variant Peptides**: Number of distinct peptide sequences (including modified variants or peptidoforms) reported across all analyses (original submission and reanalyses) associated with this dataset.
     
-    - **PSMs**: 
+    - **PSMs**: Total number of peptide-spectrum matches (i.e. spectrum identifications) reported across all analyses (original submission and reanalyses) associated with this dataset.
     
 3. **Quantification Result**: The summary of the result for statistical analysis from `Statistical Analysis of Quantified Analytes` category.
 
