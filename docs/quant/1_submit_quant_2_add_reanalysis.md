@@ -1,4 +1,4 @@
-Once your files are fully uploaded to your user account directory at MassIVE, then you are ready to submit your files as reanalysis. You must run the **Add Reanalysis** workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).
+Once your files are fully uploaded to your user account directory at MassIVE, you are ready to submit your files as a reanalysis. 
 
 
 ### 2.1 Select Dataset
@@ -15,7 +15,7 @@ click the **Add Reanalysis** button:
 ### 2.2 Workflow Selection and Reanalysis Metadata Sections
 
 **Add Reanalysis** button brings you to a MassIVE reanalysis attachment workflow input form.
-Automatically, **'MassIVE Dataset: Add Reanalysis Results'** should be selected in `Workflow`. `Species`, `Instrument`, `Post-Translation Modifications` should be filled automatically from original submission. You should add 
+At this point, the option **'MassIVE Dataset: Add Reanalysis Results'** should be automatically selected in `Workflow`. Information regarding `Species`, `Instrument`, `Post-Translation Modifications` should also be filled automatically, based on the original submission. You should add 
 
 1. the title in `Title` (at least 30 characters)
 2. the description for this reanalysis in `Description` (at least 50 characters)
@@ -25,7 +25,8 @@ Automatically, **'MassIVE Dataset: Add Reanalysis Results'** should be selected 
 ![](img/submit_quant_reanalyses/add_title_description_iprg.png)
 </center>
 
-For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' can be the `Title`. The short summary about the steps for reanalysis can be the `Description`, for instance, 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'
+Example of a `Title`: 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'
+Example of a `Description`: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'
 
 
 ### 2.3 Reanalysis File Selection section 
@@ -36,7 +37,7 @@ You should select all the files for your reanalysis by clicking any of **Select 
 </center>
 
 
-Then, file selection window should be popped up. The file selection pop-up window (below) browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked `Add Reanalysis` back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.
+Next, the file selection pop-up window (below) helps you browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. The original dataset should be automatically imported at this stage. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.
 
 
 <center>
@@ -45,15 +46,15 @@ Then, file selection window should be popped up. The file selection pop-up windo
 
 
 ### Categories for Quant files (IMPORTANT!!)
-You should select valid reanalysis files in this step. Please choose the proper category for each file. Here are more help on each of individual categories for quantification and statistical analysis results.
+You should select valid reanalysis files in this step. Please choose the proper category for each file. Here is more help on each of the individual categories for quantification and statistical analysis results.
 
 
 | Category                                     | Notes                                                                                    |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Quantification results                       | Quantification result files (reports) from data processing tools/quantification tools. It should be used for downstream statistical analysis. For example, PSM-level, transition-level, or protein-level quantified peak intensities data should be saved in this category.  |
-| Metadata                                     | Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.|
-| Statisitical analysis of quantified analytes | Files including the results for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section. |
-| Methods and Protocols                        | Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files or txt or xml files to record version of tool/software or parameters used in tool/software. Even the pdf including experimental procedure in the publication.
+| Metadata                                     | Information about the design of experiments should be submitted in the `Metadata` section. For example, an annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition, or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.|
+| Statisitical analysis of quantified analytes | Files including the results for statistical analysis. It could be the table or figure of the result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis, or pdf for figures can be saved in this section. |
+| Methods and Protocols                        | Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files, or txt or xml files to record a version of tool/software or parameters used in tool/software. Even the pdf, including the experimental procedure in the publication. |
 | Supplementary                                | Any other type of information. For example, the software-specific files from processing software can be shared in this section (sky, skyd, sky.zip, blib, irtdb, protdb, optdb, and midas for Skyline, .pdresult for Proteome Discoverer, .sne for Spectronaut).|
 
 
@@ -86,8 +87,8 @@ Here are the examples of quantification files as the input of MSstats, the outpu
 ### How to select the file(s) and category
 If you know which category should be selected for each file, let's start. Here is the example for `Quantification Results`.
 
-1. Select file(s) : *'Choi2017_DDA_Skyline_input.csv'* is the MSstats report from Skyline, which is precusor-level quantified data. It should be saved in `Quantification Results`. Click the file name(s) under your MassIVE account. Then file(s) will be highlighted.
-2. Select category : at the top-left conner, there are boxes for categories. Select (or Click) the box named `Quantification Results`.
+1. Select file(s): *'Choi2017_DDA_Skyline_input.csv'* is the MSstats report from Skyline, which is precursor-level quantified data. It should be saved in `Quantification Results`. Click the file name(s) under your MassIVE account. Then file(s) will be highlighted.
+2. Select category: at the top-left corner, there are boxes for categories. Select (or Click) the box named `Quantification Results`.
 3. Then, on the right panel, named `Selected Files`, you can see the selected file(s) under the folder named `Selected Quantification Results`.
 
 
@@ -122,13 +123,13 @@ For example, `Reanalysis Container` shows all containers for the source dataset.
 
 ### 2.5 Workflow Submission section
 
-Finally, you are ready to submit. Please type your email to get progress notice and click **Submit** buttom.
+Finally, you are ready to submit. Please type your email to get progress notice and click **Submit** button.
 
 <center>
 ![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png)
 </center>
 
 
-Then, you will move to new page, which shows the progress. Please wait. It will take few minutes. After the job is done, you will get the notification email.
+Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes. After the job is done, you will get the notification email.
 
 
