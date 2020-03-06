@@ -1,23 +1,22 @@
 
-Each container, including at least one reanalysis, has its own page. Here is the example of one contaion, RMSV000000248. It includes reanalysis (RMSV000000248.29).
+Each container, including at least one reanalysis, has its own page. Here is the example of one contaion, RMSV000000249. It includes reanalysis (RMSV000000249.1).
 
 If there are multiple experiments in one MSV or PXD, we can specify one experiment in one container.
 
 ### Container page
-If you know the container ID, such as RMSV0000248, you can search in the main MassIVE webpage. Also you can access from the dataset, for example, MSV000079843 for this container.
+If you know the container ID, such as RMSV0000249, you can search in the main MassIVE webpage. Also you can access from the dataset, for example, MSV000079843 for this container.
 
-**_todo : 1) new capture for whole page**
-![](img/access_quant_reanalyses/datasetpage_show_container_iprg.png)
+![](img/access_quant_reanalyses/container_webpage.png)
 
 
 ### Title
 
-It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this container, 'CCMS reanalyses for/from training activities'.
+It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this container, 'MassIVE.quant-Reanalysis'.
 
 
 ### Description
 
-It shows the description that submitter wrote in `Add Reanalysis Results` workflow.
+This description is automatically filled by MassIVE.
 
 
 ### Reanalyzed Datasets
@@ -27,14 +26,15 @@ It shows the datasets reanalyzed for this container. This container is belonged 
 
 ### Active Reanalyses
 
-At the bottom of this page, there is the table to show the list of reanalyses in this container. For this example, there are 28 reanalyses available in this container. Each reanalysis has RMSV ID with the suffix in the container RMSV ID. 
+At the bottom of this page, there is the table to show the list of reanalyses in this container. For this example, there are 11 reanalyses available in this container. Each reanalysis has RMSV ID with the suffix in the container RMSV ID. One reanalysis (RMSV000000249.11) includes identification search result. Rest of 10 reanalyses include statistical analysis for quantification by different tools or parameters.
 
 
-### Summary table for one reanalysis
+### Summary table for this container
 
-There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.
+There is the summary box on the left of this page. It shows the simple summary about experimental design, identification result, and quantification/statistical analysis for this reanalysis.
 
-**_todo : 2) new capture for summary table_**
+![](img/access_quant_reanalyses/container_summary_table.png)
+
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
 
@@ -44,23 +44,21 @@ There is the summary box on the left of this page. It shows the simple summary a
 
     - **Technical Replicates**: Number of distinct technical replicates across all reanalyses in this container. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered. For this container, maximum three technical replicates for the corresponding biological replicate are available across all reanalyses in this container.
 
-2. **Identification Result**: The summary of the result for identification searching from `xx` category.
+2. **Identification Result**: The summary of the result for identification searching from `Result Files` category.
 
-    - **Protein (Human, Remapped)**: Originally identified proteins that were automatically remapped by MassIVE to proteins in the SwissProt human reference database.
+    - **Proteins (Reported)**: Number of distinct protein accessions reported across all reanalyses in this container.
     
-    - **Proteins (Reported)**: Number of distinct protein accessions reported by originally submitted search results.
+    - **Peptides**: Number of distinct unmodified peptide sequences reported across all reanalyses in this container.
     
-    - **Peptides**: 
+    - **Variant Peptides**: Number of distinct peptide sequences (including modified variants or peptidoforms) reported across all reanalyses in this container.
     
-    - **Variant Peptides**:
-    
-    - **PSMs**: 
+    - **PSMs**: Total number of peptide-spectrum matches (i.e. spectrum identifications) reported across all reanalyses in this container.
 
 3. **Quantification Result**: The summary of the result for statistical analysis from `Statistical Analysis of Quantified Analytes` category.
 
-    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison across all reanalyses in this container. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance . Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this container's active reanalyses. For this container, there are xx reanalyses including the table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category. Ten proteins are significantly different for at least one pairwise comparisons across xx reanalyses.
+    - **Differential proteins**: Number of distinct proteins found to be differentially abundant in at least one comparison across all reanalyses in this container. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value <= 0.05 and lists no issues associated with statistical tests for differential abundance . Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this container's active reanalyses. For this container, there are 10 reanalyses including the table for the result of statistical analysis in the `Statistical Analysis of Quantified Analytes` category. 78 distinct protein accessions are significantly different for at least one pairwise comparisons across 10 reanalyses.
 
-    - **Quantified proteins**: Number of distinct proteins quantified across all reanalyses in this container. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this container's active reanalyses. For this container, 2,875 proteins were quantified and tested by MSstats across xx reanalyses in this container.
+    - **Quantified proteins**: Number of distinct proteins quantified across all reanalyses in this container. Distinct protein accessions are counted across all files submitted in the `Statistical Analysis of Quantified Analytes` category having a `Protein` column in this container's active reanalyses. For this container, 6,981 distinct protein accessions were quantified and tested by MSstats across 10 reanalyses in this container.
     
 
 ### [Button : FTP Download](2_download_files.md)
@@ -68,11 +66,3 @@ There is the summary box on the left of this page. It shows the simple summary a
 All the submitted files in the reanalysis are available for downloading from FTP. See [here](2_download_files.md) for detailed instructions on how to download the files in any category.
 
 
-### [Button : Browse Quantification Results](2_browse_files.md)
-
-You can browse the quantification results for the reanalysis by clicking on **Browse Quantification Results** from the reanalysis page. See [here](2_browse_files.md) for detailed instructions on how to browse the files in the `Quantification Result` or `Statistical Analysis of Quantified Analytes` categories.
-
-
-### [Button : Browse Metadata](2_browse_files.md)
-
-You can browse the metadata for the reanalysis by clicking on **Browse Metadata** from the reanalysis page. See [here](2_browse_files.md) for detailed instructions on how to browse the files in the `Metadata` category.

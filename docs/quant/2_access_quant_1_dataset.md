@@ -33,9 +33,9 @@ It shows the publication related to this dataset. The publication includes all t
 At the bottom of this page, there is the table to show the list of reanalyses in this dataset. For this example, there are 3 containers and 51 reanalyses available in this dataset. Each container and reanalysis has their own RMSV ID. If you click any RMSV ID, you will move to the webpage for specific RMSV. 
 
 
-### Summary table for one reanalysis
+### Summary table for this dataset
 
-There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.
+There is the summary box on the left of this page. It shows the simple summary about experimental design, identification result, quantification/statistical analysis for this reanalysis.
 
 ![](img/access_quant_reanalyses/dataset_summary_table.png)
 
@@ -60,7 +60,7 @@ There is the summary box on the left of this page. It shows the simple summary a
 
     - **Protein (Human, Remapped)**: Originally identified proteins that were automatically remapped by MassIVE to proteins in the SwissProt human reference database.
     
-    - **Proteins (Reported)**: Number of distinct protein accessions reported by originally submitted search results.
+    - **Proteins (Reported)**: Number of distinct protein accessions reported across all analyses (original submission and reanalyses) associated with this dataset.
     
     - **Peptides**: Number of distinct unmodified peptide sequences reported across all analyses (original submission and reanalyses) associated with this dataset.
     
