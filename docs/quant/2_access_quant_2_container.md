@@ -1,17 +1,17 @@
 
-Each container, including at least one reanalysis, has its own page. Here is the example of one contaion, RMSV000000249. It includes reanalysis (RMSV000000249.1).
+Each container, including at least one reanalysis, has its page. Here is the example of one container, RMSV000000249. It includes reanalysis (RMSV000000249.1).
 
 If there are multiple experiments in one MSV or PXD, we can specify one experiment in one container.
 
 ### Container page
-If you know the container ID, such as RMSV0000249, you can search in the main MassIVE webpage. Also you can access from the dataset, for example, MSV000079843 for this container.
+If you know the container ID, such as RMSV0000249, you can search in the main MassIVE webpage. Also, you can access the container from the dataset, for example, MSV000079843 for this container.
 
 ![](img/access_quant_reanalyses/container_webpage.png)
 
 
 ### Title
 
-It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this container, 'MassIVE.quant-Reanalysis'.
+It shows the title that the submitter provided in the `Add Reanalysis Results` workflow. For this container, 'MassIVE.quant-Reanalysis'.
 
 
 ### Description
@@ -21,17 +21,17 @@ This description is automatically filled by MassIVE.
 
 ### Reanalyzed Datasets
 
-It shows the datasets reanalyzed for this container. This container is belonged to this dataset. For this container, the reanalyses under this container are used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
+It shows the datasets reanalyzed for this container. This container belongs to this dataset. For this container, the reanalyses under this container have used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
 
 
 ### Active Reanalyses
 
-At the bottom of this page, there is the table to show the list of reanalyses in this container. For this example, there are 11 reanalyses available in this container. Each reanalysis has RMSV ID with the suffix in the container RMSV ID. One reanalysis (RMSV000000249.11) includes identification search result. Rest of 10 reanalyses include statistical analysis for quantification by different tools or parameters.
+At the bottom of this page, there is a table to show the list of reanalyses in this container. For this example, there are 11 reanalyses available in this container. Each reanalysis has RMSV ID with the suffix in the container RMSV ID. One reanalysis (RMSV000000249.11) includes an identification searching result. The rest of 10 reanalyses include statistical analysis for quantification by different tools or parameters.
 
 
 ### Summary table for this container
 
-There is the summary box on the left of this page. It shows the simple summary about experimental design, identification result, and quantification/statistical analysis for this reanalysis.
+There is the summary box on the left of this page. It shows the simple summary of experimental design, identification result, and quantification/statistical analysis for this reanalysis.
 
 ![](img/access_quant_reanalyses/container_summary_table.png)
 

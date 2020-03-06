@@ -1,6 +1,6 @@
 
 
-Each dataset has its own page. Here is the example of one dataset, MSV000079843.
+Each dataset has its page. Here is the example of one dataset, MSV000079843.
 
 ### Dataset page
 If you know the dataset MSV ID or PXD ID, such as MSV000079843 or PXD015300, you can search in the main MassIVE webpage. 
@@ -10,12 +10,12 @@ If you know the dataset MSV ID or PXD ID, such as MSV000079843 or PXD015300, you
 
 ### Title
 
-It shows the title that submitter provided in `MassIVE dataset Submission` workflow. For this dataset, 'iPRG2015'.
+It shows the title that the submitter provided in the `MassIVE dataset Submission` workflow. For this dataset, 'iPRG2015'.
 
 
 ### Description
 
-It shows the description that submitter wrote in `MassIVE dataset Submission` workflow.
+It shows the description that the submitter wrote in the `MassIVE dataset Submission` workflow.
 
 
 ### Contact
@@ -25,27 +25,27 @@ It shows the contact information about the owner or submitter of this dataset.
 
 ### Publications
 
-It shows the publication related to this dataset. The publication includes all the details related to this dataset.
+It shows the publication related to this dataset. The publication includes all the details associated with this dataset.
 
 
 ### Dataset Reanalyses
 
-At the bottom of this page, there is the table to show the list of reanalyses in this dataset. For this example, there are 3 containers and 51 reanalyses available in this dataset. Each container and reanalysis has their own RMSV ID. If you click any RMSV ID, you will move to the webpage for specific RMSV. 
+At the bottom of this page, there is the table to show the list of reanalyses in this dataset. For this example, there are 3 containers and 51 reanalyses available in this dataset. Each container and reanalysis has their RMSV ID. If you click any RMSV ID, you will move to the webpage for specific RMSV. 
 
 
 ### Summary table for this dataset
 
-There is the summary box on the left of this page. It shows the simple summary about experimental design, identification result, quantification/statistical analysis for this reanalysis.
+There is the summary box on the left of this page. It shows the simple summary of experimental design, identification result, and quantification/statistical analysis for this dataset.
 
 ![](img/access_quant_reanalyses/dataset_summary_table.png)
 
-- **Owner** column : 'Owner' means the submitter who designed the experiments, set up this dataset, and submitted files, including raw.files, for the first time. The column of 'Owner' shows the summary of what the owner submitted.
+- **Owner** column: 'Owner' means the submitter who designed the experiments, set up this dataset, and submitted files, including raw.files, for the first time. The column of 'Owner' shows a summary of what the owner provided.
 
-- **Reanalysis** column : First, it shows how many reanalyses are included in this dataset. The column of 'Reanalyses' is the summary of all reanalyses in this dataset. For this example, 51 reanalyses are available in this dataset. The column of '51 Reanalyses' is the summary of 51 reanalyses.
+- **Reanalysis** column: First, it shows how many reanalyses are included in this dataset. The column of 'Reanalyses' is the summary of all reanalyses in this dataset. For this example, 51 reanalyses are available in this dataset. The column of '51 Reanalyses' is the summary of 51 reanalyses.
 
-- **N/A** : Not available. The information corresponding to the summary is not submitted. For example, MassIVE.quant can't count the number of Conditions, Biological Replicates, or Technical Replicates if the owner didn't submit any files in `Metadata` category. Then, 'N/A' will be shown in the 'Owner' column for 'Experimental Design'. 
+- **N/A**: Not available. The information corresponding to the summary is not submitted. For example, MassIVE.quant can't count the number of Conditions, Biological Replicates, or Technical Replicates if the owner didn't provide any files in `Metadata` category. Then, 'N/A' will be shown in the 'Owner' column for 'Experimental Design'. 
 
-- **i** in the blue circle : Detailed information for each row.
+- **i** in the blue circle: Detailed information for each row.
 
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.

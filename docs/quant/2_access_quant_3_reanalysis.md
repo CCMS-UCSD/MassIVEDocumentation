@@ -1,29 +1,29 @@
 
-Each individual reanalysis has its own page. Here is the example of one reanalysis, RMSV000000249.1.
+Each reanalysis has its page. Here is the example of one reanalysis, RMSV000000249.1.
 
 ### Reanalysis page
-If you know the reanalysis ID, such as RMSV000000249.1, you can search in the main MassIVE webpage. Also you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.
+If you know the reanalysis ID, such as RMSV000000249.1, you can search in the main MassIVE webpage. Also, you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.
 
 ![](img/access_quant_reanalyses/reanalysis_webpage.png)
 
 ### Title
 
-It shows the title that submitter provided in `Add Reanalysis Results` workflow. For this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.
+It shows the title that the submitter provided in the `Add Reanalysis Results` workflow. For this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.
 
 
 ### Description
 
-It shows the description that submitter wrote in `Add Reanalysis Results` workflow.
+It shows the description that the submitter wrote in the `Add Reanalysis Results` workflow.
 
 
 ### Reanalyzed Datasets
 
-It shows the datasets reanalyzed for this reanalysis. This reanalysis is belonged to this dataset. This reanalysis, RMSV000000249.1, is used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
+It shows the datasets reanalyzed for this reanalysis. This reanalysis belongs to this dataset. This reanalysis, RMSV000000249.1, is used the datasets from the data, MSV000079843. If you click the MSV ID, you will move to the dataset webpage.
 
 
 ### Summary table for this reanalysis
 
-There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.
+There is the summary box on the left of this page. It shows the simple summary of experimental design and quantification/statistical analysis for this reanalysis.
 
 ![](img/access_quant_reanalyses/reanalysis_summary_table.png)
 
