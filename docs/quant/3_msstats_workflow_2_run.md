@@ -9,7 +9,7 @@ First, go to the main webpage for [MassIVE](https://massive.ucsd.edu/ProteoSAFe/
 ![](img/run_msstats_workflow/msstats_workflow_step0.png)
 </center>
 
-It brings you to the workflow input form. Select **MSstats (1.3)** from the drop-down button in the `Workflow`. Then the webpage will be updated as below. You should add the title in the `Title` (at least 30 characters).
+It brings you to the workflow input form. Select **MSstats (1.3)** from the drop-down button in the `Workflow`. Then the webpage will be changed as below. You should add the title in the `Title` (at least 30 characters).
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_step1.png)
@@ -18,9 +18,9 @@ It brings you to the workflow input form. Select **MSstats (1.3)** from the drop
 
 ### 2.2 File Inputs
 
-You can reanalyze either your new quantification files or published quantification file.
+You can reanalyze either your new quantification file(s) or published quantification file(s).
 
-##### 2.2.1 If you have new quantification files
+#### 2.2.1 If you have new quantification files
     
 1. Select the name of data processing tool you used from the drop-down button in the `Tool name`.
 2. Select the files from your user account directory at MassIVE by clicking any of **Select Input Files** buttons:
@@ -50,7 +50,7 @@ Once you've selected valid annotation and quantificationi files in the proper ca
 </center>
 
 
-##### 2.2.2 If you use the published quantification files
+#### 2.2.2 If you use the published quantification files
 
 Select the name of data processing tool you used from the drop-down button in the `Tool name`. Next, you should select the quantification and annotation files from the published datasets.
 
@@ -80,7 +80,7 @@ Then, the new pop-up window, `File Selection`, shows all files in this reanalysi
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step3.png)
 </center>
 
-Let's select the quantification files. For MaxQuant, two files should be selected : `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Select both of them as below.
+Let's select the quantification files. For MaxQuant, two files should be selected : `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Select both of them as below. Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for `Feature` category.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step4.png)
@@ -96,25 +96,25 @@ Finally, click `Close` button at the bottom-right on the pop-up window. Now you 
 ### 2.3 Comparison Setup
 Next, you should set up the comparison(s) between conditions of interest. **MSstats workflow** provides four options to select comparions. You should choose one of them.
 
--**All vs. All**: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
+- **All vs. All**: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_all.png)
 </center>
 
--**One vs. All**: This option will generate all pairwise comparisons between one selected condition (base condition) and other conditions in the annotation file. You should select the base condition from the drop-down button, next to `One vs. All` option. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4) and you select _Condition1_ for the base condition, total three pairwise comparisons will be considered in MSstats : _Condition2-Condition1, Condition3-Condition1, Condition4-Condition1_.
+- **One vs. All**: This option will generate all pairwise comparisons between one selected condition (base condition) and other conditions in the annotation file. You should select the base condition from the drop-down button, next to `One vs. All` option. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4) and you select _Condition1_ for the base condition, total three pairwise comparisons will be considered in MSstats : _Condition2-Condition1, Condition3-Condition1, Condition4-Condition1_.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_one.png)
 </center>
 
--**Choose Pairs**: This option will allow you to select any pairwise comparison(s) you want. If you select `Choose Pairs` option, the list of condition will be shown. Select one condition per each panel and then select `Add Selected Condition Pair` button. Then the comparison(s) you selected will be shown in the box below.
+- **Choose Pairs**: This option will allow you to select any pairwise comparison(s) you want. If you select `Choose Pairs` option, the list of condition will be shown. Select one condition per each panel and then select `Add Selected Condition Pair` button. Then the comparison(s) you selected will be shown in the box below.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_choose.png)
 </center>
 
--**Contrast Matrix**: If you want to compare the complex linear combination between conditions, you can make your own contrast matrix and use it for MSstats. The table for contrast matrix can be saved as a txt file. It should be uploaded in your account directory at MassIVE.
+- **Contrast Matrix**: If you want to compare the complex linear combination between conditions, you can make your own contrast matrix and use it for MSstats. The table for contrast matrix can be saved as a txt file. It should be uploaded in your account directory at MassIVE.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_attach.png)
