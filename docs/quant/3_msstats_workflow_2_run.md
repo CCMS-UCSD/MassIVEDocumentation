@@ -96,17 +96,13 @@ There are advanced options for options available. This step is optional. The det
 ![](img/run_msstats_workflow/msstats_workflow_adv_opt.png)
 </center>
 
-1. Advanced Filtering Options: This is the option for converter functions in MSstats.
+1. Advanced Filtering Options: the options for converter functions in MSstats. `filter_with_Qvalue` or `proteinID` for many converter functions.
 
-2. Advanced Data Processing Options:
+2. Advanced Data Processing Options: the options of imputation and normalization in `dataProcess` function.
 
-3. Advanced Normalization Options:
+3. Advanced Normalization Options: the option for `normalization='globalstandards` in `dataProcess` function.
 
-4. Advanced Feature Selection Options:
-
-advanced option box : the partial options for MSstat. link to the msstats.org
-**_need capture_**
-
+4. Advanced Feature Selection Options: This is for the options, `featureSubset` and `remove_uninformative_feature_outlier` in `dataProcess` function
 
 
 ### 2.5 Workflow Submission section
@@ -118,5 +114,5 @@ Finally, you are ready to submit. Please type your email to get progress notice 
 </center>
 
 
-Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes. After the job is done, you will get the notification email.
+Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes (or a few hours). After the job is done, you will get the notification email. The job done will be saved in your account at MassIVE.
 
