@@ -37,7 +37,7 @@ Let's select `Annotation File` first.
 2. Select category: at the top-left corner, there are boxes for categories. Select (or Click) the box named `Annotation File`.
 3. Then, on the right panel, named `Selected Files`, you can see the selected file under the folder named `Selected Annotation File`.
 
-Please repeat for quantification file. Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for `Feature` category. For `MaxQunat` output, MSstats requires two quantification report, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Please repeat to select those two files in the corresponding category.
+Please repeat for quantification file(s). Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for `Feature` category. For `MaxQunat` output, MSstats requires two quantification report, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Repeat to select those two files in the corresponding category.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_selection_popup_final.png)
@@ -52,12 +52,45 @@ Once you've selected valid annotation and quantificationi files in the proper ca
 
 ##### 2.2.2 If you use the published quantification files
 
+Select the name of data processing tool you used from the drop-down button in the `Tool name`. Next, you should select the quantification and annotation files from the published datasets.
 
-select files
+1. Click '**+**' sign in front of **Select Input Files from MassIVE dataset** option. Then the list of dataset will be shown.
+2. Type MSV ID in the empty box in the first row and below the column named 'Dataset'. For example, 'MSV000079843'
+3. Click the `Filter` button at the top left of the table. Then, the row with MSV ID your typed for the `Dataset` column is shown. 
+4. Click the `Reanalyses` button at the very right.
 
-file selection pop-up
-**_need capture_**
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step1.png)
+</center>
 
+Then, the `Dataset Reanalysis Selection` pop-up window helps you select the reanalysis including the annotation and quantification files. Find the reanalysis including the annotation and quantification files. If there are more than 5 reanalyses in the datasets, please use double arrow (<< or >>) to see more reanalyses.
+Click the `Select` button at the very right in the row for the reanalysis you want.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step2.png)
+</center>
+
+Then, the new pop-up window, `File Selection`, shows all files in this reanalysis. Let's select the annotation file.
+
+1. Find the annotation file. For this example, _Choi2017_DDA_MaxQuant_annotation.csv_ is the annotation file that we want to use. 
+2. Select **Annotation File** from the drop-down button in the `Select` column.
+3. Click the `Add` button at the very right.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step3.png)
+</center>
+
+Let's select the quantification files. For MaxQuant, two files should be selected : `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Select both of them as below.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step4.png)
+</center>
+
+Finally, click `Close` button at the bottom-right on the pop-up window. Now you can see three files are selected in total.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_done.png)
+</center>
 
 
 ### 2.3 Comparison Setup
