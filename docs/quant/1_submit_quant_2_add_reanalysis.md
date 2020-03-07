@@ -16,7 +16,7 @@ click the **Add Reanalysis** button:
 ### 2.2 Workflow Selection and Reanalysis Metadata Sections
 
 **Add Reanalysis** button brings you to a MassIVE reanalysis attachment workflow input form.
-At this point, the option **'MassIVE Dataset: Add Reanalysis Results'** should be automatically selected in `Workflow`. Information regarding `Species`, `Instrument`, `Post-Translation Modifications` should also be filled automatically, based on the original submission. You should add 
+At this point, the option **'MassIVE Dataset: Add Reanalysis Results'** should be automatically selected in the `Workflow`. Information regarding `Species`, `Instrument`, `Post-Translation Modifications` should also be filled automatically, based on the original submission. You should add 
 
 1. the title in `Title` (at least 30 characters)
 2. the description for this reanalysis in `Description` (at least 50 characters)
@@ -100,7 +100,7 @@ If you know which category should be selected for each file, let's start. Here i
 Repeat the same steps for other files.
 
 
-Once you've selected valid reanalysis files and proper categories, click **Finish Selection** buttons. 
+Once you've selected valid reanalysis files and proper categories, click **Finish Selection** button. 
 
 <center>
 ![](img/submit_quant_reanalyses/file_selection_popup_done_iprg.png)
