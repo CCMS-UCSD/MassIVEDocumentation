@@ -46,6 +46,14 @@ Please repeat for quantification file. Most data processing tools report one fea
 
 Once you've selected valid annotation and quantificationi files in the proper categories, click **Fihish Selection** button.
 
+
+Select the data processing tool name from the drop-down button. Here, `MaxQuant` is selected.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_file_input_done.png)
+</center>
+
+
 ##### 2.2.2 If you want to reqnalyze the published quantification files,
 
 
@@ -55,15 +63,33 @@ file selection pop-up
 **_need capture_**
 
 
+
 ### 2.3 Comparison Setup
+Next, you need to set up the comparison(s) between conditions of interest, **MSstats workflow** provides four options to select comparions. You should choose one of them.
 
-1. All vs All
+1. All vs. All: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
 
-2. One vs. All
+<center>
+![](img/run_msstats_workflow/msstats_workflow_contrast_all.png)
+</center>
 
-3. Choose Pairs
+2. One vs. All: This option will generate all pairwise comparisons between one selected condition (base condition) and other conditions in the annotation file. You should select the base condition from the drop-down button, next to `One vs. All` option. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4) and you select _Condition1_ for the base condition, total three pairwise comparisons will be considered in MSstats : _Condition2-Condition1, Condition3-Condition1, Condition4-Condition1_.
 
-4. Contrast Matrix
+<center>
+![](img/run_msstats_workflow/msstats_workflow_contrast_one.png)
+</center>
+
+3. Choose Pairs: This option will allow you to select any pairwise comparison you want. If you select `Choose Pairs` option, the list of condition will be shown. Select one condition per each panel and then select `Add Selected Condition Pair` button. Then the comparison(s) you selected will be shown in the box below.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_contrast_choose.png)
+</center>
+
+4. Contrast Matrix: If you have the complex linear combination between conditions, you can make your own contrast matrix and use it. The table for contrast matrix can be saved as txt file. It should be uploaded in your account directory at MassIVE.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_contrast_attach.png)
+</center>
 
 
 ### 2.4 Advanced options
