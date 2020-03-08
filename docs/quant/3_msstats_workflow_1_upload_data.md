@@ -12,6 +12,6 @@ Then, move on to **Step 2: MSstats workflow**.
 
 
 ### 1.2 Option2: Use Published Quant
-If you know MSV ID or RMSV ID including quantification files, you can import them in the **MSstats workflow**.
+If you know MSV ID including quantification files, you can import them in the **MSstats workflow**.
 
 You are ready to move on to **Step 2: MSstats workflow**.

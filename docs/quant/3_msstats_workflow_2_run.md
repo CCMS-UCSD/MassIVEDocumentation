@@ -18,7 +18,7 @@ It brings you to the workflow input form. Select **MSstats (1.3)** from the drop
 
 ### 2.2 File Inputs
 
-You can reanalyze either your new quantification file(s) or published quantification file(s).
+You can reanalyze either your new quantification file(s) or published quantification file(s).  If you have new quantification files to analze by MSstats, please go to the section 2.2.1. If you want to use the published quantification file, please go to the section 2.2.2
 
 #### 2.2.1 If you have new quantification files
     
@@ -148,4 +148,9 @@ Finally, you are ready to submit. Please type your email to get progress notice 
 
 
 Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes (or a few hours). After the job is done, you will get the notification email. The job done will be saved in your account at MassIVE.
+
+<center>
+![](img/run_msstats_workflow/msstats_workflow_job_done.png)
+</center>
+
 

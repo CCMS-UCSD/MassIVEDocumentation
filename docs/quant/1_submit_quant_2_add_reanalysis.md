@@ -6,7 +6,7 @@ Once your files are fully uploaded to your user account directory at MassIVE, yo
 
 First, go to the webpage for the dataset you reanalyzed. You can search dataset MSV ID or PXD ID in [dataset's web page](../access_public_datasets.md#MassIVEDatasetBrowsing-ViewingaDataset).
 
-click the **Add Reanalysis** button:
+Click the **Add Reanalysis** button:
 
 <center>
 ![](img/submit_quant_reanalyses/add_reanalysis_button_iprg.png)
@@ -27,10 +27,12 @@ At this point, the option **'MassIVE Dataset: Add Reanalysis Results'** should b
 </center>
 
 Example of a `Title`: 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'
+
 Example of a `Description`: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'
 
 
 ### 2.3 Reanalysis File Selection section 
+
 You should select all the files for your reanalysis by clicking any of **Select Input Files** buttons:
 
 <center>
