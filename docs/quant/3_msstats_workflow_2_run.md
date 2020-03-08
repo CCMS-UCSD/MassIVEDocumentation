@@ -20,7 +20,9 @@ It brings you to the workflow input form. Select **MSstats (1.3)** from the drop
 
 You can reanalyze either your new quantification file(s) or published quantification file(s).  If you have new quantification files to analze by MSstats, please go to the section 2.2.1. If you want to use the published quantification file, please go to the section 2.2.2
 
-#### 2.2.1 If you have new quantification files
+#### 2.2.1 Option1: New Quant files
+
+If you have new quantification files,
     
 1. Select the name of data processing tool you used from the drop-down button in the `Tool name`.
 2. Select the files from your user account directory at MassIVE by clicking any of **Select Input Files** buttons:
@@ -50,9 +52,9 @@ Once you've selected valid annotation and quantificationi files in the proper ca
 </center>
 
 
-#### 2.2.2 If you use the published quantification files
+#### 2.2.2  Option2: Published Quant files
 
-Select the name of data processing tool you used from the drop-down button in the `Tool name`. Next, you should select the quantification and annotation files from the published datasets.
+If you use the published quantification files, select the name of data processing tool you used from the drop-down button in the `Tool name`. Next, you should select the quantification and annotation files from the published datasets.
 
 1. Click '**+**' sign in front of **Select Input Files from MassIVE dataset** option. Then the list of dataset will be shown.
 2. Type MSV ID in the empty box in the first row and below the column named 'Dataset'. For example, 'MSV000079843'
@@ -129,13 +131,10 @@ There are advanced options for options available. This step is optional. The det
 ![](img/run_msstats_workflow/msstats_workflow_adv_opt.png)
 </center>
 
-1. Advanced Filtering Options: the options for converter functions in MSstats. `filter_with_Qvalue` or `proteinID` for many converter functions.
-
-2. Advanced Data Processing Options: the options of imputation and normalization in `dataProcess` function.
-
-3. Advanced Normalization Options: the option for `normalization='globalstandards` in `dataProcess` function.
-
-4. Advanced Feature Selection Options: This is for the options, `featureSubset` and `remove_uninformative_feature_outlier` in `dataProcess` function
+- Advanced Filtering Options: the options for converter functions in MSstats. `filter_with_Qvalue` or `proteinID` for many converter functions.
+- Advanced Data Processing Options: the options of imputation and normalization in `dataProcess` function.
+- Advanced Normalization Options: the option for `normalization='globalstandards` in `dataProcess` function.
+- Advanced Feature Selection Options: This is for the options, `featureSubset` and `remove_uninformative_feature_outlier` in `dataProcess` function
 
 
 ### 2.5 Workflow Submission section
