@@ -22,9 +22,9 @@ You can reanalyze either your new quantification file(s) or published quantifica
 
 #### 2.2.1 Option1: New Quant files
 
-If you have new quantification files,
+If you have new quantification files, then:
     
-1. Select the name of data processing tool you used from the drop-down button in the `Tool name`.
+1. Select the name of the data processing tool you used from the drop-down button in the `Tool name`.
 2. Select the files from your user account directory at MassIVE by clicking any of **Select Input Files** buttons:
 
 <center>
@@ -35,17 +35,17 @@ Next, the file selection pop-up window (below) helps you browses your account to
 
 Let's select `Annotation File` first.
 
-1. Select the file in your account: *'Choi2017_DDA_MaxQuant_annotationt.csv'* is the annotation file for this experiment. Select (or click) the file name. Then file name will be highlighted.
-2. Select category: at the top-left corner, there are boxes for categories. Select (or Click) the box named `Annotation File`.
+1. Select the file in your account: *'Choi2017_DDA_MaxQuant_annotationt.csv'* is the annotation file for this experiment. Select/Click the file name. Then, the file name will be highlighted.
+2. Select category: At the top-left corner, there are boxes for categories. Select/Click the box named `Annotation File`.
 3. Then, on the right panel, named `Selected Files`, you can see the selected file under the folder named `Selected Annotation File`.
 
-Please repeat for quantification file(s). Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for `Feature` category. For `MaxQunat` output, MSstats requires two quantification report, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Repeat to select those two files in the corresponding category.
+Please repeat for quantification file(s). Most data processing tools report one feature-level quantified data, which is required for MSstats. It should be selected for the `Feature` category. For `MaxQunat` output, MSstats requires two quantification report, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Repeat to select those two files in the corresponding category.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_selection_popup_final.png)
 </center>
 
-Once you've selected valid annotation and quantificationi files in the proper categories, click **Fihish Selection** button.
+Once you've selected valid annotation and quantification files in the proper categories, clicks the **Fihish Selection** button.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_done.png)
@@ -56,8 +56,8 @@ Once you've selected valid annotation and quantificationi files in the proper ca
 
 If you use the published quantification files, select the name of data processing tool you used from the drop-down button in the `Tool name`. Next, you should select the quantification and annotation files from the published datasets.
 
-1. Click '**+**' sign in front of **Select Input Files from MassIVE dataset** option. Then the list of dataset will be shown.
-2. Type MSV ID in the empty box in the first row and below the column named 'Dataset'. For example, 'MSV000079843'
+1. Click '**+**' sign in front of **Select Input Files from MassIVE dataset** option. Then, the list of dataset will be shown.
+2. Type MSV ID in the empty box in the first row and below the column named 'Dataset', for example, 'MSV000079843'
 3. Click the `Filter` button at the top left of the table. Then, the row with MSV ID your typed for the `Dataset` column is shown. 
 4. Click the `Reanalyses` button at the very right.
 
@@ -65,8 +65,7 @@ If you use the published quantification files, select the name of data processin
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step1.png)
 </center>
 
-Then, the `Dataset Reanalysis Selection` pop-up window helps you select the reanalysis including the annotation and quantification files. Find the reanalysis including the annotation and quantification files. If there are more than 5 reanalyses in the datasets, please use double arrow (<< or >>) to see more reanalyses.
-Click the `Select` button at the very right in the row for the reanalysis you want.
+Then, the `Dataset Reanalysis Selection` pop-up window helps you select the reanalysis, including the annotation and quantification files. Find the reanalysis, including the annotation and quantification files. If there are more than 5 reanalyses in the datasets, please use a double arrow (<< or >>) to see more reanalyses. Click the `Select` button at the very right in the row for the reanalysis you want.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step2.png)
@@ -82,13 +81,13 @@ Then, the new pop-up window, `File Selection`, shows all files in this reanalysi
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step3.png)
 </center>
 
-Let's select the quantification files. For MaxQuant, two files should be selected : `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Select both of them as below. Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for `Feature` category.
+Let's select the quantification files. For MaxQuant, two files should be selected : `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Select both of them as below. Most data processing tools report one feature-level quantified data, which is required for MSstats. It should be selected for the `Feature` category.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step4.png)
 </center>
 
-Finally, click `Close` button at the bottom-right on the pop-up window. Now you can see three files are selected in total.
+Finally, click the `Close` button at the bottom-right on the pop-up window. Now, you can see three files are selected in total.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_done.png)
@@ -98,7 +97,7 @@ Finally, click `Close` button at the bottom-right on the pop-up window. Now you 
 ### 2.3 Comparison Setup
 Next, you should set up the comparison(s) between conditions of interest. **MSstats workflow** provides four options to select comparions. You should choose one of them.
 
-- **All vs. All**: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
+- **All vs. All**: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), a total of six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_all.png)
@@ -110,13 +109,13 @@ Next, you should set up the comparison(s) between conditions of interest. **MSst
 ![](img/run_msstats_workflow/msstats_workflow_contrast_one.png)
 </center>
 
-- **Choose Pairs**: This option will allow you to select any pairwise comparison(s) you want. If you select `Choose Pairs` option, the list of condition will be shown. Select one condition per each panel and then select `Add Selected Condition Pair` button. Then the comparison(s) you selected will be shown in the box below.
+- **Choose Pairs**: This option will allow you to select any pairwise comparison(s) you want. If you select `Choose Pairs` option, the list of conditions will be shown. Select one condition per each panel and then select the `Add Selected Condition Pair` button. Then the comparison(s) you selected will be shown in the box below.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_choose.png)
 </center>
 
-- **Contrast Matrix**: If you want to compare the complex linear combination between conditions, you can make your own contrast matrix and use it for MSstats. The table for contrast matrix can be saved as a txt file. It should be uploaded in your account directory at MassIVE.
+- **Contrast Matrix**: If you want to compare the complex linear combination between conditions, you can make your contrast matrix and use it for MSstats. The table for the contrast matrix can be saved as a txt file. It should be uploaded in your account directory at MassIVE.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_contrast_attach.png)
@@ -131,9 +130,9 @@ There are advanced options for options available. This step is optional. The det
 ![](img/run_msstats_workflow/msstats_workflow_adv_opt.png)
 </center>
 
-- Advanced Filtering Options: the options for converter functions in MSstats. `filter_with_Qvalue` or `proteinID` for many converter functions.
-- Advanced Data Processing Options: the options of imputation and normalization in `dataProcess` function.
-- Advanced Normalization Options: the option for `normalization='globalstandards` in `dataProcess` function.
+- Advanced Filtering Options: The options for converter functions in MSstats. `filter_with_Qvalue` or `proteinID` for many converter functions.
+- Advanced Data Processing Options: The options of imputation and normalization in `dataProcess` function.
+- Advanced Normalization Options: The option for `normalization='globalstandards` in `dataProcess` function.
 - Advanced Feature Selection Options: This is for the options, `featureSubset` and `remove_uninformative_feature_outlier` in `dataProcess` function
 
 

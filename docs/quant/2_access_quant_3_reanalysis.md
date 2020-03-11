@@ -8,7 +8,7 @@ If you know the reanalysis ID, such as RMSV000000249.1, you can search in the ma
 
 ### Title
 
-It shows the title that the submitter provided in the `Add Reanalysis Results` workflow. For this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.
+It shows the title that the submitter provided in the `Add Reanalysis Results` workflow  for this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.
 
 
 ### Description
@@ -31,7 +31,7 @@ There is the summary box on the left of this page. It shows the simple summary o
 
     - **Condition**: Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the `Metadata` category having a "Condition" column in this reanalysis. For this reanalysis, there are four conditions from 'annotation.csv' file in the `Metadata` category.
 
-    - **Biological Replicates**: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this reanalysis. For this reanalysis, there is `BioReplicate` column in 'annotation.csv' file. Four unique ID for biological replicates are available.
+    - **Biological Replicates**: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this reanalysis. For this reanalysis, there is a `BioReplicate` column in 'annotation.csv' file. Four unique IDs for biological replicates are available.
 
     - **Technical Replicates**: Number of distinct technical replicates in this reanalysis. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed in files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered. For this reanalysis, there is one file, called 'annotation.csv' in the `Metadata` category. Each biological replicate is assigned in one condition. There are three unique IDs of 'Run' for each biological replicate, which are the technical replicates for the corresponding biological replicate.
 
