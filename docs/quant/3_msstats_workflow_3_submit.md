@@ -27,7 +27,7 @@ At this point, the option **'MassIVE Dataset: Add Reanalysis Results'** should b
 
 Example of a `Title`: 'MassIVE.quant reanalysis from MaxQuant+ MSstats workflow from RMSV000000249.2'
 
-Example of a `Description`: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification(from RMSV000000249.2), followed by MSstats for statistical analysis of differentially abundant proteins. Here MSstats(1.3) workflow was used.'
+Example of a `Description`: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification(from RMSV000000249.2), followed by MSstats for statistical analysis of differentially abundant proteins. Here MSstats workflow was used.'
 
 
 ### 3.3 Reanalysis File Selection section 
@@ -91,14 +91,14 @@ For example, `Reanalysis Container` shows all containers for the source dataset.
 
 ### 3.5 Workflow Submission section
 
-Finally, you are ready to submit. Please type your email to get progress notice and click the **Submit** button.
+Finally, you are ready to submit. Please type your email to get notice of the progress of the submission and click the **Submit** button.
 
 <center>
 ![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png)
 </center>
 
 
-Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes. 
+Then, you will be redirected to a new page, which shows the progress. Please wait. It will take a few minutes. 
 
 <center>
 ![](img/submit_msstats_workflow/msstats_workflow_submit_reanalysis_running.png)

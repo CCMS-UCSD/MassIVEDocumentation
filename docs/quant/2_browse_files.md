@@ -24,6 +24,8 @@ Then, the rows with 'Condition1' for `Condition` column are shown. For this exam
 
 If you want to remove the filter and to see the whole table, remove 'Condition1' that you typed and click the same `Filter` button again.
 
+**_!! Note_**: *Run* and *Raw.file* are identical in most datasets. However, if *Run* information in quantification files are different than the name of raw files, we recommend to provide both *Run* and *Raw.file* in the `Metadata`. *Raw.file* refers to the name of .raw file in the original submission of dataset. *Run* refers to MS run ID in the quantification files.
+
 
 ### Browse Quantification Results
 
@@ -55,9 +57,11 @@ You can filter the rows. Let's check the rows for a protein named 'sp|D6VTK4|STE
 1. Type 'sp|D6VTK4|STE2_YEAST' in the empty box in the first row and below the column named 'Protein'.
 2. Click the `Filter` button at the top left of the table.
 
-Then, the rows with 'sp|D6VTK4|STE2_YEAST' for the `Protein` column are shown. There are six rows with different `Label`, which shows different pairwise comparisons.
+Then, the rows with 'sp|D6VTK4|STE2_YEAST' for the `Protein` column are shown. There are six rows with different `Label`, which shows different pairwise comparisons. The user can customize the names of comparisons, which are shown in the `Label`, in MSstats. It can be different than the values of `Condition` in the annotation file. 
 
 ![](img/access_quant_reanalyses/browse_quantresult_filtered_protein.png)
+
+
 
 If you want to remove the filter and to see the whole table, remove 'sp|D6VTK4|STE2_YEAST' that you typed and click the same `Filter` button again.
 

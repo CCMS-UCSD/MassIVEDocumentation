@@ -29,7 +29,7 @@ There is the summary box on the left of this page. It shows the simple summary o
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
 
-    - **Condition**: Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the `Metadata` category having a "Condition" column in this reanalysis. For this reanalysis, there are four conditions from 'annotation.csv' file in the `Metadata` category.
+    - **Conditions**: Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the `Metadata` category having a "Condition" column in this reanalysis. For this reanalysis, there are four conditions from 'annotation.csv' file in the `Metadata` category.
 
     - **Biological Replicates**: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this reanalysis. For this reanalysis, there is a `BioReplicate` column in 'annotation.csv' file. Four unique IDs for biological replicates are available.
 

@@ -38,13 +38,13 @@ There is the summary box on the left of this page. It shows the simple summary o
 
 1. **Experimental Design**: The summary of detected experimental design from the `Metadata` category.
 
-    - **Condition**: Number of distinct conditions across all reanalyses in this container. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this container's reanalyses. For this container, there are four conditions across all files in the `Metadata` category in this container's reanalyses.
+    - **Conditions**: Number of distinct conditions across all reanalyses in this container. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this container's reanalyses. For this container, there are four conditions across all files in the `Metadata` category in this container's reanalyses.
 
     - **Biological Replicates**: Number of distinct biological replicates across all reanalyses in this container. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this container's reanalyses. For this container, four unique IDs for biological replicates are available across all 'annotation.csv' files in the `Metadata` category in this container's reanalyses.
 
     - **Technical Replicates**: Number of distinct technical replicates across all reanalyses in this container. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered. For this container, a maximum of three technical replicates for the corresponding biological replicate is available across all reanalyses in this container.
 
-2. **Identification Result**: The summary of the result for identification searching from `Result Files` category.
+2. **Identification Result**: The summary of the identifications from searching the dataset in `Result Files` category.
 
     - **Proteins (Reported)**: Number of distinct protein accessions reported across all reanalyses in this container.
     

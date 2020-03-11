@@ -49,13 +49,13 @@ There is the summary box on the left of this page. It shows the simple summary o
 
 1. **Experimental Design**: The summary of detected experimental design from `Metadata` category.
 
-    - **Condition**: Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this dataset. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. There are four conditions across all files in the `Metadata` category in this dataset's reanalyses.
+    - **Conditions**: Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the `Metadata` category having a `Condition` column in this dataset. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. There are four conditions across all files in the `Metadata` category in this dataset's reanalyses.
 
     - **Biological Replicates**: Number of distinct biological replicates across all analyses (original submission and reanalyses) associated with this dataset. Distinct replicate labels are counted across all files submitted in the `Metadata` category having a `BioReplicate` or `Replicate` column in this dataset. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. Four unique IDs for biological replicates are available across all 'annotation.csv' files in the `Metadata` category in this dataset's reanalyses.
 
     - **Technical Replicates**: Number of distinct technical replicates across all analyses (original submission and reanalyses) associated with this dataset. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the `Metadata` category. In the case of fractionated experiments, only the first fraction is considered. For this dataset, the owner didn't submit any file in the `Metadata` category ('N/A' shown). However, reanalyses submitted this information. The Maximum three technical replicates for the corresponding biological replicate are available across all reanalyses in this dataset.
 
-2. **Identification Result**: The summary of the result for identification searching from `xx` category.
+2. **Identification Result**: The summary of the identifications from searching the dataset in `Result Files` category.
 
     - **Protein (Human, Remapped)**: Originally identified proteins that were automatically remapped by MassIVE to proteins in the SwissProt human reference database.
     

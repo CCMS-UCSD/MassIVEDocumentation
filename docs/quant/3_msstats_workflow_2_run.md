@@ -9,7 +9,7 @@ First, go to the main webpage for [MassIVE](https://massive.ucsd.edu/ProteoSAFe/
 ![](img/run_msstats_workflow/msstats_workflow_step0.png)
 </center>
 
-It brings you to the workflow input form. Select **MSstats (1.3)** from the drop-down button in the `Workflow`. Then the webpage will be changed as below. You should add the title in the `Title` (at least 30 characters).
+It brings you to the workflow input form. Select **MSstats** from the drop-down button in the `Workflow`. Then the webpage will be changed as below. You should add the title in the `Title` (at least 30 characters).
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_step1.png)
@@ -35,17 +35,17 @@ Next, the file selection pop-up window (below) helps you browses your account to
 
 Let's select `Annotation File` first.
 
-1. Select the file in your account: *'Choi2017_DDA_MaxQuant_annotationt.csv'* is the annotation file for this experiment. Select/Click the file name. Then, the file name will be highlighted.
+1. Select the file in your account: *'Choi2017_DDA_MaxQuant_annotation.csv'* is the annotation file for this experiment. Select/Click the file name. Then, the file name will be highlighted.
 2. Select category: At the top-left corner, there are boxes for categories. Select/Click the box named `Annotation File`.
 3. Then, on the right panel, named `Selected Files`, you can see the selected file under the folder named `Selected Annotation File`.
 
-Please repeat for quantification file(s). Most data processing tools report one feature-level quantified data, which is required for MSstats. It should be selected for the `Feature` category. For `MaxQunat` output, MSstats requires two quantification report, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Repeat to select those two files in the corresponding category.
+Please repeat for quantification file(s). Most data processing tools report one feature-level quantified data, which is required for MSstats. It should be selected for the `Feature` category. For `MaxQuant` output, MSstats requires two quantification reports, `evidence.txt` for `Features` and `proteinGroups.txt` for `Proteins`. Repeat to select those two files in the corresponding category.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_selection_popup_final.png)
 </center>
 
-Once you've selected valid annotation and quantification files in the proper categories, clicks the **Fihish Selection** button.
+Once you've selected valid annotation and quantification files in the proper categories, clicks the **Finish Selection** button.
 
 <center>
 ![](img/run_msstats_workflow/msstats_workflow_file_input_done.png)
@@ -95,7 +95,7 @@ Finally, click the `Close` button at the bottom-right on the pop-up window. Now,
 
 
 ### 2.3 Comparison Setup
-Next, you should set up the comparison(s) between conditions of interest. **MSstats workflow** provides four options to select comparions. You should choose one of them.
+Next, you should set up the comparison(s) between conditions of interest. The **MSstats workflow** provides four options to select comparions. You should choose one of them.
 
 - **All vs. All**: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), a total of six pairwise comparisons will be considered in MSstats : _Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4_.
 
