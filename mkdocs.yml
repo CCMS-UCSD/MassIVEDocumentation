@@ -2,20 +2,38 @@ site_name: MassIVE Documentation
 edit_uri: 'https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/'
 nav:
     - MassIVE Introduction: index.md
-    - Account Registration: account_registration.md
-    - Data Upload: upload_data.md
-    - Submit Data to MassIVE: 
-        - Submit Data: submit_data.md
-        - Dataset Submission Workflow: submission_workflow.md
-        - Reviewer Access: reviewer_access.md
-        - Make Public: make_public.md
-        - Add/Update Metadata: add_update_metadata.md
-        - Add Publication: add_publication.md
-    - Share Reanalyses: share_reanalyses.md
-    - Reanalyze Spectra: reanalyze_spectra.md
-    - Access Public Datasets: access_public_datasets.md
-    - Search Identifications: search_identifications.md
+    - MassIVE:
+      - Account Registration: account_registration.md
+      - Data Upload: upload_data.md
+      - Submit Data to MassIVE:
+          - Submit Data: submit_data.md
+          - Dataset Submission Workflow: submission_workflow.md
+          - Reviewer Access: reviewer_access.md
+          - Make Public: make_public.md
+          - Add/Update Metadata: add_update_metadata.md
+          - Add Publication: add_publication.md
+      - Share Reanalyses: share_reanalyses.md
+      - Reanalyze Spectra: reanalyze_spectra.md
+      - Access Public Datasets: access_public_datasets.md
+      - Search Identifications: search_identifications.md
+    - MassIVE.quant:
+      - Introduction: quant/0_massive_quant.md
+      - Submit Quant Reanalysis:
+          - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
+          - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
+          - Step2 - Add Reanalysis : quant/1_submit_quant_2_add_reanalysis.md
+      - Access Quant Reanalysis:
+          - Reanalysis webpage : quant/2_access_quant_3_reanalysis.md
+          - Container webpage : quant/2_access_quant_2_container.md
+          - Dataset webpage : quant/2_access_quant_1_dataset.md
+          - Browse files : quant/2_browse_files.md
+          - Download files : quant/2_download_files.md
+      - Run MSstats Workflow:
+          - Step1 - Upload Data : quant/3_msstats_workflow_1_upload_data.md
+          - Step2 - MSstats Workflow: quant/3_msstats_workflow_2_run.md
+          - Step3 - Submit Result: quant/3_msstats_workflow_3_submit.md
+
 theme:
-    name: material
+    name: windmill
 
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
