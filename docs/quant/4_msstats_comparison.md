@@ -134,3 +134,24 @@ Click the ion at the left of row number, in the first column. Then the Venn Diag
 </center>
 
 #### 4.2 Protein-level view
+
+<center>
+![](img/msstats_comparison/msstats_comparison_view_differential_analysis.png)
+</center>
+
+<center>
+![](img/msstats_comparison/msstats_comparison_differential_analysis_table.png)
+</center>
+
+<center>
+![](img/msstats_comparison/msstats_comparison_filter_comparison_table.png)
+</center>
+
+<center>
+![](img/msstats_comparison/msstats_comparison_comparison_plot.png)
+</center>
+
+
+<center>
+![](img/msstats_comparison/msstats_comparisons_detail_view.png)
+</center>
