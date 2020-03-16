@@ -135,22 +135,31 @@ Click the ion at the left of row number, in the first column. Then the Venn Diag
 
 #### 4.2 Protein-level view
 
+Click **View Differential Abundance Analysis** in the **Status** row.
+
 <center>
 ![](img/msstats_comparison/msstats_comparison_view_differential_analysis.png)
 </center>
+
+The table below will appear.  This contains all of the quantifiable proteins from all of the analyses combined, and gives the adjusted p-value and the fold change for each protein in each MSstats job used for comparison.
 
 <center>
 ![](img/msstats_comparison/msstats_comparison_differential_analysis_table.png)
 </center>
 
+We can filter the rows to see all differentially abundant (adjusted p-value < 0.05, issues = 'NA') proteins for a given analysis and see if they are significant in the other analyses.  Applying this filter on the ```Choi2017_DDNA_Skyline_testResult_byMSstats``` as below, we see that there are 29 differentially abundant proteins across the 6 conditions.
+
 <center>
 ![](img/msstats_comparison/msstats_comparison_filter_comparison_table.png)
 </center>
+
+For each protein, we can look at a plot of the fold change for each result and see how they compare by clicking the graph icon on the left of the row.
 
 <center>
 ![](img/msstats_comparison/msstats_comparison_comparison_plot.png)
 </center>
 
+Finally, by clicking on the double arrows on the left side of the table, we can consider the original outputs from MSstats to see the details of each analysis.
 
 <center>
 ![](img/msstats_comparison/msstats_comparisons_detail_view.png)
