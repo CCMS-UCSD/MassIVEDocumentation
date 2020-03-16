@@ -32,6 +32,8 @@ nav:
           - Step1 - Upload Data : quant/3_msstats_workflow_1_upload_data.md
           - Step2 - MSstats Workflow: quant/3_msstats_workflow_2_run.md
           - Step3 - Submit Result: quant/3_msstats_workflow_3_submit.md
+      - Comparison Workflow:
+          - Compare MSstats Result : quant/4_msstats_comparison.md
 
 theme:
     name: windmill
