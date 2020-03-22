@@ -1,12 +1,11 @@
-
 To represent quantification and extract meaningful insight there are two file formats that we define:
 
-1. Yet Another Feature Format (YAFF) - This describes feature quantification
-1. Annotation Format  - This describes the experimental design and conditions to meaningfully compare
+ 1. Minimal Feature Input Format (MFIF) - This describes feature quantification
+ 1. Annotation Format  - This describes the experimental design and conditions to meaningfully compare
 
-These two files are used for creating a reanalysis for MassIVE.quant as well as enabling you to compute statistics with the MSStats workflow. 
+These two files are used for creating a reanalysis for MassIVE.quant as well as enabling you to compute statistics with the MSstats workflow. 
 
-## YAFF Documentation
+ ## MFIF Documentation
 
 This describes the quantification format that will be required. The format must be tab separated.
 
