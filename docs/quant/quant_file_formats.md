@@ -1,26 +1,28 @@
 
 To represent quantification and extract meaningful insight there are two file formats that we define:
 
-1. Minimal Feature Input Format (MFIF) - This describes feature quantification
+1. Yet Another Feature Format (YAFF) - This describes feature quantification
 1. Annotation Format  - This describes the experimental design and conditions to meaningfully compare
 
 These two files are used for creating a reanalysis for MassIVE.quant as well as enabling you to compute statistics with the MSStats workflow. 
 
-## MFIF Documentation
+## YAFF Documentation
 
-This describes the quantification format that will be required. 
+This describes the quantification format that will be required. The format must be tab separated.
 
-[Example File](example_files/Choi2017_DDA_Skyline_input_50_minimal.csv)
+[Example File](example_files/50proteins_iprg_yaff.tsv)
 
 | Header | Description | Required |
 |--------|-------------|----------|
-| Protein Name | Name of the Protein | Yes |
-| PeptideSequence | Sequence of Peptide | Yes |
-| PeptideModifiedSequence | PeptideModifiedSequence | Yes |
-| Precursor Charge | Charge | Yes | 
-| Fragmentation | Always list precursor | Yes | 
-| FileName | Sample Name | Yes | 
-| Area | Quantification Value | Yes | 
+| Protein | Name of the Protein | Proteomics |
+| Unmodified Peptide | Sequence of peptide without modifications | Proteomics |
+| Modified Peptide | Sequence of peptide including modifications | Proteomics |
+| Structure | Name of the structure | Metabolomics |
+| Feature Name | Feature name for structure | Metabolomics |
+| m/z | Quantification Value | All | 
+| Charge | Precursor charge | All | 
+| Run | Sample/Run Name | All | 
+| Intensity | Quantification Value | All | 
 
 
 ## Annotation Format
