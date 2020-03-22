@@ -10,7 +10,7 @@ These two files are used for creating a reanalysis for MassIVE.quant as well as 
 
 This describes the quantification format that will be required. The format must be tab separated.
 
-[Example File](example_files/50proteins_iprg_yaff.tsv)
+[Example File](example_files/50proteins_iprg_yaff.txt)
 
 | Header | Description | Required |
 |--------|-------------|----------|
