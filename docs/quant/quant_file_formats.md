@@ -14,7 +14,7 @@ This describes the quantification format that will be required. The format must 
 
 | Header | Description | Required |
 |--------|-------------|----------|
-| Protein | Name of the Protein | Proteomics |
+| Protein | Name of the protein | Proteomics |
 | Unmodified Peptide | Sequence of peptide without modifications | Proteomics |
 | Modified Peptide | Sequence of peptide including modifications | Proteomics |
 | Structure | Name of the structure | Metabolomics |
