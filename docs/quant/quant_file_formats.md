@@ -1,7 +1,7 @@
 To represent quantification and extract meaningful insight there are two file formats that we define:
 
  1. Minimal Feature Input Format (MFIF) - This describes feature quantification
- 1. Annotation Format  - This describes the experimental design and conditions to meaningfully compare
+ 1. Annotation Format - This describes the experimental design and conditions to meaningfully compare
 
 These two files are used for creating a reanalysis for MassIVE.quant as well as enabling you to compute statistics with the MSstats workflow. 
 
@@ -9,7 +9,7 @@ These two files are used for creating a reanalysis for MassIVE.quant as well as 
 
 This describes the quantification format that will be required. The format must be tab separated.
 
-[Example File](example_files/50proteins_iprg_yaff.txt)
+[Example File](example_files/50proteins_iprg_mfif.txt)
 
 | Header | Description | Required |
 |--------|-------------|----------|
