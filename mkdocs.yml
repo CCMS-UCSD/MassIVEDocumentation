@@ -18,7 +18,6 @@ nav:
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
       - Introduction: quant/0_massive_quant.md
-      - File Formats: quant/quant_file_formats.md
       - Submit Quant Reanalysis:
           - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
           - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
