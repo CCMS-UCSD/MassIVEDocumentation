@@ -37,7 +37,7 @@ This describes the quantification format that will be required. The format must 
 | TimePoint | Different time points within the same experiment | Yes* |
 | BioReplicate | Biological replicate | Yes |
 | Experiment | Technical replicate | Yes |
-| Fraction | Comparison Condition | Yes |
+| Fraction | Fraction number | No |
 | Disease | Disease name | Yes* |
 | Tissue | Tissue name | Yes* |
 | Species | Species name | Yes* |
