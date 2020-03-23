@@ -31,9 +31,18 @@ This describes the quantification format that will be required. The format must 
 | Header | Description | Required |
 |--------|-------------|----------|
 | Run  | File name for sample  | Yes |
-| Cohort | High Level Grouping | Yes |
-| Condition | Comparison Condition | Yes |
-| BioReplicate | Biological Replicate | Yes |
-| Experiment | Can be anything | Yes |
+| Subject | An individual from whom multiple samples maybe aquired for the purpose of the study. | No |
+| Cohort | A set of subjects aggregated for the purpose of the study | Yes* |
+| Condition | Original dataset study variable | Yes* |
+| TimePoint | Different time points within the same experiment | Yes* |
+| BioReplicate | Biological replicate | Yes |
+| Experiment | Technical replicate | Yes |
+| Fraction | Comparison Condition | Yes |
+| Disease | Disease name | Yes* |
+| Tissue | Tissue name | Yes* |
+| Species | Species name | Yes* |
+| Enzyme | Enzyme name | No |
+| Notes | Oher notes | Yes |
 | Dataset |  MassIVE Dataset Accession  | No (Only for Reanalysis Attachement) |
 
+ \*One of the following must be in the file.
