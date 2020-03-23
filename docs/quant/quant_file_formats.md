@@ -18,10 +18,10 @@ This describes the quantification format that will be required. The format must 
 | Modified Peptide | Sequence of peptide including modifications | Proteomics |
 | Structure | Name of the structure | Metabolomics |
 | Feature Name | Feature name for structure | Metabolomics |
-| m/z | Quantification Value | All | 
+| m/z | Mass to charge ratio | All | 
 | Charge | Precursor charge | All | 
 | Run | Sample/Run Name | All | 
-| Intensity | Quantification Value | All | 
+| Intensity | Intensity for the feature | All | 
 
 
 ## Annotation Format
