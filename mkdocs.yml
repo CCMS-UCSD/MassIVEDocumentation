@@ -36,7 +36,8 @@ nav:
           - Compare MSstats Result : quant/4_msstats_comparison.md
     - CoronaMassKB:
       - Introduction: CoronaMassKB/0_CoronaMassKB.md
-      - Submit Quant Reanalysis:
+      - Share Identification Reanalysis: share_reanalyses.md
+      - Share Quant Reanalysis:
           - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
           - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
           - Step2 - Add Reanalysis : quant/1_submit_quant_2_add_reanalysis.md
