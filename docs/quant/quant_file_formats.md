@@ -16,8 +16,8 @@ This describes the quantification format that will be required. The format must 
 | Protein | Name of the protein | Proteomics |
 | Unmodified Peptide | Sequence of peptide without modifications | Proteomics |
 | Modified Peptide | Sequence of peptide including modifications | Proteomics |
-| Structure | Name of the structure | Metabolomics |
-| Feature Name | Feature name for structure | Metabolomics |
+| Compound | Name of the compound | Metabolomics |
+| Feature ID | Feature ID | Metabolomics |
 | m/z | Mass to charge ratio | All | 
 | Charge | Precursor charge | All | 
 | Run | Sample/Run Name | All | 
