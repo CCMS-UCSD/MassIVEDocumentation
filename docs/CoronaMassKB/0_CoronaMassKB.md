@@ -6,6 +6,6 @@ CoronaMassKB is primarily designed for supporting sharing of proteomics, metabol
 
 While CoronaMassKB supports both private and public research projects, we strongly encourage all participants to openly share their data/results in public datasets and dataset reanalyses. Credit must be given where credit is due (citations are required for all data and results used in any publication) but a global pandemic requires a global response from a community of experts working together towards a global solution.
 
-* [Submit Dataset](submission_workflow.md) - submit a new dataset to CoronaMassKB
+* [Submit Dataset](../submission_workflow.md) - submit a new dataset to CoronaMassKB
 * [Browse Datasets](https://massive.ucsd.edu/ProteoSAFe/corona-mass-kb-datasets.jsp#%7B%22query%22%3A%7B%7D%2C%22table_sort_history%22%3A%22createdMillis_dsc%22%2C%22keywords_input%22%3A%22CoronaMassKB%22%7D) - browse all datasets in CoronaMassKB
 * [Browse Reanalyses](https://massive.ucsd.edu/ProteoSAFe/corona-mass-kb-reanalyses.jsp#%7B%22query%22%3A%7B%7D%2C%22table_sort_history%22%3A%22createdMillis_dsc%22%2C%22dataset_keywords_input%22%3A%22CoronaMassKB%22%7D) - browse all reanalyses of all datasets in CoronaMassKB
