@@ -42,7 +42,7 @@ This describes the quantification format that will be required. The format must 
 | Tissue | Tissue name | Yes* |
 | Species | Species name | Yes* |
 | Enzyme | Enzyme name | No |
-| Notes | Oher notes | Yes |
+| Notes | Other notes | Yes |
 | Dataset |  MassIVE Dataset Accession  | No (Only for Reanalysis Attachement) |
 
  \*One of the following must be in the file.
