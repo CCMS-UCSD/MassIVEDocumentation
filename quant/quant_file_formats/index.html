@@ -171,23 +171,63 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <td>Yes</td>
 </tr>
 <tr>
+<td>Subject</td>
+<td>An individual from whom multiple samples maybe aquired for the purpose of the study.</td>
+<td>No</td>
+</tr>
+<tr>
 <td>Cohort</td>
-<td>High Level Grouping</td>
-<td>Yes</td>
+<td>A set of subjects aggregated for the purpose of the study</td>
+<td>Yes*</td>
 </tr>
 <tr>
 <td>Condition</td>
-<td>Comparison Condition</td>
-<td>Yes</td>
+<td>Original dataset study variable</td>
+<td>Yes*</td>
+</tr>
+<tr>
+<td>TimePoint</td>
+<td>Different time points within the same experiment</td>
+<td>Yes*</td>
 </tr>
 <tr>
 <td>BioReplicate</td>
-<td>Biological Replicate</td>
+<td>Biological replicate</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Experiment</td>
-<td>Can be anything</td>
+<td>Technical replicate</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Fraction</td>
+<td>Comparison Condition</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Disease</td>
+<td>Disease name</td>
+<td>Yes*</td>
+</tr>
+<tr>
+<td>Tissue</td>
+<td>Tissue name</td>
+<td>Yes*</td>
+</tr>
+<tr>
+<td>Species</td>
+<td>Species name</td>
+<td>Yes*</td>
+</tr>
+<tr>
+<td>Enzyme</td>
+<td>Enzyme name</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Oher notes</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -197,6 +237,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </tr>
 </tbody>
 </table>
+<p>*One of the following must be in the file.</p>
 
   <br>
     
