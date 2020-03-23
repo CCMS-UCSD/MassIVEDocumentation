@@ -37,6 +37,7 @@ nav:
     - CoronaMassKB:
       - Introduction: CoronaMassKB/0_CoronaMassKB.md
       - Share Identification Reanalysis: share_reanalyses.md
+      - File Formats: quant/quant_file_formats.md
       - Share Quant Reanalysis:
           - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
           - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
