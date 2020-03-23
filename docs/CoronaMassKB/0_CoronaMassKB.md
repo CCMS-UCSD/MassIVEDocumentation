@@ -9,3 +9,5 @@ While CoronaMassKB supports both private and public research projects, we strong
 * [Submit Dataset](../submission_workflow.md) - submit a new dataset to CoronaMassKB
 * [Browse Datasets](https://massive.ucsd.edu/ProteoSAFe/corona-mass-kb-datasets.jsp#%7B%22query%22%3A%7B%7D%2C%22table_sort_history%22%3A%22createdMillis_dsc%22%2C%22keywords_input%22%3A%22CoronaMassKB%22%7D) - browse all datasets in CoronaMassKB
 * [Browse Reanalyses](https://massive.ucsd.edu/ProteoSAFe/corona-mass-kb-reanalyses.jsp#%7B%22query%22%3A%7B%7D%2C%22table_sort_history%22%3A%22createdMillis_dsc%22%2C%22dataset_keywords_input%22%3A%22CoronaMassKB%22%7D) - browse all reanalyses of all datasets in CoronaMassKB
+
+We are also organizing a collaborative effort to make sense of this data as a community with that effort visible [here](https://mwang87.github.io/MassSpec-Coronavirus-Project-Docs/). Please feel free to contribute any downstream analysis, figures, and text as well. 
