@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Submit Quant Reanalysis - MassIVE Documentation</title>
+    <title>Download files - MassIVE Documentation</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -66,20 +66,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../3_msstats_workflow_1_upload_data/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-link">
+      <a href="../3_msstats_workflow_1_upload_data/" class="btn btn-xs btn-link">
         Step1 - Upload Data
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_browse_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
-        Introduction
+        Previous</a><a href="../2_browse_files/" class="btn btn-xs btn-link">
+        Browse files
       </a>
     </div>
     
@@ -87,15 +87,18 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>After you've successfully reanalyzed <strong>public data</strong> from MassIVE, share your findings with the community by attaching your results (<strong>quantification and statistical analysis result</strong>) back to the dataset.</p>
-<p>If you reanalyzed a MassIVE dataset's spectrum files and their quantification <strong>using offline analysis tools</strong> (such as Skyline, MaxQuant, Proteome Discoverer, Spectronaut for data processing and R packages, Perseus for statistical analysis), then you can attach those results to the original dataset, as a <strong>reanalysis</strong>.</p>
-<p><strong>Note: If you submit new datasets, check <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">submit a new dataset to MassIVE</a> and follow this documentation for submitting quantification and statistical analysis result.</strong></p>
-<p>There are two steps to submit your reanalysis to the datasets.</p>
-<ol>
-<li>Upload your data files to the MassIVE web server.</li>
-<li>Run <em>Add Reanalysis</em> workflow on those files.</li>
-</ol>
-<p>Let's start <strong>Step 1: Upload Data</strong>.</p>
+    <p>All the submitted files in the reanalysis are available for downloading from FTP.</p>
+<p>Click <strong>FTP Download</strong> button.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/download_ftp_step1.png" /></p>
+<p>It browses the FTP. Each folder is for a category. Let's go to <strong>quant/</strong> folder, which means the <code>Quantification Results</code> category.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/download_ftp_step2.png" /></p>
+<p>Then, you can see all the files under the <code>Quantification Results</code> category.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/download_ftp_quant.png" /></p>
+<p>Click the file named <em>Choi2017_DDA_Skyline_input.csv</em>. Then this file will be downloaded on your computer.</p>
+<p>Let's go one page back and then go to <strong>methods/</strong> folder, which means <code>Methods and Protocol</code> category.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/download_ftp_step3.png" /></p>
+<p>Then, you can see all the files under the <code>Methods and Protocol</code> category. There are Rscript used for statistical analysis, pdf including the data analysis steps, log file recorded the version of MSstats and parameters. If you download R script and other files in <code>Quantification Results</code>, you can reproduce the same statistical result.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/download_ftp_method.png" /></p>
 
   <br>
     
@@ -108,20 +111,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../3_msstats_workflow_1_upload_data/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-link">
+      <a href="../3_msstats_workflow_1_upload_data/" class="btn btn-xs btn-link">
         Step1 - Upload Data
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_browse_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
-        Introduction
+        Previous</a><a href="../2_browse_files/" class="btn btn-xs btn-link">
+        Browse files
       </a>
     </div>
     
@@ -132,7 +135,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/1_submit_quant_0_submit_quant.md">Edit on </a>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant-corona/2_download_files.md">Edit on </a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>

@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Submit Quant Reanalysis - MassIVE Documentation</title>
+    <title>Step1 - Upload Data - MassIVE Documentation</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -32,6 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "1.1 Option1: Upload New Quant", url: "#_top", children: [
+          ]},
+          {title: "1.2 Option2: Use Published Quant", url: "#12-option2-use-published-quant", children: [
+          ]},
         ];
 
     </script>
@@ -66,20 +70,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-link">
-        Step1 - Upload Data
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-link">
+        Step2 - MSstats Workflow
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
-        Introduction
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
@@ -87,15 +91,22 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>After you've successfully reanalyzed <strong>public data</strong> from MassIVE, share your findings with the community by attaching your results (<strong>quantification and statistical analysis result</strong>) back to the dataset.</p>
-<p>If you reanalyzed a MassIVE dataset's spectrum files and their quantification <strong>using offline analysis tools</strong> (such as Skyline, MaxQuant, Proteome Discoverer, Spectronaut for data processing and R packages, Perseus for statistical analysis), then you can attach those results to the original dataset, as a <strong>reanalysis</strong>.</p>
-<p><strong>Note: If you submit new datasets, check <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">submit a new dataset to MassIVE</a> and follow this documentation for submitting quantification and statistical analysis result.</strong></p>
-<p>There are two steps to submit your reanalysis to the datasets.</p>
-<ol>
-<li>Upload your data files to the MassIVE web server.</li>
-<li>Run <em>Add Reanalysis</em> workflow on those files.</li>
-</ol>
-<p>Let's start <strong>Step 1: Upload Data</strong>.</p>
+    <p>Before you run <strong>MSstats workflow</strong>, quantification files(reports) from data processing tools should be ready. </p>
+<h3 id="11-option1-upload-new-quant">1.1 Option1: Upload New Quant</h3>
+<p>You can perform <strong>MSstats workflow</strong> for a new quantification.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_wnew_fig.png" />
+</center></p>
+<p>If you have a new quantification file, start by uploading your quantification files to your MassIVE account.</p>
+<p>Uploading data for MassIVE repository submission is the general procedure for any data submission in MassIVE repository.
+Please follow the instruction on <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">how to upload data for MassIVE repository</a>.</p>
+<p>Then, move on to <strong>Step 2: MSstats workflow</strong>.</p>
+<h3 id="12-option2-use-published-quant">1.2 Option2: Use Published Quant</h3>
+<p>You can perform <strong>MSstats workflow</strong> using a quantification already published in MassIVE.quant.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_wpublished_fig.png" />
+</center></p>
+<p>If you know the MSV ID or RMSV ID, including quantification files, you are ready to move on to <strong>Step 2: MSstats workflow</strong>.</p>
 
   <br>
     
@@ -108,20 +119,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../1_submit_quant_1_upload_data/" class="btn btn-xs btn-link">
-        Step1 - Upload Data
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-link">
+        Step2 - MSstats Workflow
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
-        Introduction
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
@@ -132,7 +143,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/1_submit_quant_0_submit_quant.md">Edit on </a>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant-corona/3_msstats_workflow_1_upload_data.md">Edit on </a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>

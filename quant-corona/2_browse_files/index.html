@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Browse files - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Browse Metadata", url: "#_top", children: [
+          ]},
+          {title: "Browse Quantification Results", url: "#browse-quantification-results", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-8412213-5', 'ccms-ucsd.github.io');
+        ga('send', 'pageview');
+    </script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../2_access_quant_1_dataset/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../2_access_quant_1_dataset/" class="btn btn-xs btn-link">
+        Dataset webpage
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h3 id="browse-metadata">Browse Metadata</h3>
+<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in the <code>Metadata</code> category.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_step1.png" /></p>
+<p>You will move to the new webpage to show the list of files under the <code>Metadata</code> category.
+<img alt="" src="../img/access_quant_reanalyses/browse_metadata_step2.png" /></p>
+<p>Select one file name and it will show how the file looks. This is the example of an annotation file for MSstats, which requires <em>Run</em> or <em>Raw.file</em>, <em>Condition</em>, <em>BioReplicate</em>. It can have many additional columns.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_step3.png" /></p>
+<p>You can filter the rows. Let's check the rows for 'Condition1'.</p>
+<ol>
+<li>Type 'Condition1' in the empty box in the first row and below the column named 'Condition'.</li>
+<li>Click <code>Filter</code> button at the top left of the table.</li>
+</ol>
+<p>Then, the rows with 'Condition1' for <code>Condition</code> column are shown. For this example, there are three Runs from 'Condition1'.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_filtered.png" /></p>
+<p>If you want to remove the filter and to see the whole table, remove 'Condition1' that you typed and click the same <code>Filter</code> button again.</p>
+<p><strong><em>!! Note</em></strong>: <em>Run</em> and <em>Raw.file</em> are identical in most datasets. However, if <em>Run</em> information in quantification files are different than the name of raw files, we recommend to provide both <em>Run</em> and <em>Raw.file</em> in the <code>Metadata</code>. <em>Raw.file</em> refers to the name of .raw file in the original submission of dataset. <em>Run</em> refers to MS run ID in the quantification files.</p>
+<h3 id="browse-quantification-results">Browse Quantification Results</h3>
+<p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in the <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step1.png" /></p>
+<p>You will move to the new webpage to show the list of files under the <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<p>Select one file, named <em>quant/Choi2017_DDA_Skyline_input.csv</em>. This file was submmited to the <code>Quantification Results</code>. 
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step2.png" /></p>
+<p><strong><em>Note</em></strong>: The file size of the quantification result could be big. If the webpage shows like below, please wait for little more.
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_wait.png" /></p>
+<p>This is the example of the quantification result (MSstats reports) from Skyline. </p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_quant.png" /></p>
+<p>Let's see another file. Select one file, named <em>quant_stats/Choi2017_DDA_Skyline_testResult_byMSstats.csv</em>. This file was submitted to <code>Statistical Analysis of Quantified Analytes</code>. 
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step3.png" /></p>
+<p>This is the example of the output of MSstats, using the quantification result from Skyline (named <em>Choi2017_DDA_Skyline_input.csv</em>, the file shown above).
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_stats.png" /></p>
+<p>You can filter the rows. Let's check the rows for a protein named 'sp|D6VTK4|STE2_YEAST'.</p>
+<ol>
+<li>Type 'sp|D6VTK4|STE2_YEAST' in the empty box in the first row and below the column named 'Protein'.</li>
+<li>Click the <code>Filter</code> button at the top left of the table.</li>
+</ol>
+<p>Then, the rows with 'sp|D6VTK4|STE2_YEAST' for the <code>Protein</code> column are shown. There are six rows with different <code>Label</code>, which shows different pairwise comparisons. The user can customize the names of comparisons, which are shown in the <code>Label</code>, in MSstats. It can be different than the values of <code>Condition</code> in the annotation file. </p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_filtered_protein.png" /></p>
+<p>If you want to remove the filter and to see the whole table, remove 'sp|D6VTK4|STE2_YEAST' that you typed and click the same <code>Filter</code> button again.</p>
+<p>Let's check the rows with significantly different proteins and comparisons.</p>
+<ol>
+<li>Type '0.5' in the second empty box in the first row and below the column named 'adj.pvalue'.</li>
+<li>Type 'NA' in the empty box in the first row and below the column named 'issue'.</li>
+<li>Click the <code>Filter</code> button at the top left of the table.</li>
+</ol>
+<p>Then, the rows with significantly differential abundunce are shown. There are 29 rows shown. Among 29 rows, there are 7 unique proteins.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_filtered_sig.png" /></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../2_access_quant_1_dataset/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../2_access_quant_1_dataset/" class="btn btn-xs btn-link">
+        Dataset webpage
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant-corona/2_browse_files.md">Edit on </a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
