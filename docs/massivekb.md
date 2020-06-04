@@ -14,13 +14,13 @@ The following views are described:
 | View Library - Library Variants | All Library Spectra at 1% local precursor FDR | 
 | View Library - Library Variants Ambiguity Filtered | Library spectra filtered for ambiguity spectra |
 | View Library - Library Variants Ambiguity Filtered 2+ Sequence Protein Filtered | Library spectra filtered to only proteins that included 2 sequences that uniquely mapped to proteins after considering SAAVs |
-| Provenance - All Candidate library spectra | View top 100 spectra that were candidates for inclusion in the library for each precursor. Includes provenance links back to original search and spectrum file. |
+| Provenance - All Candidate library spectra | View top 100 spectra that were candidates for inclusion in the library for each precursor. Includes provenance links back to original search and spectrum file |
 | Provenance - View All Search Tasks| List of all search tasks that were used to in the construction of library| 
-| Provenance - View All Library Augments | List of augment tasks that incrementally included more spectra in library throughout time. | 
-| Provenance - View All Library Spectrum Files | List of all input spectrum files that were searched to be included in spectral library. | 
-| Protein Results - All Proteins  | Protein with FDR calculated from precursors after ambiguity filtered. | 
+| Provenance - View All Library Augments | List of augment tasks that incrementally included more spectra in library throughout time | 
+| Provenance - View All Library Spectrum Files | List of all input spectrum files that were searched to be included in spectral library | 
+| Protein Results - All Proteins  | Protein with FDR calculated from precursors after ambiguity filtered | 
 | Ambiguity - Ambiguity Library Results  | List of library spectra and the number of identifications for each | 
-| Library Augmentation - Augment This Library | Link to augment existing library. Takes you to selection page to add new spectra to grow library. | 
+| Library Augmentation - Augment This Library | Link to augment existing library. Takes you to selection page to add new spectra to grow library | 
 | Downloads - MGF library  | Annotated MGF Library download of full MassIVE-KB library | 
 | Downloads - sptxt library | Annotated sptxt Library download of full MassIVE-KB library for use with Trans Proteomics Pipeline and Skyline | 
 | Downloads - Ambiguity Filtered MGF Library| Annotated MGF Library download of full MassIVE-KB library with ambiguously identified spectra filtered out | 
