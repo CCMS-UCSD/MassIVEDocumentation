@@ -7,7 +7,7 @@ You can browse MassIVE-KB libraries to explore what is in them, and what is the 
 
 ![](img/massivekb/kb-status.png)
 
-The following views are described
+The following views are described:
 
 | View | Description |
 | ---- | ----------- | 
