@@ -67,7 +67,7 @@ After the searches are finished, the identified spectra are extracted from the o
 ![](img/massivekb/kb-extraction.png)
 
 
-### Library Creation of a New Library
+### Creation of a New Library
 
 To create a library from an existing spectra extraction workflow, please click the “Create Library from Extracts” link. It will take you to this [workflow](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22LIBRARY_CREATION_AUGMENT_LIBRARY_TEST%22%7D) with selections pre-populated. 
 
