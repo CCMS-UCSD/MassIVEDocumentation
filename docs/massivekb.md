@@ -76,7 +76,7 @@ To create a library from an existing spectra extraction workflow, please click t
 
 The default parameters are appropriate for human HCD proteome parameters, adjust accordingly for your data.
 
-### Library Augment of an Existing Library
+### Augment an Existing Library
 
 To augment an existing library, on the status page of the existing spectral library, please click the “Augment This Library” link.
 
