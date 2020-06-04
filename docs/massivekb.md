@@ -1,10 +1,9 @@
 
-The MassIVE Knowledge Base (MassIVE-KB) is a set of peptide spectral libraries. They are distilled from 31TB of human proteomics HCD data. Users can peak at the inside of these libraries, browse the source data, and track full provenance of analysis tasks that created these libraries. 
-
+The MassIVE Knowledge Base (MassIVE-KB) is a set of peptide spectral libraries. They are distilled from 31TB of human proteomics HCD data. Users can peek at the inside of these libraries, browse the source data, and track full provenance of analysis tasks that created these libraries. 
 
 ## Browsing Libraries
 
-You can browser MassIVE-KB libraries to explore what is in them, and what is the provenance. Here is a view of the status page of a massive-kb library:
+You can browse MassIVE-KB libraries to explore what is in them, and what is the provenance. Here is a view of the status page of a massive-kb library:
 
 ![](img/massivekb/kb-status.png)
 
