@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MassIVE-KB - MassIVE Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Browsing Libraries", url: "#_top", children: [
+          ]},
+          {title: "Using Libraries", url: "#using-libraries", children: [
+          ]},
+          {title: "Creating Your Own", url: "#creating-your-own", children: [
+              {title: "Database Searching Proteomics Data for Library Creation", url: "#database-searching-proteomics-data-for-library-creation" },
+              {title: "Spectra Extraction/Quality Filtering", url: "#spectra-extractionquality-filtering" },
+              {title: "Creation of a New Library", url: "#creation-of-a-new-library" },
+              {title: "Augment an Existing Library", url: "#augment-an-existing-library" },
+          ]},
+          {title: "License", url: "#license", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-8412213-5', 'ccms-ucsd.github.io');
+        ga('send', 'pageview');
+    </script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../CoronaMassKB/0_CoronaMassKB/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../CoronaMassKB/0_CoronaMassKB/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../quant/4_msstats_comparison/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../quant/4_msstats_comparison/" class="btn btn-xs btn-link">
+        Compare MSstats Result
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>The MassIVE Knowledge Base (MassIVE-KB) is a set of peptide spectral libraries. They are distilled from 31TB of human proteomics HCD data. Users can peek at the inside of these libraries, browse the source data, and track full provenance of analysis tasks that created these libraries. </p>
+<h2 id="browsing-libraries">Browsing Libraries</h2>
+<p>You can browse MassIVE-KB libraries to explore what is in them, and what is the provenance. Here is a view of the status page of a massive-kb library:</p>
+<p><img alt="" src="../img/massivekb/kb-status.png" /></p>
+<p>The following views are described:</p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View Library - Library Variants</td>
+<td>All Library Spectra at 1% local precursor FDR</td>
+</tr>
+<tr>
+<td>View Library - Library Variants Ambiguity Filtered</td>
+<td>Library spectra filtered for ambiguity spectra</td>
+</tr>
+<tr>
+<td>View Library - Library Variants Ambiguity Filtered 2+ Sequence Protein Filtered</td>
+<td>Library spectra filtered to only proteins that included 2 sequences that uniquely mapped to proteins after considering SAAVs</td>
+</tr>
+<tr>
+<td>Provenance - All Candidate library spectra</td>
+<td>View top 100 spectra that were candidates for inclusion in the library for each precursor. Includes provenance links back to original search and spectrum file</td>
+</tr>
+<tr>
+<td>Provenance - View All Search Tasks</td>
+<td>List of all search tasks that were used to in the construction of library</td>
+</tr>
+<tr>
+<td>Provenance - View All Library Augments</td>
+<td>List of augment tasks that incrementally included more spectra in library throughout time</td>
+</tr>
+<tr>
+<td>Provenance - View All Library Spectrum Files</td>
+<td>List of all input spectrum files that were searched to be included in spectral library</td>
+</tr>
+<tr>
+<td>Protein Results - All Proteins</td>
+<td>Protein with FDR calculated from precursors after ambiguity filtered</td>
+</tr>
+<tr>
+<td>Ambiguity - Ambiguity Library Results</td>
+<td>List of library spectra and the number of identifications for each</td>
+</tr>
+<tr>
+<td>Library Augmentation - Augment This Library</td>
+<td>Link to augment existing library. Takes you to selection page to add new spectra to grow library</td>
+</tr>
+<tr>
+<td>Downloads - MGF library</td>
+<td>Annotated MGF Library download of full MassIVE-KB library</td>
+</tr>
+<tr>
+<td>Downloads - sptxt library</td>
+<td>Annotated sptxt Library download of full MassIVE-KB library for use with Trans Proteomics Pipeline and Skyline</td>
+</tr>
+<tr>
+<td>Downloads - Ambiguity Filtered MGF Library</td>
+<td>Annotated MGF Library download of full MassIVE-KB library with ambiguously identified spectra filtered out</td>
+</tr>
+<tr>
+<td>Downloads - Ambiguity Filtered sptxt Library</td>
+<td>Annotated sptxt Library download of full MassIVE-KB library with ambiguously identified spectra filtered out</td>
+</tr>
+<tr>
+<td>Downloads - Ambiguity Filtered 2+ Sequence Protein Filtered MGF Library</td>
+<td>Annotated MGF library filtered to only proteins that included 2 sequences that uniquely mapped to proteins after considering SAAVs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-libraries">Using Libraries</h2>
+<p>These spectral libraries can be:</p>
+<ol>
+<li>Downloaded as MGF in external programs (e.g. MSPLIT)</li>
+<li>Downloaded as MSP/SPTXT in external programs (e.g. SpectraST)</li>
+<li>Downloaded as JSON</li>
+<li>Searched in MassIVE (e.g. Maestro, MSPLIT)</li>
+</ol>
+<h2 id="creating-your-own">Creating Your Own</h2>
+<p>You can create your own spectral libraries with our MassIVE-KB pipelines. </p>
+<p>There are three distinct steps in the creation of MassIVE-KB spectral libraries.</p>
+<ol>
+<li>Database Searching</li>
+<li>Spectra Extraction/Quality Filtering</li>
+<li>Library Creation/Augmentation</li>
+</ol>
+<h3 id="database-searching-proteomics-data-for-library-creation">Database Searching Proteomics Data for Library Creation</h3>
+<p>Users can utilize a modified MSGF+ search workflow available at the Center for Computational Mass Spectrometry available <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22MSGF-PLUS-AMBIGUITY%22%7D">here</a>. Users may choose any public or private data they have access to and search with appropriate parameters.</p>
+<h4 id="synthetic-spectral-data-searching">Synthetic Spectral Data Searching</h4>
+<p>To search a synthetic peptide pool, please use this <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22MSGF-PLUS-SYNTHETIC%22%7D">workflow</a>. The parameters are nearly identical to MSGF+, but there are additional options. Specifically, users should add some background spectra that is not of the primary peptide pool to be identified. Users then will specify the “target_run_filename” as the full file name of the spectrum file to be identified. Identifications to other spectrum files are called decoys. Additionally, the set of peptides that that are in common between the target spectrum file and background spectrum files will be specified in “blacklisted_decoy_peptides_json” as a list of peptide strings in json format. Finally, users must enter the acceptable collision energies in the “acceptable_collision_energies” in a semicolon separated string format. All other collision energies are ignored.</p>
+<h3 id="spectra-extractionquality-filtering">Spectra Extraction/Quality Filtering</h3>
+<p>After the searches are finished, the identified spectra are extracted from the original mzXML/mzML files and quality filtered. A set of search jobs can be extracted at once using this <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22LIBRARY_CREATION_SPECTRA_EXTRACTION%22%7D">workflow</a>. To select searches to extract, select an appropriate search job from the jobs list. Any jobs run by the specific user may be selected.</p>
+<p><img alt="" src="../img/massivekb/kb-extraction.png" /></p>
+<h3 id="creation-of-a-new-library">Creation of a New Library</h3>
+<p>To create a library from an existing spectra extraction workflow, please click the “Create Library from Extracts” link. It will take you to this <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22LIBRARY_CREATION_AUGMENT_LIBRARY_TEST%22%7D">workflow</a> with selections pre-populated. </p>
+<p><img alt="" src="../img/massivekb/kb-create.png" /></p>
+<p>The default parameters are appropriate for human HCD proteome parameters, adjust accordingly for your data.</p>
+<h3 id="augment-an-existing-library">Augment an Existing Library</h3>
+<p>To augment an existing library, on the status page of the existing spectral library, please click the “Augment This Library” link.</p>
+<p><img alt="" src="../img/massivekb/kb-augment.png" /></p>
+<p>This brings users to a library augment workflow page. Please select a spectra extraction job from the jobs table to augment to the existing library. Only one extraction can augment a library at one time.</p>
+<p><img alt="" src="../img/massivekb/kb-augment2.png" /></p>
+<p>The default parameters are appropriate for human HCD proteome parameters, adjust accordingly for your data.</p>
+<h2 id="license">License</h2>
+<p>All MassIVE-KB Reference spectra will have the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> license.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../CoronaMassKB/0_CoronaMassKB/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../CoronaMassKB/0_CoronaMassKB/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../quant/4_msstats_comparison/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../quant/4_msstats_comparison/" class="btn btn-xs btn-link">
+        Compare MSstats Result
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/massivekb.md">Edit on </a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
