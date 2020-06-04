@@ -82,7 +82,7 @@ To augment an existing library, on the status page of the existing spectral libr
 
 ![](img/massivekb/kb-augment.png)
 
-This brings users to a library augment workflow page. Please select a spectra extraction job from the jobs table to augment to the existing library. Only one extraction can be augmented to a library at one time.
+This brings users to a library augment workflow page. Please select a spectra extraction job from the jobs table to augment to the existing library. Only one extraction can augment a library at one time.
 
 ![](img/massivekb/kb-augment2.png)
 
