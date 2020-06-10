@@ -28,4 +28,4 @@ You can also experiment with the FTP client interface to move and rename files a
 
 ![WinSCP_file_interface](img/upload_data/WinSCP_file_interface.png)
 
-If you have any questions about any part of the MassIVE file upload process, please feel free to email [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu) for more information.
+If you have any questions about any part of the MassIVE file upload process, please feel free to email [ccms-web@cs.ucsd.edu](mailto:ccms-web@cs.ucsd.edu) for more information.
