@@ -3,7 +3,7 @@
 
 In order to ensure the reproducibility of a quantitative workflow, MassIVE.quant maintains with four levels of curation, reflecting the documentation and the reproducibility of the quantitative workflow.
 
-### Level 1. MassIVE.quant reviewed - Bronze (Automatic review) : 
+### Level 1. MassIVE.quant reviewed - Bronze (Automatic review) 
 
 During the submission, the infrastructure checks whether the submission of the dataset or reanalysis meets the minimal requirements for the entry-level (Bronze) of curation.
 
@@ -31,7 +31,7 @@ As a request from the submitter for Bronze level dataset or reanalysis, MassIVE 
 * Statistical Analysis of Quantified Analytes
     * Check whether it is meaningful information or not.  
     * Files can be parsed and showed up for browsing or not. For example, xls file with multiple sheets can not be parsed.
-    * !! Note : it does not need to be the MSstats output format.
+    * **!! Note** : it does not need to be the MSstats output format.
 
 ###  Level 3. MassIVE.quant reviewed - Gold (Manual review) : Level 1 + Check repeatability
 
@@ -44,8 +44,8 @@ As a request from the submitter for Silver level dataset or reanalysis, MassIVE 
 * R script or any script is available to reproduce statistical analysis.
 * Tool-specific files including these information as alternatives, such as .pdresult, .pdstudy, .sne, .sky and so on.
 * Or other configuration file to repeat the same analysis
-* !! Note : Gold level doesn’t mean to reproduce the same conclusion in the original publication.
-* !! Note : We don’t review or evaluate the method itself.
+* **!! Note** : Gold level doesn’t mean to reproduce the same conclusion in the original publication.
+* **!! Note** : We don’t review or evaluate the method itself.
 
 ###  Level 4. MassIVE.quant reviewed - Platinum (Manual review) : Level 2 + Check reproducibility for publication 
 
@@ -54,7 +54,7 @@ Platinum level means that anyone can reproduce the same conclusion in the public
 As a request from the submitter for Gold level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Platinum level. 
 
 * The dataset (MSV) or reanalysis (RMSV) can be referred for the publication. Please don't forget to add publication in the description.
-* !! Note : We don’t review or evaluate the method itself.
+* **!! Note** : We don’t review or evaluate the method itself.
 
 ### FAQ: If you want to move your data in PRIDE to MassIVE?
 
