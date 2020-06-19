@@ -106,41 +106,61 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <h3 id="massivequant-level-of-curation">MassIVE.quant : Level of curation</h3>
 <p>In order to ensure the reproducibility of a quantitative workflow, MassIVE.quant maintains with four levels of curation, reflecting the documentation and the reproducibility of the quantitative workflow.</p>
 <h3 id="level-1-massivequant-reviewed-bronze-automatic-review">Level 1. MassIVE.quant reviewed - Bronze (Automatic review) :</h3>
-<p>During the submission, the infrastructure checks whether the submission of the dataset or reanalysis meets the minimal requirements for the entry-level (Bronze) of curation.
-    * Check ‘Metadata’ includes the required column headers : Condition, BioReplicate, Run (or Raw.files)
-    * Check whether the raw files in metadata are available in ‘raw spectrum files’ collection or not.
-    * Check any files in ‘Quantification’ collection
-    * Check any files in ‘Statistical Analysis of Quantified Analytes’ collection</p>
+<p>During the submission, the infrastructure checks whether the submission of the dataset or reanalysis meets the minimal requirements for the entry-level (Bronze) of curation.</p>
+<ul>
+<li>Check ‘Metadata’ includes the required column headers : Condition, BioReplicate, Run (or Raw.files)</li>
+<li>Check whether the raw files in metadata are available in ‘raw spectrum files’ collection or not.</li>
+<li>Check any files in ‘Quantification’ collection</li>
+<li>Check any files in ‘Statistical Analysis of Quantified Analytes’ collection</li>
+</ul>
 <p>If the submitted dataset or analysis meets the requirements above, then it will get the Bronze level. The submitter can then request the advanced review to level up.</p>
 <h3 id="level-2-massivequant-reviewed-silver-manual-review">Level 2. MassIVE.quant reviewed - Silver (Manual review)</h3>
 <p>As a request from the submitter for Bronze level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Silver level. </p>
-<p>1) Metadata 
-    * Summary statistics in the blue box are correct or not.
-    * Correctly annotated for biological replicate. 
-    * Correctly reported technical replicate and fraction.
-    * More information is optional.</p>
-<p>2) Quantification 
-    * Feature-level or protein-level quantification is available or not.
-    * File can be parsed and showed up for browsing or not. For example, xls file with multiple sheets can not be parsed.</p>
-<p>3) Statistical Analysis of Quantified Analytes
-    * Check whether it is meaningful information or not.<br />
-    * Files can be parsed and showed up for browsing or not. For example, xls file with multiple sheets can not be parsed.
-    * !! Note : it does not need to be the MSstats output format.</p>
+<ul>
+<li>
+<p>Metadata </p>
+<ul>
+<li>Summary statistics in the blue box are correct or not.</li>
+<li>Correctly annotated for biological replicate. </li>
+<li>Correctly reported technical replicate and fraction.</li>
+<li>More information is optional.</li>
+</ul>
+</li>
+<li>
+<p>Quantification </p>
+<ul>
+<li>Feature-level or protein-level quantification is available or not.</li>
+<li>File can be parsed and showed up for browsing or not. For example, xls file with multiple sheets can not be parsed.</li>
+</ul>
+</li>
+<li>
+<p>Statistical Analysis of Quantified Analytes</p>
+<ul>
+<li>Check whether it is meaningful information or not.  </li>
+<li>Files can be parsed and showed up for browsing or not. For example, xls file with multiple sheets can not be parsed.</li>
+<li>!! Note : it does not need to be the MSstats output format.</li>
+</ul>
+</li>
+</ul>
 <h3 id="level-3-massivequant-reviewed-gold-manual-review-level-1-check-repeatability">Level 3. MassIVE.quant reviewed - Gold (Manual review) : Level 1 + Check repeatability</h3>
 <p>Mainly, Gold level means that anyone can repeat the same conclusion in ‘Statistical Analysis of Quantified Analytes’s collection, which requires more information about all data analysis steps.</p>
-<p>As a request from the submitter for Silver level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Gold level. 
-    * mqpar.xml, parameter files for MaxQuant -&gt; Method collection
-    * Log files for MSstats -&gt; Method collection
-    * R script or any script is available to reproduce statistical analysis.
-    * Tool-specific files including these information as alternatives, such as .pdresult, .pdstudy, .sne, .sky and so on.
-    * Or other configuration file to repeat the same analysis
-    * !! Note : Gold level doesn’t mean to reproduce the same conclusion in the original publication.
-    * !! Note : We don’t review or evaluate the method itself.</p>
+<p>As a request from the submitter for Silver level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Gold level. </p>
+<ul>
+<li>mqpar.xml, parameter files for MaxQuant -&gt; Method collection</li>
+<li>Log files for MSstats -&gt; Method collection</li>
+<li>R script or any script is available to reproduce statistical analysis.</li>
+<li>Tool-specific files including these information as alternatives, such as .pdresult, .pdstudy, .sne, .sky and so on.</li>
+<li>Or other configuration file to repeat the same analysis</li>
+<li>!! Note : Gold level doesn’t mean to reproduce the same conclusion in the original publication.</li>
+<li>!! Note : We don’t review or evaluate the method itself.</li>
+</ul>
 <h3 id="level-4-massivequant-reviewed-platinum-manual-review-level-2-check-reproducibility-for-publication">Level 4. MassIVE.quant reviewed - Platinum (Manual review) : Level 2 + Check reproducibility for publication</h3>
 <p>Platinum level means that anyone can reproduce the same conclusion in the publication. For example, the dataset or reanalysis fully documented for all data analysis steps will get the Platinum level.</p>
-<p>As a request from the submitter for Gold level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Platinum level. 
-    * The dataset (MSV) or reanalysis (RMSV) can be referred for the publication. Please don't forget to add publication in the description.
-    * !! Note : We don’t review or evaluate the method itself.</p>
+<p>As a request from the submitter for Gold level dataset or reanalysis, MassIVE team will review the submitted files related to quantification. If the submitted dataset or analysis meets the requirements below, then it will get the Platinum level. </p>
+<ul>
+<li>The dataset (MSV) or reanalysis (RMSV) can be referred for the publication. Please don't forget to add publication in the description.</li>
+<li>!! Note : We don’t review or evaluate the method itself.</li>
+</ul>
 <h3 id="faq-if-you-want-to-move-your-data-in-pride-to-massive">FAQ: If you want to move your data in PRIDE to MassIVE?</h3>
 <p>Please let us(ccms-web@cs.ucsd.edu) know which datasets (PXD ID) to import and we'll get them to MassIVE for you.</p>
 <h3 id="faq-how-to-request-to-review-my-quantification-submission">FAQ: How to request to review my quantification submission?</h3>
