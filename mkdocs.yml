@@ -18,6 +18,8 @@ nav:
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
       - Introduction: quant/0_massive_quant.md
+      - Required files: quant/0_prepare_required_files.md
+      - Level of curation: quant/0_level_reviewing.md
       - Submit Quant Reanalysis:
           - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
           - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
