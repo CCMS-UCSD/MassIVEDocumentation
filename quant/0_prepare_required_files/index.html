@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Required files - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "What files are required for MassIVE.quant?", url: "#_top", children: [
+          ]},
+          {title: "1. Metadata", url: "#1-metadata", children: [
+          ]},
+          {title: "2. Quantification", url: "#2-quantification", children: [
+          ]},
+          {title: "3. Statistical Analysis of Quantified Analytes", url: "#3-statistical-analysis-of-quantified-analytes", children: [
+          ]},
+          {title: "(Optional) Additional file", url: "#optional-additional-file", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-8412213-5', 'ccms-ucsd.github.io');
+        ga('send', 'pageview');
+    </script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../0_level_reviewing/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../0_level_reviewing/" class="btn btn-xs btn-link">
+        Level of curation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h3 id="what-files-are-required-for-massivequant">What files are required for MassIVE.quant?</h3>
+<p>To reproduce quantitative workflow, <strong>MassIVE.quant requires data (files) in three collections</strong> of MassIVE: 1. Metadata, 2. Quantification, and 3. Statistical Analysis of Quantified Analytes. Here are the detailed required information for each collection.</p>
+<h3 id="1-metadata">1. Metadata</h3>
+<ul>
+<li>
+<p>File format - a tabular format : i.e., csv, txt, tsv</p>
+<ul>
+<li><strong>!! Note</strong> : xls file with multiple sheets can not be parsed. Please prepare each sheet as a separate file.</li>
+</ul>
+</li>
+<li>
+<p>Minimum required columns: </p>
+<ul>
+<li><strong>!! Note</strong> : Column headers should be matched as below.</li>
+<li><strong>Run</strong> : This column contains the identifier of a mass spectrometry run. Each mass spectrometry run should have a unique identifier, regardless of the origin of the biological sample. It could have Raw file names. </li>
+<li><strong>Condition</strong> : This column indicates groups of interest (such as “Disease” or “Control”) or time points (such as “T1”, “T2”, etc).</li>
+<li><strong>BioReplicate</strong> : This column should contain a unique identifier for each biological replicate in the experiment. For example, in a clinical proteomic investigation this should be a unique patient id. Patients from distinct groups should have distinct ids. If the technical replicates are present, all samples or runs from a same biological replicate should have a same id.</li>
+<li><strong>Channel</strong> : This is only for iTRAQ or TMT experiment. This column contains labeling information (126, ... 131) for iTRAQ and TMT. It should be consistent with the channel columns in quantification. For MaxQuant output, the value of this column should have channel.0, channel.1, and so on. </li>
+</ul>
+</li>
+<li>
+<p>Addition columns for complex experimental design:</p>
+<ul>
+<li><strong>Fraction</strong> : One technical replicate of one sample or TMT mixture may be fractionated into multiple fractions to increase the analytical depth. Then one technical replicate of one sample or TMT mixture should correspond to multiple fractions. </li>
+<li><strong>TechReplicate</strong> : Technical replicate of one sample. One sample may have multiple technical replicates. For example, <code>TechReplicate</code> = 1  or 2 for the two technical replicates of one sample, then they should have the same <code>Condition</code> and <code>BioReplicate</code> values.</li>
+<li><strong>TechRepMixture</strong> : Technical replicate of one TMT mixture. One mixture may have multiple technical replicates. For example, if <code>TechRepMixture</code> = 1, 2 are the two technical replicates of one mixture, then they should match with the same <code>Mixture</code> value.</li>
+<li>More information is welcome.</li>
+</ul>
+</li>
+<li>
+<p>Example</p>
+<ul>
+<li>Label-free DDA, DIA, or SRM 
+<center>
+<img alt="" src="../img/required_columns/metadata_example_lf.png" />
+</center></li>
+<li>DDA with chemical labeling (TMT) 
+<center>
+<img alt="" src="../img/required_columns/metadata_example_tmt.png" />
+</center></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-quantification">2. Quantification</h3>
+<ul>
+<li>
+<p>File format - a tabular format : i.e., csv, txt, tsv, xls</p>
+<ul>
+<li><strong>!! Note</strong> : xls file with multiple sheets can not be parsed. Please prepare each sheet as a separate file.</li>
+</ul>
+</li>
+<li>
+<p>There are no required columns. Every tool reports the quantification with different column headers. Any quantification for feature-level, peptide-leve, or protein-level, which you used for downstream analysis, should be submitted in this collection.</p>
+</li>
+<li>
+<p>Examples for some data processing tools</p>
+<ul>
+<li>Skyline : MSstats input.csv </li>
+<li>MaxQuant : evidence.txt, proteinGroups.txt, peptides.txt or Phospho (STY)Sites.txt</li>
+<li>Progenesis : PSM-level quantification</li>
+<li>Proteome Discoverer : peptide/PSM or protein-level report as txt files</li>
+<li>Spectronaut : .xls file from ‘MSstats scheme (v3.7.3)’</li>
+<li>DIA-Umpire : FragSummary.xls, PeptideSummary.xls, ProtSummary.xls</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-statistical-analysis-of-quantified-analytes">3. Statistical Analysis of Quantified Analytes</h3>
+<ul>
+<li>
+<p>File format - a tabular format : i.e., csv, txt, tsv, xls</p>
+<ul>
+<li><strong>!! Note</strong> : xls file with multiple sheets can not be parsed. Please prepare each sheet as a separate file.</li>
+</ul>
+</li>
+<li>
+<p>There are no required columns. The diverse statistical analyses report the different information. The tabular format of output for statistical analysis should be submitted in this collection. If the output is not tabular format, please submit it in the <code>Supplementary</code> collection.</p>
+</li>
+<li>
+<p>Example files for differential abundance analysis </p>
+<ul>
+<li>Protein : Protein ID</li>
+<li>Label : Comparison between groups of conditions (ex. Disease-Healthy or Disease vs Healthy) or time points (ex. T1-T0, 60mins - 0 min)</li>
+<li>pvalue : p-value</li>
+<li>adj.pvalue : adjusted p-value</li>
+<li>Example of output from MSstats R package
+<center>
+<img alt="" src="../img/required_columns/statquant_example.png" />
+</center></li>
+</ul>
+</li>
+</ul>
+<h3 id="optional-additional-file">(Optional) Additional file</h3>
+<p>We recommend that you submit additional files to reproduce the quantitative workflow in <code>Method and Protocol</code> or <code>Supplementary</code> collection.</p>
+<ul>
+<li>Examples for some data processing tools or statistical analysis<ul>
+<li>Parameter or configuration files &gt; <code>Method and Protocol</code> collection<ul>
+<li>Parameter.txt or mqpar.xml from MaxQuant </li>
+<li>Log file from MSstats R package</li>
+</ul>
+</li>
+<li>Tool-specific files &gt; <code>Supplementary</code> collection<ul>
+<li>Skyline : sky, skyd, sky.zip, blib, irtdb, protdb, optdv, and midas</li>
+<li>Spectronaut : .sne, .kit</li>
+<li>Proteome Discoverer : .pdResult, .pdStudy</li>
+</ul>
+</li>
+<li>Command-line script &gt; <code>Method and Protocol</code> collection<ul>
+<li>R or python script</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../0_level_reviewing/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../0_level_reviewing/" class="btn btn-xs btn-link">
+        Level of curation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../0_massive_quant/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../0_massive_quant/" class="btn btn-xs btn-link">
+        Introduction
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/0_prepare_required_files.md">Edit on </a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
