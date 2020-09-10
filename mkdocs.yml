@@ -57,6 +57,8 @@ nav:
           - Step3 - Submit Result: quant-corona/3_msstats_workflow_3_submit.md
       - Comparison Workflow:
           - Compare MSstats Result : quant-corona/4_msstats_comparison.md
+    - MassIVE API: api.md
+
 
 theme:
     name: windmill
