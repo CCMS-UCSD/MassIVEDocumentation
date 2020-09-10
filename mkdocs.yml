@@ -18,6 +18,8 @@ nav:
       - Search Identifications: search_identifications.md
     - MassIVE.quant:
       - Introduction: quant/0_massive_quant.md
+      - Required files: quant/0_prepare_required_files.md
+      - Level of curation: quant/0_level_reviewing.md
       - Submit Quant Reanalysis:
           - Submit Quant Reanalysis: quant/1_submit_quant_0_submit_quant.md
           - Step1 - Upload Data : quant/1_submit_quant_1_upload_data.md
@@ -34,7 +36,29 @@ nav:
           - Step3 - Submit Result: quant/3_msstats_workflow_3_submit.md
       - Comparison Workflow:
           - Compare MSstats Result : quant/4_msstats_comparison.md
+    - MassIVE-KB: massivekb.md
+    - CoronaMassKB:
+      - Introduction: CoronaMassKB/0_CoronaMassKB.md
+      - Share Identification Reanalysis: share_reanalyses.md
+      - File Formats: quant-corona/quant_file_formats.md
+      - Share Quant Reanalysis:
+          - Submit Quant Reanalysis: quant-corona/1_submit_quant_0_submit_quant.md
+          - Step1 - Upload Data : quant-corona/1_submit_quant_1_upload_data.md
+          - Step2 - Add Reanalysis : quant-corona/1_submit_quant_2_add_reanalysis.md
+      - Access Quant Reanalysis:
+          - Reanalysis webpage : quant-corona/2_access_quant_3_reanalysis.md
+          - Container webpage : quant-corona/2_access_quant_2_container.md
+          - Dataset webpage : quant-corona/2_access_quant_1_dataset.md
+          - Browse files : quant-corona/2_browse_files.md
+          - Download files : quant-corona/2_download_files.md
+      - Run MSstats Workflow:
+          - Step1 - Upload Data : quant-corona/3_msstats_workflow_1_upload_data.md
+          - Step2 - MSstats Workflow: quant-corona/3_msstats_workflow_2_run.md
+          - Step3 - Submit Result: quant-corona/3_msstats_workflow_3_submit.md
+      - Comparison Workflow:
+          - Compare MSstats Result : quant-corona/4_msstats_comparison.md
     - MassIVE API: api.md
+
 
 theme:
     name: windmill
