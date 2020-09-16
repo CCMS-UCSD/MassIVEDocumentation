@@ -34,6 +34,7 @@
         var pageToc = [
           {title: "MassIVE API", url: "#_top", children: [
               {title: "MassIVE Dataset Linking", url: "#massive-dataset-linking" },
+              {title: "MassIVE Dataset Information", url: "#massive-dataset-information" },
           ]},
         ];
 
@@ -84,6 +85,15 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h2 id="massive-dataset-linking">MassIVE Dataset Linking</h2>
 <h3 id="direct-links-to-datasets-by-accession">Direct Links to Datasets By Accession</h3>
 <pre><code>https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?accession=&lt;accession&gt;
+</code></pre>
+
+<h2 id="massive-dataset-information">MassIVE Dataset Information</h2>
+<h3 id="proxy-api">PROXY API</h3>
+<pre><code>http://massive.ucsd.edu/ProteoSAFe/proxi/v0.1/datasets/&lt;accession&gt;
+</code></pre>
+
+<h3 id="detailed-dataset-information">Detailed Dataset Information</h3>
+<pre><code>https://massive.ucsd.edu/ProteoSAFe/QueryDatasets?pageSize=30&amp;offset=0&amp;query={%22title_input%22:%22&lt;accession&gt;%22}
 </code></pre>
 
   <br>
