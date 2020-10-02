@@ -13,6 +13,7 @@ nav:
           - Add/Update Metadata: add_update_metadata.md
           - Add Publication: add_publication.md
       - Share Reanalyses: share_reanalyses.md
+      - Automated Conversion: conversion.md
       - Reanalyze Spectra: reanalyze_spectra.md
       - Access Public Datasets: access_public_datasets.md
       - Search Identifications: search_identifications.md
