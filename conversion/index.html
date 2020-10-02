@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Reanalyze Spectra - MassIVE Documentation</title>
+    <title>Automated Conversion - MassIVE Documentation</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "MassiVE Conversion", url: "#_top", children: [
+              {title: "Conversion Rules", url: "#conversion-rules" },
+              {title: "Supported Conversion Source Files", url: "#supported-conversion-source-files" },
+          ]},
         ];
 
     </script>
@@ -66,20 +70,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../access_public_datasets/" class="btn btn-xs btn-default pull-right">
+      <a href="../reanalyze_spectra/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../access_public_datasets/" class="btn btn-xs btn-link">
-        Access Public Datasets
+      <a href="../reanalyze_spectra/" class="btn btn-xs btn-link">
+        Reanalyze Spectra
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../conversion/" class="btn btn-xs btn-default pull-left">
+      <a href="../share_reanalyses/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../conversion/" class="btn btn-xs btn-link">
-        Automated Conversion
+        Previous</a><a href="../share_reanalyses/" class="btn btn-xs btn-link">
+        Share Reanalyses
       </a>
     </div>
     
@@ -87,45 +91,25 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>Start reanalyzing MassIVE datasets by clicking the “Reanalyze Spectra” button on the dataset page:</p>
-<p><img alt="Image showing reanalyze button for MassIVE" src="../img/reanalyze_spectra/reanalyze_button.png" /></p>
-<p>This brings you to the ProteoSAFe data analysis workflow input form, with the dataset’s spectrum files pre-selected. From here you can configure and run your search on these files:</p>
-<p><img alt="Image showing complete reanalysis setup for MassIVE" src="../img/reanalyze_spectra/reanalysis_setup.png" /></p>
-<p>ProteoSAFe offers a variety of analysis tools to derive meaningful knowledge from a dataset’s spectrum files:</p>
-<table>
-<thead>
-<tr>
-<th>Workflow</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Database Search</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22MSGF_PLUS%22}">MS-GF+</a></td>
-</tr>
-<tr>
-<td>Spectral Library Search</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22MSPLIT_NEW%22}">MSPLIT</a></td>
-</tr>
-<tr>
-<td>Multi-Blind Modification Search</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22MODA%22}">MODa</a></td>
-</tr>
-<tr>
-<td>De Novo Peptide Sequencing</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22PEPNOVO%22}">PepNovo</a></td>
-</tr>
-<tr>
-<td>Proteogenomics</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22ENOSIC2%22}">Enosi</a></td>
-</tr>
-<tr>
-<td>Multi-Pass Search</td>
-<td><a href="http://proteomics.ucsd.edu/ProteoSAFe/index.jsp?params={%22workflow%22:%22MAESTRO%22}">Maestro</a></td>
-</tr>
-</tbody>
-</table>
+    <h2 id="massive-conversion">MassiVE Conversion</h2>
+<p>MassIVE automatically can convert public datasets. You simply can click the <strong>Convert Spectra</strong> button on the top of each dataset page. Once converted, these files are listed in the ccms_peak folder for each dataset. </p>
+<h3 id="conversion-rules">Conversion Rules</h3>
+<p>We use the following logic to determine what files to convert:</p>
+<ol>
+<li>Find all Thermo and Sciex vendor files in the raw collection and convert with MSConvert to mzML and copy to ccms_peak</li>
+<li>If the above does not exist, find all mzML and mzXML files in the raw collection, convert to mzML and copy to ccms_peak</li>
+<li>If the above does not exist, find all Thermo and Sciex vendor files in the peak collection and convert with MSConvert to mzML and copy to ccms_peak</li>
+<li>If the above does not exist, we find all mzML and mzXML files in the peak collection, convert to mzML and copy to ccms_peak</li>
+<li>If the above does not exist, create an empty ccms_peak</li>
+</ol>
+<h3 id="supported-conversion-source-files">Supported Conversion Source Files</h3>
+<p>We currently support conversion from the following formats:</p>
+<ol>
+<li>mzML</li>
+<li>mzXML</li>
+<li>Thermo .raw</li>
+<li>Sciex .wiff</li>
+</ol>
 
   <br>
     
@@ -138,20 +122,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../access_public_datasets/" class="btn btn-xs btn-default pull-right">
+      <a href="../reanalyze_spectra/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../access_public_datasets/" class="btn btn-xs btn-link">
-        Access Public Datasets
+      <a href="../reanalyze_spectra/" class="btn btn-xs btn-link">
+        Reanalyze Spectra
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../conversion/" class="btn btn-xs btn-default pull-left">
+      <a href="../share_reanalyses/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../conversion/" class="btn btn-xs btn-link">
-        Automated Conversion
+        Previous</a><a href="../share_reanalyses/" class="btn btn-xs btn-link">
+        Share Reanalyses
       </a>
     </div>
     
@@ -162,7 +146,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/reanalyze_spectra.md">Edit on </a>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/conversion.md">Edit on </a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
