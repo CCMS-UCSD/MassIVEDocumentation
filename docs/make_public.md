@@ -10,3 +10,6 @@ When this happens, the dataset is affected in the following ways:
 *   It appears in [public dataset searches](access_public_datasets.md#MassIVEDatasetBrowsing-Searching) on the MassIVE web site.
 *   If the submitter specified a [password](#MassIVEDatasetSubmission-Privacy) for the dataset, then this password is removed, and is replaced by the anonymous password “a”.
 *   If the submitter checked the “[Submit to ProteomeXchange](#MassIVEDatasetSubmission-Publication)” checkbox, then a ProteomeXchange announcement message is submitted, and the dataset will appear in the list of public datasets at [ProteomeCentral](http://proteomecentral.proteomexchange.org/cgi/GetDataset).
+
+NOTE: dataset will be made public by administrators if a paper is published that includes the dataset accession and a member of the community requests that the specific accession be made public
+
