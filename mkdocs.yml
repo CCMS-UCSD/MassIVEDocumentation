@@ -12,6 +12,7 @@ nav:
           - Make Public: make_public.md
           - Add/Update Metadata: add_update_metadata.md
           - Add Publication: add_publication.md
+      - Download Dataset Files: download_data.md
       - Share Reanalyses: share_reanalyses.md
       - Automated Conversion: conversion.md
       - Reanalyze Spectra: reanalyze_spectra.md
