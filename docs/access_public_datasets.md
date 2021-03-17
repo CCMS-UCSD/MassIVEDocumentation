@@ -26,25 +26,7 @@ If your dataset is private, and you wish to share it with colleagues such as jou
 
 ### Dataset FTP Access
 
-To view or download a dataset’s files, simply click on the “FTP Download” link on this page.
-
-![](img/access_public_datasets/MassIVE_FTP_download.png)
-
-If you are asked to enter a username and password, then use the dataset ID and password as shown here:
-
-![](img/access_public_datasets/MassIVE_Chrome_FTP_login.png)
-
-Once you are connected to the dataset’s FTP directory, then the browser will bring up a listing of the dataset’s top-level directory, which can be navigated just like any directory listing.
-
-![](img/access_public_datasets/MassIVE_FTP_browser.png)
-
-Alternatively, you can simply copy the FTP URL and then paste it into your preferred FTP client program, which will then (after any relevant password authentication) provide the same access to the dataset’s files.
-
-### Dataset Passwords
-
-Technically, you must enter a password to access any dataset’s files by FTP. If the dataset is public, or is private but the submitter did not specify a password, then it should be accessible using the anonymous password “a”.
-
-Try entering “a” as the dataset’s password if you want to view a public dataset and you are being challenged by the server for password authentication.
+See [here](download_data.md) for information on how to view or download a dataset's files via FTP.
 
 ### Browsing Submitted Result Files
 
