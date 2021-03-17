@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Add Publication - MassIVE Documentation</title>
+    <title>Download Dataset Files - MassIVE Documentation</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,8 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "FTP Download", url: "#_top", children: [
+          ]},
         ];
 
     </script>
@@ -66,20 +68,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../download_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../share_reanalyses/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../download_data/" class="btn btn-xs btn-link">
-        Download Dataset Files
+      <a href="../share_reanalyses/" class="btn btn-xs btn-link">
+        Share Reanalyses
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../add_update_metadata/" class="btn btn-xs btn-default pull-left">
+      <a href="../add_publication/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../add_update_metadata/" class="btn btn-xs btn-link">
-        Add/Update Metadata
+        Previous</a><a href="../add_publication/" class="btn btn-xs btn-link">
+        Add Publication
       </a>
     </div>
     
@@ -87,10 +89,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>To associate a new publication with a dataset, click on the “Add Publication” link near the top of the status page.</p>
-<p><img alt="" src="../img/add_publication/MassIVE_add_publication.png" /></p>
-<p>This will open a form to describe the publication and add it to the dataset. A PubMed lookup service is provided for papers that are already published or in submission, although any of the form fields can also be manually filled out or edited.</p>
-<p><img alt="" src="../img/add_publication/MassIVE_add_publication_form.png" /></p>
+    <h3 id="ftp-download">FTP Download</h3>
+<p>The most reliable way to download files from a MassIVE dataset is via FTP. General instructions for choosing and setting up an FTP client program can be found in the dataset file upload documentation <a href="../upload_data/">here</a>.</p>
+<p>Once your preferred client is ready, navigate to the FTP URL seen on the dataset's web page:</p>
+<p><img alt="" src="../img/download_data/MassIVE_public_FTP_URL.png" /></p>
+<p>If the dataset is public, then the displayed FTP URL will be accessible anonymously, i.e. without requiring any kind of login to the MassIVE FTP server. However, if the dataset is still private then you will have to log in. This is illustrated on private dataset pages, where both the private and public FTP URLs are shown:</p>
+<p><img alt="" src="../img/download_data/MassIVE_private_FTP_URL.png" />
+<br/><sup><strong>Note the "MSV...@" portion of the private FTP URL. This indicates the username that must be provided to log in to this private dataset. Some FTP clients recognize this portion of the URL and automatically fill in the username, and some don't. If prompted, just remember to use the full 9-digit MSV accession.</strong></sup></p>
+<p>When logging in to the MassIVE FTP server to download private dataset files, do NOT use your own account's username and password! Doing so will take you to your own account's private FTP directory - NOT that of the dataset.</p>
+<hr />
+<blockquote>
+<p>For private datasets, use these FTP login credentials:<br/><br/>Username: the dataset's 9-digit MSV accession<br/>Password: the password specified in the original submission, or "a" (for anonymous) if no password was entered</p>
+</blockquote>
+<hr />
+<p><img alt="" src="../img/download_data/MassIVE_Chrome_FTP_login.png" /></p>
 
   <br>
     
@@ -103,20 +115,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../download_data/" class="btn btn-xs btn-default pull-right">
+      <a href="../share_reanalyses/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../download_data/" class="btn btn-xs btn-link">
-        Download Dataset Files
+      <a href="../share_reanalyses/" class="btn btn-xs btn-link">
+        Share Reanalyses
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../add_update_metadata/" class="btn btn-xs btn-default pull-left">
+      <a href="../add_publication/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../add_update_metadata/" class="btn btn-xs btn-link">
-        Add/Update Metadata
+        Previous</a><a href="../add_publication/" class="btn btn-xs btn-link">
+        Add Publication
       </a>
     </div>
     
@@ -127,7 +139,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/add_publication.md">Edit on </a>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/download_data.md">Edit on </a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
