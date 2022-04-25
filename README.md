@@ -21,3 +21,6 @@ pip install mkdocs-minify-plugin
 
 ```mkdocs gh-deploy```
 
+NOTE: Default system Python may already have an outdated version of `mkdocs` installed. In this case, explicitly specify the new conda-installed version with:
+
+```<conda_install_location>/envs/mkdocs/bin/mkdocs```
