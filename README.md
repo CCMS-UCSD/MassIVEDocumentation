@@ -17,6 +17,8 @@ pip install mkdocs-minify-plugin
 
 ```mkdocs serve```
 
+This will start a local web server (address displayed on the command line - typically something like http://127.0.0.1:8000/) to test any documentation changes before deploying.
+
 5. Deploy to github pages
 
 ```mkdocs gh-deploy```
