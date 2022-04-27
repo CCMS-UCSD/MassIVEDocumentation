@@ -22,3 +22,7 @@ This will start a local web server (address displayed on the command line - typi
 NOTE: Default system Python may already have an outdated version of `mkdocs` installed. In this case, explicitly specify the new conda-installed version with:
 
 ```<conda_install_location>/envs/mkdocs/bin/mkdocs```
+
+5. Deploy to GitHub Pages
+
+Merge your branch changes to the main branch of this repository, and your changes will automatically be built and deployed to the GitHub pages web site: https://jjcarver.github.io/MassIVEDocumentation/
