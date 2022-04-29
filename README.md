@@ -25,4 +25,4 @@ NOTE: Default system Python may already have an outdated version of `mkdocs` ins
 
 5. Deploy to GitHub Pages
 
-Merge your branch changes to the main branch of this repository, and your changes will automatically be built and deployed to the GitHub pages web site: https://jjcarver.github.io/MassIVEDocumentation/
+Create a pull request to merge your branch changes to the main branch of this repository, and your changes will automatically be built and deployed to the GitHub pages web site: https://jjcarver.github.io/MassIVEDocumentation/
