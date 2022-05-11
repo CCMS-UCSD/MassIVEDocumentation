@@ -60,7 +60,11 @@ nav:
       - Comparison Workflow:
           - Compare MSstats Result : quant-corona/4_msstats_comparison.md
     - MassIVE API: api.md
-
+#    - Modifications:
+#        - Analysis of Post-Translational Modifications: ptm_analysis.md
+#        - Data Analysis Workflows:
+#            - Maestro workflow: workflows/maestro.md
+#            - ModDecode workflow: workflows/moddecode.md
 
 theme:
     name: windmill
