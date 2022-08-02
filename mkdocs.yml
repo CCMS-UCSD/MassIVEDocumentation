@@ -2,6 +2,10 @@ site_name: MassIVE Documentation
 edit_uri: 'https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/'
 nav:
     - MassIVE Introduction: index.md
+    - Policy:
+      - MassIVE/GNPS Fair Use Policy: fair_use_policy.md
+      - Fair Use Policy FAQ: fair_use_policy_faq.md
+      - User File Management: user_file_management.md
     - MassIVE:
       - Account Registration: account_registration.md
       - Data Upload: upload_data.md
