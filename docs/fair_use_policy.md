@@ -3,6 +3,7 @@
 For 10 years MassIVE and GNPS have provided valuable storage data analysis and repository services to the proteomics, metabolomics and natural products research communities, and we remain committed to providing a high quality service to the research community around the world. Since its inception, MassIVE and GNPS have provided free storage of mass spectrometry data to allow users to share their data via public dataset submissions, as well as to run any of our many freely available data analysis workflows. Many thousands of users thus continue to productively use our system in a manner that requires only limited long-term storage for files that are not used for dataset submissions.
 
 Within the MassIVE/GNPS ecosystem, data is stored in two main locations:
+
 - Each user account’s temporary private file space
 - Datasets a user has submitted to the MassIVE repository
 
