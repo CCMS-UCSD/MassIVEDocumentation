@@ -6,6 +6,7 @@
 2. **How do I reduce my storage to comply with the policy?**
 
     You can easily reduce your private storage space using any of the following methods:
+
     - Submit your files to MassIVE (see documentation [here](submission_workflow.md)).
     - Use the "User Files" option on the website banner to view, sort and delete files/folders (see documentation [here](user_file_management.md)).
     - Use an FTP client, as is commonly used for large data transfers (see documentation [here](upload_data.md)).
