@@ -28,4 +28,4 @@ If the total volume of user account uploads exceeds 100 GB for more than 4 month
 
 We understand that this updated policy will require adjustments from some of our users and we will do all we can to minimize the impact of these changes while continuing to provide high quality services to all MassIVE and GNPS users. In particular, we understand that these requirements may cause some dataset files to have to be uploaded more than once before the full dataset can be submitted. To reduce the chances of requiring multiple uploads, we recommend that (a) all dataset files be uploaded only when the dataset is essentially ready for submission within just a few months or (b) data for a manuscript can also be submitted as multiple smaller datasets, all of which can then be associated with the same papers or project grants.
 
-If you have any questions about this policy please contact us at [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu).
+If you have any questions about this policy, please consult our [Fair Use Policy FAQ](fair_use_policy_faq.md) or contact us at [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu).
