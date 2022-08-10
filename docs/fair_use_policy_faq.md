@@ -18,7 +18,7 @@
 
 4. **I've reduced my storage to under 100 GB, but my account is still flagged as "Non-compliant". What do I do?**
 
-    Simply log in to either the MassIVE or GNPS web portal, and you should see a button on the main portal page that you can click to verify that your account is now compliant. The system will then check your account and automatically update its status. This may take some time, since the system will check all the files in your account.
+    Simply log in to either the MassIVE or GNPS web portal and click the "User Files" link in the top banner menu to verify that your account is now compliant. The system will then check your account and automatically update its status. This may take some time, since the system will check all the files in your account.
 
 5. **I followed the recommended steps to reduce my storage, but I'm still having problems. What do I do?**
 
