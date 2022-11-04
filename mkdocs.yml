@@ -42,6 +42,10 @@ nav:
           - Step3 - Submit Result: quant/3_msstats_workflow_3_submit.md
       - Comparison Workflow:
           - Compare MSstats Result : quant/4_msstats_comparison.md
+      - Run Maxquant Workflow:
+          - Step1 - Input Files: quant/5_maxquant_workflow_1_upload_data.md
+          - Step2 - Parameter Setup: quant/5_maxquant_workflow_2_parameter_setup.md
+          - Step3 - View and Download Result: quant/5_maxquant_workflow_3_view_result.md
     - MassIVE-KB: massivekb.md
     - CoronaMassKB:
       - Introduction: CoronaMassKB/0_CoronaMassKB.md
