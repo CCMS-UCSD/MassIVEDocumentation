@@ -11,8 +11,12 @@ In addition, you can see information about the workflow run from the other secti
 Once you select `View Features` button in the `Status` section, the workflow will provide a list of features detected and mapped to [Andromeda's](http://www.coxdocs.org/doku.php?id=maxquant:andromeda) peptide IDs by MaxQuant software.
 This result is basically from the text file `evidence.txt` that you could find in the directory `/combined/txt` if running MaxQuant locally.
 If you are interested in a complete set of MaxQuant result files including `allPeptides.txt`, `evidence.txt`, `peptides.txt`, `proteinGroups.txt`, etc.,
-please use the button `Download results directly from MaxQuant output` in the same section.
+please use the button `Download results directly from MaxQuant output`, then click the `Download` in the top-right corner.
 The description of these files can be found in [the MaxQuant tutorial](https://pharmazie.uni-greifswald.de/storages/uni-greifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf).
+
+<center>
+![](img/run_maxquant_workflow/maxquant_view_features.png)
+</center>
 
 ### 3.2 Download Result Files by Our Advanced Mapping
 
