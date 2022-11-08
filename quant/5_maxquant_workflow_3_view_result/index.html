@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Step3 - View and Download Result - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "3.1 View Features and Download MaxQuant Result Files", url: "#_top", children: [
+          ]},
+          {title: "3.2 Download Result Files by Our Advanced Mapping", url: "#32-download-result-files-by-our-advanced-mapping", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../massivekb/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../massivekb/" class="btn btn-xs btn-link">
+        MassIVE-KB
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-link">
+        Step2 - Parameter Setup
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>After the job is done, you will see a summary webpage similar as in the following figure.
+The result files would be found in the <code>Status</code> section.
+In addition, you can see information about the workflow run from the other sections, such as input files used, the job status, running time and its computation graph, etc.</p>
+<p><center>
+<img alt="" src="../img/run_maxquant_workflow/maxquant_job_done.png" />
+</center></p>
+<h3 id="31-view-features-and-download-maxquant-result-files">3.1 View Features and Download MaxQuant Result Files</h3>
+<p>Once you select <code>View Features</code> button in the <code>Status</code> section, the workflow will provide a list of features detected and mapped to <a href="http://www.coxdocs.org/doku.php?id=maxquant:andromeda">Andromeda's</a> peptide IDs by MaxQuant software.
+This result is basically from the text file <code>evidence.txt</code> that you could find in the directory <code>/combined/txt</code> if running MaxQuant locally.
+If you are interested in a complete set of MaxQuant result files including <code>allPeptides.txt</code>, <code>evidence.txt</code>, <code>peptides.txt</code>, <code>proteinGroups.txt</code>, etc.,
+please use the button <code>Download results directly from MaxQuant output</code>, then click the <code>Download</code> in the top-right corner.
+The description of these files can be found in <a href="https://pharmazie.uni-greifswald.de/storages/uni-greifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf">the MaxQuant tutorial</a>.</p>
+<p><center>
+<img alt="" src="../img/run_maxquant_workflow/maxquant_view_features.png" />
+</center></p>
+<h3 id="32-download-result-files-by-our-advanced-mapping">3.2 Download Result Files by Our Advanced Mapping</h3>
+<p>If you provided peptide IDs in the section <code>Advanced Identification Mapping Parameters</code> before starting your workflow,
+you can find the results with the mapped IDs by the option <code>Download results with mapped identifications</code> in the <code>Status</code> section.
+The information of mapped features, peptides and proteins is stored in .tsv files in the downloaded folder <code>mapped_features</code>.
+The file <code>evidence.tsv</code> would be the most important file among them. This probably contains all information needed for your further analyses.
+Our mapping also outputs <code>evidence.tsv</code> and <code>proteins.tsv</code> as the same formats with MaxQuant's <code>evidence.txt</code> and <code>proteinGroups.txt</code>, respectively.
+Thus, you can easily read our mapping and MaxQuant's result files in the same way.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../massivekb/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../massivekb/" class="btn btn-xs btn-link">
+        MassIVE-KB
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-link">
+        Step2 - Parameter Setup
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/5_maxquant_workflow_3_view_result.md">Edit on None</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

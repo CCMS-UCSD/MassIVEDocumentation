@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Step1 - Input Files - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "1.1 Workflow Overview", url: "#_top", children: [
+          ]},
+          {title: "1.2 Step 1.1: Upload Data", url: "#12-step-11-upload-data", children: [
+          ]},
+          {title: "1.2 Step 1.2: Input Files", url: "#12-step-12-input-files", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-link">
+        Step2 - Parameter Setup
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../4_msstats_comparison/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../4_msstats_comparison/" class="btn btn-xs btn-link">
+        Compare MSstats Result
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>The <strong>MaxQuant workflow</strong> is designed to run MaxQuant Software, a quantitative proteomics package on web server environment. 
+That would help your MaxQuant using become convenient and efficient.
+We also support a friendly user-interface for reporting results and editing parameters on this workflow.
+And, a new component - mapping features from MaxQuant to peptide sequences identified by the most effective database search tools such as MS-GF+, ModDecode.</p>
+<p>To run the <strong>MaxQuant workflow</strong>, a set of spectrum files together with an annotation file is needed. The other inputs are not strictly required and will be explained later in this document.</p>
+<h3 id="11-workflow-overview">1.1 Workflow Overview</h3>
+<p>You can perform <strong>MaxQuant workflow</strong> for running the software package in our web server. It would contain every result, output files gained if running on your local.</p>
+<p>The main interface of the workflow is as the following.
+<center>
+<img alt="" src="../img/run_maxquant_workflow/maxquant_overview.png" />
+</center></p>
+<p>The first step would be uploading your input files to the workflow (including spectrum files and an annotation file for the set of spectra).
+The <strong>Basic Options</strong> box includes upload buttons for the main input.
+Note that you can use databases to perform the Maxquant search on sequences of the specific species but are not required to upload database files.
+It is helpful in terms of both search quality and time, since you know which species your samples come from.
+When running without a database, Maxquant will perform the search with common contaminants (under the software's folder MaxQuant/bin/conf/contaminants.fasta or in <a href="https://lotus1.gwdg.de/mpg/mmbc/maxquant_input.nsf/7994124a4298328fc125748d0048fee2/$FILE/contaminants.fasta">this link</a>). </p>
+<h3 id="12-step-11-upload-data">1.2 Step 1.1: Upload Data</h3>
+<p>If you have a new dataset, start by uploading your spectrum and annotation files to your MassIVE account.</p>
+<p>Uploading data for MassIVE repository submission is the general procedure for any data submission in MassIVE repository.
+Please follow the instruction on <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">how to upload data for MassIVE repository</a>.</p>
+<h3 id="12-step-12-input-files">1.2 Step 1.2: Input Files</h3>
+<p>After your desired spectrum files are in MassIVE repository - either they already exist or you uploaded them yourself.
+You can select and add them for the input of the workflow as in the following figure.
+Note that you can select multiple files at a time or select all files in a folder just by select that folder (see details on  <strong>MassIVE</strong> section).</p>
+<p><center>
+<img alt="" src="../img/run_maxquant_workflow/maxquant_input_files.png" />
+</center></p>
+<p>Similarly, locate to your annotation file in MassIVE, then select and add it by the corresponding button <strong>Annotation File</strong>.
+<center>
+<img alt="" src="../img/run_maxquant_workflow/maxquant_annotation_add.png" />
+</center></p>
+<p>The other input files are optional in this workflow, but if you want to use them the way to add is similar to what we went through for the spectrum and annotation files.</p>
+<p>Since necessary files were added to the workflow input, you can move on to <strong>Step 2: Parameter setup</strong>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../5_maxquant_workflow_2_parameter_setup/" class="btn btn-xs btn-link">
+        Step2 - Parameter Setup
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../4_msstats_comparison/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../4_msstats_comparison/" class="btn btn-xs btn-link">
+        Compare MSstats Result
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/5_maxquant_workflow_1_upload_data.md">Edit on None</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
