@@ -48,7 +48,7 @@ nav:
           - Step3 - View and Download Result: quant/5_maxquant_workflow_3_view_result.md
       - Run MSGF+ Workflow:
           - Step1 - Input Files: quant/6_msgf_workflow_1_upload_data.md
-          - Step2 - Parameter Setup: quant/6_msgf_workflow_2_setup_parameters.md
+          - Step2 - Setup Parameters: quant/6_msgf_workflow_2_setup_parameters.md
           - Step3 - View and Download Result: quant/6_msgf_workflow_3_view_and_download_results.md
     - MassIVE-KB: massivekb.md
     - CoronaMassKB:
