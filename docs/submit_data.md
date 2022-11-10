@@ -19,7 +19,7 @@ Once you have a MassIVE web site account, you can upload files to your account e
 
 ### Dataset File Organization
 
-See [here](submission_workflow#MassIVEDatasetSubmission-FileCategories) for a detailed explanation of the various file categories within a MassIVE dataset submission.
+See [here](submission_workflow.md#submission-file-categories) for a detailed explanation of the various file categories within a MassIVE dataset submission.
 
 **A recommended procedure for simplifying the MassIVE submission process is to use FTP to upload and organize your files into separate folders, each named for one of the dataset’s main file categories. This way, when you are ready to make your submission, all you need to do is select each folder and assign it to its proper category, without having to fumble through a large number of individual file assignments.**
 
