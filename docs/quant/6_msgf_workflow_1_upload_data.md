@@ -28,7 +28,7 @@ We would recommend you let them as default if you are not familiar with them.
 The first step would be selecting or uploading your input files to the workflow (including spectrum files and a database file).
 The **Basic Options** box includes upload buttons for the main input.
 Note that it is helpful in terms of both search quality and time, since you know which species your samples come from to determine an appropriate database file.
-The workflow also supports searching on common protein contaminants, such as trypsin (TRYP_PIG, TRYP_BOVIN), keratin (K22E_HUMAN, K22O_HUMAN, K2C1_HUMAN, K2C3_HUMAN, K2C7_HUMAN, K1C1_HUMAN),..
+The workflow also supports searching on common protein contaminants, such as `trypsin (TRYP_PIG, TRYP_BOVIN)`, `keratin (K22E_HUMAN, K22O_HUMAN, K2C1_HUMAN, K2C3_HUMAN, K2C7_HUMAN, K1C1_HUMAN)`,..
 But we will do to the details later in the section **setup parameters**.
 
 ### 1.2 Step 1.1: Upload Data
@@ -38,7 +38,7 @@ If you have a new dataset, start by uploading your spectrum and/or database file
 Uploading data for MassIVE repository submission is the general procedure for any data submission in MassIVE repository.
 Please follow the instruction on [how to upload data for MassIVE repository](https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/).
 
-### 1.2 Step 1.2: Input Files for The workflow
+### 1.3 Step 1.2: Input Files for The workflow
 
 After your desired spectrum files are in MassIVE repository - either they already exist or you uploaded them yourself.
 You can select and add them for the input of the workflow as in the following figures.
@@ -54,7 +54,7 @@ And adding them by the button `Spectrum Files`:
 ![](img/run_msgf_workflow/msgf_upload_spectra.png)
 </center>
 
-Similarly, locate to your database file(s) in MassIVE, then select and add it by the corresponding button `Sequence Files`.
+Similarly, locate to your database file(s) in **MassIVE**, then select and add it by the corresponding button `Sequence Files`.
 In this example, we use a fasta file of human proteome from [UniProt](https://www.uniprot.org/proteomes/UP000005640), since we are doing a search on spectral data from human.
 
 <center>

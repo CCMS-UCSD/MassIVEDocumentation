@@ -1,28 +1,36 @@
 After the job is done, you will see a summary webpage similar as in the following figure.
-The result files would be found in the `Status` section.
-In addition, you can see information about the workflow run from the other sections, such as input files used, the job status, running time and its computation graph, etc.
+Different options to view and export the run's result can be found in the `Status` section.
+In addition, you can see details about the **MS-GF+ Ambiguity** run from the other sections, such as input files used, the job's status and running time and its computation graph, etc.
 
 <center>
-![](img/run_maxquant_workflow/maxquant_job_done.png)
+![](img/run_msgf_workflow/msgf_job_done.png)
 </center>
 
-### 3.1 View Features and Download MaxQuant Result Files
+In order to view the result Peptide-Spectrum Matches (PSMs), click into options `Top 1 + Ties mzTab`, or `Top K mzTab` under the line `MS-GF+ Results`.
+The former option will show you the list of PSMs passing the FDR threshold and allow returning at most one sequence for each input spectrum.
+While the later one accept top K matches per spectrum.
+The value of K would depend on the parameter `Top k matches per spectrum` on the `Advanced Options` before submitting the job (Please revisit **Step2 - Setup Parameters** to learn how to use the parameter).
 
-Once you select `View Features` button in the `Status` section, the workflow will provide a list of features detected and mapped to [Andromeda's](http://www.coxdocs.org/doku.php?id=maxquant:andromeda) peptide IDs by MaxQuant software.
-This result is basically from the text file `evidence.txt` that you could find in the directory `/combined/txt` if running MaxQuant locally.
-If you are interested in a complete set of MaxQuant result files including `allPeptides.txt`, `evidence.txt`, `peptides.txt`, `proteinGroups.txt`, etc.,
-please use the button `Download results directly from MaxQuant output`, then click the `Download` in the top-right corner.
-The description of these files can be found in [the MaxQuant tutorial](https://pharmazie.uni-greifswald.de/storages/uni-greifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf).
+Depends on the number of PSMs returned by the search, it would take some time to generate the result view - Typically, it takes a few minutes.
+You can see in the following figure an example of our search's result view after `Top 1 + Ties mzTab` is selected.
+There are around 129K lines returned, each includes the complete information of the corresponding PSM such as file name and scan number of the spectrum, the peptide sequence and charge state assigned to the spectrum.
+The workflow also reports additional information that might be helpful for your further analysis, for example the accession of the protein matched to this spectrum
+and the positions and accessions of all Post-Translational Modifications (PTMs) found for this spectrum identification, etc.
+You can scroll to the left and right to explore all the result columns.
+The meanings of the columns are also shown after you click on the column headers.
 
 <center>
-![](img/run_maxquant_workflow/maxquant_view_features.png)
+![](img/run_msgf_workflow/msgf_psm_view.png)
 </center>
 
-### 3.2 Download Result Files by Our Advanced Mapping
+Since the option `Top K mzTab` is selected, the view would have more PSMs returned. The following figure has more than 170K PSMs from the same job - in this case K = `5`.
+Because multiple sequences (at most K) can be assigned to a spectrum and reported if they pass the FDR threshold.
+There are different sequences in the same rectangle that are matched to a spectrum, as shown in this example.
 
-If you provided peptide IDs in the section `Advanced Identification Mapping Parameters` before starting your workflow,
-you can find the results with the mapped IDs by the option `Download results with mapped identifications` in the `Status` section.
-The information of mapped features, peptides and proteins is stored in .tsv files in the downloaded folder `mapped_features`.
-The file `evidence.tsv` would be the most important file among them. This probably contains all information needed for your further analyses.
-Our mapping also outputs `evidence.tsv` and `proteins.tsv` as the same formats with MaxQuant's `evidence.txt` and `proteinGroups.txt`, respectively.
-Thus, you can easily read our mapping and MaxQuant's result files in the same way.
+<center>
+![](img/run_msgf_workflow/msgf_topk_view.png)
+</center>
+
+In addition, the workflow also supports processing and exporting your **MS-GF+ Ambiguity** search result to the inputs for the other tasks,
+such as for library construction or [MSStats](https://ccms-ucsd.github.io/MassIVEDocumentation/#quant/3_msstats_workflow_1_upload_data/) inputs.
+If you are interested, please see the options under sections `Library Construction Inputs (Includes decoys, length-based FDR)` and `Export` of the `Status` box.
