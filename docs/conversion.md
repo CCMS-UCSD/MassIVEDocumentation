@@ -1,4 +1,4 @@
-## MassiVE Conversion
+## MassIVE Conversion
 
 MassIVE automatically can convert public datasets. You simply can click the **Convert Spectra** button on the top of each dataset page. Once converted, these files are listed in the ccms_peak folder for each dataset. 
 
