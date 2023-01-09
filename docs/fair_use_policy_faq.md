@@ -45,3 +45,7 @@
     Any other file you see in your account (not shown as a link, and with a file size of greater than 0 bytes) is a real file that has never been submitted to any MassIVE dataset. These are the files that do count toward your account's fair use policy compliance, so these are the ones that you want to either submit in a new dataset or delete until your account's total storage occupancy is no more than 100 GB.
 
     Finally, the [user files management web interface](user_file_management.md) does not display any links, so whatever you see there is a real file that counts toward your account's fair use policy compliance. This can be helpful to filter out the links if your account contains many of them.
+
+8. **I need to submit much more than 100 GB in my dataset. How can I do this if each account is limited to only 100 GB?**
+
+    The 100 GB limit is for _long-term storage_ of files only. MassIVE welcomes large datasets - as long as you submit your files within 4 months of originally uploading them, then you are welcome to upload as much data as necessary. Some MassIVE datasets are multiple terabytes in size.
