@@ -14,7 +14,9 @@
 
 3. **I need to store my files for longer than 4 months. How can I do that?**
 
-    If your circumstances are unique and you anticipate it will take longer than 4 months to prepare for an upcoming dataset submission, and you cannot store your files elsewhere, then please contact us at [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu) and we will be happy to help find a suitable solution.
+    If you plan to submit to MassIVE, then submitting early is usually appropriate even if your manuscript is still under extended review or your data is still embargoed. All MassIVE datasets are private by default and remain so until YOU choose to make them public. All that your initial submission does is move the files out of your account and into MassIVE, and therefore out of your account's policy compliance footprint. You can still wait as long as necessary to release your dataset to the public.
+
+    However, if your circumstances are unique and you anticipate it will take longer than 4 months to prepare for even a private dataset submission, and you cannot store your files elsewhere, then please contact us at [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu) and we will be happy to help find a suitable solution.
 
 4. **I've reduced my storage to under 100 GB, but my account is still flagged as "Non-compliant". What do I do?**
 
@@ -30,7 +32,9 @@
 
 7. **I'd like to delete some files to reduce my storage, but I don't want to accidentally delete anything I've already submitted to MassIVE.**
 
-    As soon as any dataset submission job completes (i.e. as soon as you get an MSV accession), then all of the files you submitted in that job are fully removed from your account directory and replaced with read-only links to the permanent MassIVE files. We leave these links in your account in case you ever need to run additional online workflows on them. However, these links are read-only and take up no space.
+    As soon as you submit any files to MassIVE, they are permanently protected and you could not delete them even if you tried. The only way to delete an already-submitted MassIVE dataset is to contact us and request that we delete it on your behalf. Thus it is always safe to delete anything you wish from your own account's private FTP directory.
+
+    Specifically, during your dataset submission job, all of the files you submitted in that job are fully removed from your account directory and replaced with read-only links to the permanent MassIVE files. We leave these links in your account in case you ever need to run additional online workflows on them. However, these links are read-only and take up no space.
 
     If you view your account via FTP, you will see these links as empty (0 bytes) files (sometimes shown as folders by certain FTP clients). Most FTP clients will indicate that these are links by displaying them with shortcut icons, or file/folder icons decorated with small arrows. For example, in FileZilla:
 
