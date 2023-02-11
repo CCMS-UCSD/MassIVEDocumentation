@@ -11,7 +11,7 @@ This workflow supports inputting the most important and likely-to-change paramet
 These parameters are placed in the **MaxQuant Parameters** box shown in the figure above. 
 It also supports uploading a parameter file if you prefer to upload your own parameter file. 
 The parameter file should be an .xml file and is typically obtained by **Save parameters** option from your personal MaxQuant software or from some existing MaxQuant run.
-A parameter file with default parameters can be found [here](https://drive.google.com/file/d/1Iiuk1XbXQZW8IuOM3-b73argwVyF-oFA/view?usp=share_link).  
+An example parameter file with default parameters can be found [here](https://drive.google.com/file/d/1Iiuk1XbXQZW8IuOM3-b73argwVyF-oFA/view?usp=share_link).  
 You can further edit your on your computer and upload it to the workflow by the option of **Parameter File .xml From Maxquant (optional)**.
 Once you upload your parameter file, the workflow will automatically parse it and set the parameter values for the MaxQuant job as in the parameter file.
 And it should be noted that parameter values in the uploaded file have higher priority over ones set in the workflow view, e.g,
