@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Step1 - Input Files - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "1.1 Workflow Overview", url: "#_top", children: [
+          ]},
+          {title: "1.2 Step 1.1: Upload Data", url: "#12-step-11-upload-data", children: [
+          ]},
+          {title: "1.3 Step 1.2: Input Files for The workflow", url: "#13-step-12-input-files-for-the-workflow", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-link">
+        Step2 - Setup Parameters
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../5_maxquant_workflow_3_view_result/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../5_maxquant_workflow_3_view_result/" class="btn btn-xs btn-link">
+        Step3 - View and Download Result
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>The <strong>MS-GF+ Ambiguity</strong> is an improved implementation for <a href="https://www.nature.com/articles/ncomms6277">MS-GF+</a>, 
+regraded as one of the most effective database search tools for MS/MS data.<br />
+Our <strong>MS-GF+ Ambiguity</strong> implementation is deployed on web server environment to be convenient and resource-efficient for the users.
+We also support a friendly user-interface to support the users set up and edit parameters easily.
+The users can also view and download results directly from the workflow.
+And, many new components are developing and will be integrated into the workflow.</p>
+<p>To run the <strong>MS-GF+ Ambiguity</strong> workflow, a set of spectrum files together with a protein database file (e.g. <code>*.fasta, *.fa, *.faa</code>,..) is needed.
+The parameter settings will be described later in the section <strong>setup parameters</strong> of this document.</p>
+<h3 id="11-workflow-overview">1.1 Workflow Overview</h3>
+<p>You can have an <strong>MS-GF+ Ambiguity</strong> workflow by either starting a new one from our <a href="https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp">ProteoSAFe website</a> or cloning an existing workflow.</p>
+<p>The main interface of the workflow is as the following figure and includes main sections: <code>Workflow Selection</code> for specifying the title for your workflow;
+<code>Basic Options</code> - this is the most needed section, for uploading input files and setting up basic parameters for your workflow;
+<code>Allowed Post-Translational Modifications</code> for specifying the number of PTMs (Post-Translational Modifications) and the specific PTMs that you are interested in the mass spectrometry data;
+<code>Advanced Options</code>, as the name it is for setting up advanced options related to the search's quality and performance.
+We would recommend you let them as default if you are not familiar with them.
+<code>Workflow Submission</code> for inputting for email address to receive notifications when your workflow is running.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_overview.png" />
+</center></p>
+<p>The first step would be selecting or uploading your input files to the workflow (including spectrum files and a database file).
+The <strong>Basic Options</strong> box includes upload buttons for the main input.
+Note that it is helpful in terms of both search quality and time, since you know which species your samples come from to determine an appropriate database file.
+The workflow also supports searching on common protein contaminants, such as <code>trypsin (TRYP_PIG, TRYP_BOVIN)</code>, <code>keratin (K22E_HUMAN, K22O_HUMAN, K2C1_HUMAN, K2C3_HUMAN, K2C7_HUMAN, K1C1_HUMAN)</code>,..
+But we will do to the details later in the section <strong>setup parameters</strong>.</p>
+<h3 id="12-step-11-upload-data">1.2 Step 1.1: Upload Data</h3>
+<p>If you have a new dataset, start by uploading your spectrum and/or database files to your MassIVE account.</p>
+<p>Uploading data for MassIVE repository submission is the general procedure for any data submission in MassIVE repository.
+Please follow the instruction on <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">how to upload data for MassIVE repository</a>.</p>
+<h3 id="13-step-12-input-files-for-the-workflow">1.3 Step 1.2: Input Files for The workflow</h3>
+<p>After your desired spectrum files are in MassIVE repository - either they already exist or you uploaded them yourself.
+You can select and add them for the input of the workflow as in the following figures.
+Note that you can select multiple files at a time or select all files in a folder just by select that folder (see details on  the <strong>MassIVE</strong> section in the website menu).</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_input_buttons.png" />
+</center></p>
+<p>And adding them by the button <code>Spectrum Files</code>:</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_upload_spectra.png" />
+</center></p>
+<p>Similarly, locate to your database file(s) in <strong>MassIVE</strong>, then select and add it by the corresponding button <code>Sequence Files</code>.
+In this example, we use a fasta file of human proteome from <a href="https://www.uniprot.org/proteomes/UP000005640">UniProt</a>, since we are doing a search on spectral data from human.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_upload_database.png" />
+</center></p>
+<p>Since the desired files were added to the workflow input, you can go over and set values for necessary parameters of the <strong>MS-GF+ Ambiguity</strong> search.
+We will describe the full set of <strong>MS-GF+ Ambiguity</strong> parameters in the next section, <strong>Step 2: Setup Parameters</strong>.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-link">
+        Step2 - Setup Parameters
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../5_maxquant_workflow_3_view_result/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../5_maxquant_workflow_3_view_result/" class="btn btn-xs btn-link">
+        Step3 - View and Download Result
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/6_msgf_workflow_1_upload_data.md">Edit on None</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

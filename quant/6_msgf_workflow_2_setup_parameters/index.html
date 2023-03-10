@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Step2 - Setup Parameters - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "2.1 Basic Parameters", url: "#_top", children: [
+          ]},
+          {title: "2.2 Modification Search Parameters", url: "#22-modification-search-parameters", children: [
+          ]},
+          {title: "2.3 Advanced Parameters", url: "#23-advanced-parameters", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../6_msgf_workflow_3_view_and_download_results/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../6_msgf_workflow_3_view_and_download_results/" class="btn btn-xs btn-link">
+        Step3 - View and Download Result
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../6_msgf_workflow_1_upload_data/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../6_msgf_workflow_1_upload_data/" class="btn btn-xs btn-link">
+        Step1 - Input Files
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>Once your spectrum and database files are added, they will be summarized in the <strong>Basic Options</strong> box.
+It should be noted that you can add and remove files for the input anytime before you submit the workflow.
+Next, you would like to configure parameters for your <strong>MS-GF+ Ambiguity</strong> search from the workflow's user interface.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_parameter_overview.png" />
+</center></p>
+<h3 id="21-basic-parameters">2.1 Basic Parameters</h3>
+<p>This workflow supports a convenient interface for inputting the most important and likely-to-change parameters (depend on the mass spectrometry data) for your <strong>MS-GF+ Ambiguity</strong> search. 
+These parameter inputs are placed in the <code>Basic Options</code> box shown in the figure below.</p>
+<p>Specifically:</p>
+<ul>
+<li><code>Instrument</code>: Type of mass spectrometer used to generate the experimental spectra.</li>
+<li><code>Fragmentation Method</code>: Fragmentation method used - this parameter would be used to determine the scoring model.</li>
+<li><code>Cysteine Protecting Group</code>: Chemical modification used to treat the cysteine residues in the peptide (typically, a +57 Carbamidomethylation is used).</li>
+<li><code>Protease</code>: Choice of a proteolytic enzyme (Default: <code>Trypsin</code>).</li>
+<li><code>Number of Allowed</code> <sup>13</sup>C: Number of Carbon-13 allowed (Default: <code>1</code>).</li>
+<li><code>Number of Allowed Non-Enzymatic Termini</code>: Specifying the number of allowed non-enzymatic termini (Default: <code>1</code>).
+This parameter is used to apply the enzyme cleavage specificity rule when searching the database.
+For example, for <code>Trypsin</code> with <code>value = 0</code>, it will search for fully tryptic peptides only.
+Using <code>value = 1</code> or <code>2</code> can make the search slower.</li>
+<li><code>Parent Mass Tolerance</code>: Precursor mass tolerance in ppm or Da.
+It is recommended to use a tight tolerance rather than a loose tolerance (e.g. for Orbitrap data, 10ppm or 20ppm usually identifies more spectra than 50ppm).</li>
+<li><code>Isobaric Tag Type</code>: Isobaric tags used for quantification (Optional).</li>
+<li><code>Include Common Contaminants</code>: If selected, additionally search on a small database of common protein contaminants, such as trypsin (TRYP_PIG, TRYP_BOVIN), keratin (K22E_HUMAN, K22O_HUMAN, K2C1_HUMAN, K2C3_HUMAN, K2C7_HUMAN, K1C1_HUMAN),..</li>
+</ul>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_basic_parameters.png" />
+</center></p>
+<h3 id="22-modification-search-parameters">2.2 Modification Search Parameters</h3>
+<p>If you consider modifications for your search, the box of <strong>Allowed Post-Translational Modifications</strong> would support this on all common as well as novel Post-Translational Modifications (PTMs), which you can define by yourself. 
+First, you can fill in a number in the head, the <code>Maximum Number of PTMs Permitted in a Single Peptide</code>.
+Note that if this value is large and multiple dynamic modifications are considered, the search will be slow (depending on size of the <code>fasta</code> files).
+The recommended value here are 1 or 2 (Default: <code>1</code>).</p>
+<p>There is a list of common modifications in the table. You can select modifications that you are considering.
+The <strong>MS-GF+ Ambiguity</strong> workflow also supports you adding novel or additional PTMs. You can add one after providing the mass (in <code>Da</code>) and the residues in the last row.
+The residues must be a string of abbreviation letters for standard amino acid (i.e. <code>ACDEFGHIKLMNOPQRSTUVWY</code>).
+You can also fill in this field with an asterisk <code>*</code> if any residue will fit in your experiment.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_modification_parameters.png" />
+</center></p>
+<h3 id="23-advanced-parameters">2.3 Advanced Parameters</h3>
+<p>The box of <strong>Advanced Options</strong> in the following figure supports settings for the quality control and performance of your <strong>MS-GF+ Ambiguity</strong> search.
+If you are not interested in customizing your search result and speed, do not mind any parameter in this section and just leave them as default.
+Otherwise, please follow the following description for these parameters.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_advanced_parameters.png" />
+</center></p>
+<ul>
+<li><code>Spectrum-Level FDR</code>: Peptide-Spectrum Match-level (PSM-level) false discovery rate used to filter results (Default: <code>0.01</code>, e.g. <code>1%</code> FDR).</li>
+<li><code>Precursor (peptide + charge)-Level FDR</code>: Precursor-level false discovery rate used to filter results (Default: <code>0.01</code>, e.g. <code>1%</code> FDR). 
+Note that a precursor is defined as a peptide sequence with a charge state.</li>
+<li><code>Protein-Level FDR (parsimony algorithm)</code>: Protein-level false discovery rate used to filter results (Default: <code>0.01</code>, e.g. <code>1%</code> FDR).</li>
+<li><code>Top k matches per spectrum</code>: Number of matches per spectrum to be reported (Default: 5).</li>
+<li><code>Search Parallelism</code>: Number of spectrum files to search in parallel. 
+This parameter is useful if your spectral dataset is large. Range of 1 to 200 (Default: 40).</li>
+<li><code>KL Filtering Threshold</code>: Spectra with a <a href="https://en.wikipedia.org/wiki/Kullback–Leibler_divergence">Kullback-Leibler (KL) divergence</a> above this value will be filtered out.
+If threshold is set to 0, no spectra are filtered out.</li>
+<li><code>Correct Precursor Masses</code>: Select <code>Yes</code> if you want to correct precursor masses during KL filtering.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../6_msgf_workflow_3_view_and_download_results/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../6_msgf_workflow_3_view_and_download_results/" class="btn btn-xs btn-link">
+        Step3 - View and Download Result
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../6_msgf_workflow_1_upload_data/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../6_msgf_workflow_1_upload_data/" class="btn btn-xs btn-link">
+        Step1 - Input Files
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/6_msgf_workflow_2_setup_parameters.md">Edit on None</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Step3 - View and Download Result - MassIVE Documentation</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../massivekb/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../massivekb/" class="btn btn-xs btn-link">
+        MassIVE-KB
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-link">
+        Step2 - Setup Parameters
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>After the job is done, you will see a summary webpage similar as in the following figure.
+Different options to view and export the run's result can be found in the <code>Status</code> section.
+In addition, you can see details about the <strong>MS-GF+ Ambiguity</strong> run from the other sections, such as input files used, the job's status and running time and its computation graph, etc.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_job_done.png" />
+</center></p>
+<p>In order to view the result Peptide-Spectrum Matches (PSMs), click into options <code>Top 1 + Ties mzTab</code>, or <code>Top K mzTab</code> under the line <code>MS-GF+ Results</code>.
+The former option will show you the list of PSMs passing the FDR threshold and allow returning at most one sequence for each input spectrum.
+While the later one accept top K matches per spectrum.
+The value of K would depend on the parameter <code>Top k matches per spectrum</code> on the <code>Advanced Options</code> before submitting the job (Please revisit <strong>Step2 - Setup Parameters</strong> to learn how to use the parameter).</p>
+<p>Depends on the number of PSMs returned by the search, it would take some time to generate the result view - Typically, it takes a few minutes.
+You can see in the following figure an example of our search's result view after <code>Top 1 + Ties mzTab</code> is selected.
+There are around 129K lines returned, each includes the complete information of the corresponding PSM such as file name and scan number of the spectrum, the peptide sequence and charge state assigned to the spectrum.
+The workflow also reports additional information that might be helpful for your further analysis, for example the accession of the protein matched to this spectrum
+and the positions and accessions of all Post-Translational Modifications (PTMs) found for this spectrum identification, etc.
+You can scroll to the left and right to explore all the result columns.
+The meanings of the columns are also shown after you click on the column headers.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_psm_view.png" />
+</center></p>
+<p>Since the option <code>Top K mzTab</code> is selected, the view would have more PSMs returned. The following figure has more than 170K PSMs from the same job - in this case K = <code>5</code>.
+Because multiple sequences (at most K) can be assigned to a spectrum and reported if they pass the FDR threshold.
+There are different sequences in the same rectangle that are matched to a spectrum, as shown in this example.</p>
+<p><center>
+<img alt="" src="../img/run_msgf_workflow/msgf_topk_view.png" />
+</center></p>
+<p>In addition, the workflow also supports processing and exporting your <strong>MS-GF+ Ambiguity</strong> search result to the inputs for the other tasks,
+such as for library construction or <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/#quant/3_msstats_workflow_1_upload_data/">MSStats</a> inputs.
+If you are interested, please see the options under sections <code>Library Construction Inputs (Includes decoys, length-based FDR)</code> and <code>Export</code> of the <code>Status</code> box.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../massivekb/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../massivekb/" class="btn btn-xs btn-link">
+        MassIVE-KB
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../6_msgf_workflow_2_setup_parameters/" class="btn btn-xs btn-link">
+        Step2 - Setup Parameters
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/6_msgf_workflow_3_view_and_download_results.md">Edit on None</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
