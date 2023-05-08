@@ -10,11 +10,10 @@ To connect to your MassIVE user account via FTP, simply log on to the FTP server
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
-[WinSCP](https://winscp.net/eng/index.php) (recommended and used for the example illustrations below)  
+[FileZilla](https://filezilla-project.org/)  
+[WinSCP](https://winscp.net/eng/index.php) (used for the example illustrations below)  
 [CoreFTP](http://www.coreftp.com/)  
 [CoffeeCup Free FTP](http://www.coffeecup.com/free-ftp/)
-
-_Note: We no longer recommend FileZilla, since it was found to contain malware in a recent update._
 
 Most FTP client programs use a similar interface. There is usually some sort of server or session management interface, allowing you to set up and store your connection information for a particular FTP server, and then re-connect to that server easily. For example, in WinSCP:
 
