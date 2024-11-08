@@ -14,7 +14,7 @@ If the dataset is public, then the displayed FTP URL will be accessible anonymou
 When logging in to the MassIVE FTP server to download private dataset files, do NOT use your own account's username and password! Doing so will take you to your own account's private FTP directory - NOT that of the dataset.
 
 ---
-> For private datasets, use these FTP login credentials:<br/><br/>Username: the dataset's 9-digit MSV accession<br/>Password: the password specified in the original submission, or "a" (for anonymous) if no password was entered
+> For private datasets, use these FTP login credentials:<br/><br/>Username: the dataset's 9-digit MSV accession<br/>Password: the password specified in the original submission (contact the dataset submitter to request access)
 
 ---
 

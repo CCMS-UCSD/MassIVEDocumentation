@@ -10,9 +10,9 @@ Username:	{MSV_accession}_reviewer
 
 Password:	{*dataset*'s password - NOT the submitter's private account password!}
 
-> **Please note that a dataset's password must be set during initial submission by entering it into the "Password" field in the dataset submission form. If this field is left blank, then the dataset will be automatically assigned the anonymous password "a". Please DO NOT share your own private account's password with reviewers. See our [dataset submission documentation](submission_workflow.md#dataset-privacy) for more details on dataset privacy and how to set this password.**
+> **Please note that a dataset's password must be set during initial submission by entering it into the "Password" field in the dataset submission form. Reviewers should contact the original dataset submitter to request access. Please DO NOT share your own private account's password with reviewers. See our [dataset submission documentation](submission_workflow.md#dataset-privacy) for more details on dataset privacy and how to set this password.**
 
-For example, if your dataset was MSV000000001, then the reviewer account username would be "MSV000000001_reviewer", and the password would be the one you entered into the initial dataset submission form, or "a" if you did not enter a password.
+For example, if your dataset was MSV000000001, then the reviewer account username would be "MSV000000001_reviewer", and the password would be the one you entered into the initial dataset submission form. If you lose this password, please contact us at [ccms@proteomics.ucsd.edu](mailto:ccms@proteomics.ucsd.edu) to reset it.
 
 With these credentials your reviewers can access your private dataset, and since the dataset’s files are automatically shared with this account it can also be used to run [ProteoSAFe analysis workflows](reanalyze_spectra.md) on those files for testing and review purposes.
 
