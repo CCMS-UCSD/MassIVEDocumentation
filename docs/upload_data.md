@@ -2,11 +2,13 @@ Uploading data for MassIVE repository submission is only available for registere
 
 Once you have a MassIVE web site account, it is strongly recommended that you use FTP to upload your dataset files to your account, as opposed to the MassIVE web interface. This is because the web-based upload interface is optimized for quick uploads of small files, whereas for the much larger files typically associated with MassIVE datasets, FTP is much more stable and robust.
 
-To connect to your MassIVE user account via FTP, simply log on to the FTP server at massive.ucsd.edu, using the same username and password as your MassIVE web account.
+To connect to your MassIVE user account via FTP, simply log on to the FTP server at massive-ftp.ucsd.edu, using the same username and password as your MassIVE web account.
 
 | MassIVE FTP Server                   |
 | ------------------------------------ |
-| [massive.ucsd.edu](https://massive.ucsd.edu) |
+| [massive-ftp.ucsd.edu](https://massive-ftp.ucsd.edu) |
+
+**Please note that the address of the official MassIVE FTP server has changed. It is no longer located at *massive.ucsd.edu*. It is now located at *massive-ftp.ucsd.edu***
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
