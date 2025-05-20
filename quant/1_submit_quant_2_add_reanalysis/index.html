@@ -98,9 +98,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h3 id="21-select-dataset">2.1 Select Dataset</h3>
 <p>First, go to the webpage for the dataset you reanalyzed. You can search dataset MSV ID or PXD ID on <a href="../../access_public_datasets/#MassIVEDatasetBrowsing-ViewingaDataset">dataset's web page</a>.</p>
 <p>Click the <strong>Add Reanalysis</strong> button:</p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/add_reanalysis_button_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/add_reanalysis_button_iprg.png)
+</center>
+
 <h3 id="22-workflow-selection-and-reanalysis-metadata-sections">2.2 Workflow Selection and Reanalysis Metadata Sections</h3>
 <p><strong>Add Reanalysis</strong> button brings you to a MassIVE reanalysis attachment workflow input form.
 At this point, the option <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should be automatically selected in the <code>Workflow</code>. Information regarding <code>Species</code>, <code>Instrument</code>, <code>Post-Translation Modifications</code> should also be filled automatically, based on the original submission. You should add: </p>
@@ -108,20 +109,23 @@ At this point, the option <strong>'MassIVE Dataset: Add Reanalysis Results'</str
 <li>the title in <code>Title</code> (at least 30 characters)</li>
 <li>the description for this reanalysis in <code>Description</code> (at least 50 characters)</li>
 </ol>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/add_title_description_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/add_title_description_iprg.png)
+</center>
+
 <p>Example of a <code>Title</code>: 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'</p>
 <p>Example of a <code>Description</code>: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'</p>
 <h3 id="23-reanalysis-file-selection-section">2.3 Reanalysis File Selection section</h3>
 <p>You should select all the files for your reanalysis by clicking any of <strong>Select Input Files</strong> buttons:</p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/add_reanalysis_file_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/add_reanalysis_file_iprg.png)
+</center>
+
 <p>Next, the file selection pop-up window (below) helps you browses your account to select the files you uploaded as well as any other files you wish to attach for this reanalysis. The original dataset should be automatically imported at this stage. You can see that Raw spectrum files and Peak list files that are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.</p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_iprg_full.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/file_selection_popup_iprg_full.png)
+</center>
+
 <h3 id="categories-for-quantification-files-important">Categories for Quantification Files (IMPORTANT!!)</h3>
 <p>You should select valid reanalysis files in this step. Please choose the proper category for each file. Here is more help on each of the individual categories for quantification and statistical analysis results:</p>
 <table>
@@ -264,27 +268,31 @@ At this point, the option <strong>'MassIVE Dataset: Add Reanalysis Results'</str
 <li>Select category: At the top-left corner, there are boxes for categories. Select/Click the box named <code>Quantification Results</code>.</li>
 <li>Then, on the right panel, named <code>Selected Files</code>, you can see the selected file(s) under the folder named <code>Selected Quantification Results</code>.</li>
 </ol>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_iprg_intermediate_step.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/file_selection_popup_iprg_intermediate_step.png)
+</center>
+
 <p>Repeat the same steps for other files.</p>
 <p>Once you've selected valid reanalysis files and proper categories, click <strong>Finish Selection</strong> button. </p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_done_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/file_selection_popup_done_iprg.png)
+</center>
+
 <p>Then, you will be back to reanalysis the attachment workflow input form.</p>
 <p><strong><em>!! NOTE: To browse the dataset in MassIVE.quant, the three categories, 1) Quantification Results, 2) Metadata, 3) Statistical Analysis of Quantified Analytes, should have the file(s).</em></strong></p>
 <h3 id="24-reanalysis-container-selection-section">2.4 Reanalysis Container Selection section</h3>
 <p>The reanalysis attachment workflow will determine which source datasets were reanalyzed, then prepare what's referred to as a <code>Reanalysis Container</code> for your attachment. A reanalysis container simply refers to the unique set of datasets that were reanalyzed - usually only one, but possibly more. The workflow then attaches your results to this container. Any other reanalysis results attached (by any user) to this same set of datasets will also go in the same container.</p>
 <p>For example, <code>Reanalysis Container</code> shows all containers for the source dataset. You can choose one of them or make <em>New reanalysis container</em>. If you select <strong>New reanalysis container</strong>, then you should put the title for this container in <code>Reanalysis Container Title</code>.</p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/reanalysis_container_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/reanalysis_container_iprg.png)
+</center>
+
 <h3 id="25-workflow-submission-section">2.5 Workflow Submission section</h3>
 <p>Finally, you are ready to submit. Please type your email to get notice of the progress of the submission and click <strong>Submit</strong> button.</p>
-<p><center>
-<img alt="" src="../img/submit_quant_reanalyses/workflow_submission_done_iprg.png" />
-</center></p>
+<center>
+![](img/submit_quant_reanalyses/workflow_submission_done_iprg.png)
+</center>
+
 <p>Then, you will be redirected to a new page, which shows the progress. Please wait. It will take a few minutes. After the job is done, you will get the notification email.</p>
 
   <br>

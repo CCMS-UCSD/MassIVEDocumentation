@@ -81,9 +81,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <p>After the job is done, you will see a summary webpage similar as in the following figure.
 Different options to view and export the run's result can be found in the <code>Status</code> section.
 In addition, you can see details about the <strong>MS-GF+ Ambiguity</strong> run from the other sections, such as input files used, the job's status and running time and its computation graph, etc.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_job_done.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_job_done.png)
+</center>
+
 <p>In order to view the result Peptide-Spectrum Matches (PSMs), click into options <code>Top 1 + Ties mzTab</code>, or <code>Top K mzTab</code> under the line <code>MS-GF+ Results</code>.
 The former option will show you the list of PSMs passing the FDR threshold and allow returning at most one sequence for each input spectrum.
 While the later one accept top K matches per spectrum.
@@ -95,15 +96,17 @@ The workflow also reports additional information that might be helpful for your 
 and the positions and accessions of all Post-Translational Modifications (PTMs) found for this spectrum identification, etc.
 You can scroll to the left and right to explore all the result columns.
 The meanings of the columns are also shown after you click on the column headers.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_psm_view.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_psm_view.png)
+</center>
+
 <p>Since the option <code>Top K mzTab</code> is selected, the view would have more PSMs returned. The following figure has more than 170K PSMs from the same job - in this case K = <code>5</code>.
 Because multiple sequences (at most K) can be assigned to a spectrum and reported if they pass the FDR threshold.
 There are different sequences in the same rectangle that are matched to a spectrum, as shown in this example.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_topk_view.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_topk_view.png)
+</center>
+
 <p>In addition, the workflow also supports processing and exporting your <strong>MS-GF+ Ambiguity</strong> search result to the inputs for the other tasks,
 such as for library construction or <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/#quant/3_msstats_workflow_1_upload_data/">MSStats</a> inputs.
 If you are interested, please see the options under sections <code>Library Construction Inputs (Includes decoys, length-based FDR)</code> and <code>Export</code> of the <code>Status</code> box.</p>

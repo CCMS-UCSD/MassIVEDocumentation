@@ -85,18 +85,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <p>After the job is done, you will see a summary webpage similar as in the following figure.
 The result files would be found in the <code>Status</code> section.
 In addition, you can see information about the workflow run from the other sections, such as input files used, the job status, running time and its computation graph, etc.</p>
-<p><center>
-<img alt="" src="../img/run_maxquant_workflow/maxquant_job_done.png" />
-</center></p>
+<center>
+![](img/run_maxquant_workflow/maxquant_job_done.png)
+</center>
+
 <h3 id="31-view-features-and-download-maxquant-result-files">3.1 View Features and Download MaxQuant Result Files</h3>
 <p>Once you select <code>View Features</code> button in the <code>Status</code> section, the workflow will provide a list of features detected and mapped to <a href="http://www.coxdocs.org/doku.php?id=maxquant:andromeda">Andromeda's</a> peptide IDs by MaxQuant software.
 This result is basically from the text file <code>evidence.txt</code> that you could find in the directory <code>/combined/txt</code> if running MaxQuant locally.
 If you are interested in a complete set of MaxQuant result files including <code>allPeptides.txt</code>, <code>evidence.txt</code>, <code>peptides.txt</code>, <code>proteinGroups.txt</code>, etc.,
 please use the button <code>Download results directly from MaxQuant output</code>, then click the <code>Download</code> in the top-right corner.
 The description of these files can be found in <a href="https://pharmazie.uni-greifswald.de/storages/uni-greifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf">the MaxQuant tutorial</a>.</p>
-<p><center>
-<img alt="" src="../img/run_maxquant_workflow/maxquant_view_features.png" />
-</center></p>
+<center>
+![](img/run_maxquant_workflow/maxquant_view_features.png)
+</center>
+
 <h3 id="32-download-result-files-by-our-advanced-mapping">3.2 Download Result Files by Our Advanced Mapping</h3>
 <p>If you provided peptide IDs in the section <code>Advanced Identification Mapping Parameters</code> before starting your workflow,
 you can find the results with the mapped IDs by the option <code>Download results with mapped identifications</code> in the <code>Status</code> section.

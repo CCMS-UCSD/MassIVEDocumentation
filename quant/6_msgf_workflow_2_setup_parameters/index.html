@@ -87,9 +87,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <p>Once your spectrum and database files are added, they will be summarized in the <strong>Basic Options</strong> box.
 It should be noted that you can add and remove files for the input anytime before you submit the workflow.
 Next, you would like to configure parameters for your <strong>MS-GF+ Ambiguity</strong> search from the workflow's user interface.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_parameter_overview.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_parameter_overview.png)
+</center>
+
 <h3 id="21-basic-parameters">2.1 Basic Parameters</h3>
 <p>This workflow supports a convenient interface for inputting the most important and likely-to-change parameters (depend on the mass spectrometry data) for your <strong>MS-GF+ Ambiguity</strong> search. 
 These parameter inputs are placed in the <code>Basic Options</code> box shown in the figure below.</p>
@@ -109,9 +110,10 @@ It is recommended to use a tight tolerance rather than a loose tolerance (e.g. f
 <li><code>Isobaric Tag Type</code>: Isobaric tags used for quantification (Optional).</li>
 <li><code>Include Common Contaminants</code>: If selected, additionally search on a small database of common protein contaminants, such as trypsin (TRYP_PIG, TRYP_BOVIN), keratin (K22E_HUMAN, K22O_HUMAN, K2C1_HUMAN, K2C3_HUMAN, K2C7_HUMAN, K1C1_HUMAN),..</li>
 </ul>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_basic_parameters.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_basic_parameters.png)
+</center>
+
 <h3 id="22-modification-search-parameters">2.2 Modification Search Parameters</h3>
 <p>If you consider modifications for your search, the box of <strong>Allowed Post-Translational Modifications</strong> would support this on all common as well as novel Post-Translational Modifications (PTMs), which you can define by yourself. 
 First, you can fill in a number in the head, the <code>Maximum Number of PTMs Permitted in a Single Peptide</code>.
@@ -121,16 +123,18 @@ The recommended value here are 1 or 2 (Default: <code>1</code>).</p>
 The <strong>MS-GF+ Ambiguity</strong> workflow also supports you adding novel or additional PTMs. You can add one after providing the mass (in <code>Da</code>) and the residues in the last row.
 The residues must be a string of abbreviation letters for standard amino acid (i.e. <code>ACDEFGHIKLMNOPQRSTUVWY</code>).
 You can also fill in this field with an asterisk <code>*</code> if any residue will fit in your experiment.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_modification_parameters.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_modification_parameters.png)
+</center>
+
 <h3 id="23-advanced-parameters">2.3 Advanced Parameters</h3>
 <p>The box of <strong>Advanced Options</strong> in the following figure supports settings for the quality control and performance of your <strong>MS-GF+ Ambiguity</strong> search.
 If you are not interested in customizing your search result and speed, do not mind any parameter in this section and just leave them as default.
 Otherwise, please follow the following description for these parameters.</p>
-<p><center>
-<img alt="" src="../img/run_msgf_workflow/msgf_advanced_parameters.png" />
-</center></p>
+<center>
+![](img/run_msgf_workflow/msgf_advanced_parameters.png)
+</center>
+
 <ul>
 <li><code>Spectrum-Level FDR</code>: Peptide-Spectrum Match-level (PSM-level) false discovery rate used to filter results (Default: <code>0.01</code>, e.g. <code>1%</code> FDR).</li>
 <li><code>Precursor (peptide + charge)-Level FDR</code>: Precursor-level false discovery rate used to filter results (Default: <code>0.01</code>, e.g. <code>1%</code> FDR). 
