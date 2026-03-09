@@ -21,7 +21,7 @@ Most FTP client programs use a similar interface. There is usually some sort of 
 
 ![WinSCP_quick_connect_TLS](img/upload_data/WinSCP_quick_connect.png)
 
-When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive.ucsd.edu as the server or “host” name (port 21), followed by your MassIVE username and password, and the client should connect you to your user file space.
+When setting up your FTP server connection, be sure to use FTP with TLS/SSL explicit encryption. Then enter massive-ftp.ucsd.edu as the server or “host” name (port 21), followed by your MassIVE username and password, and the client should connect you to your user file space.
 
 From there, you can upload files by finding them on your computer (usually in the left panel) and then dragging them over to the server (usually in the right panel), or you can download files from the server to your computer by dragging them in the reverse direction.
 
@@ -30,3 +30,4 @@ You can also experiment with the FTP client interface to move and rename files a
 ![WinSCP_file_interface](img/upload_data/WinSCP_file_interface.png)
 
 If you have any questions about any part of the MassIVE file upload process, please feel free to email [ccms-web@cs.ucsd.edu](mailto:ccms-web@cs.ucsd.edu) for more information.
+
