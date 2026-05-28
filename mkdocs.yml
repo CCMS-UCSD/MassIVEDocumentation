@@ -51,6 +51,9 @@ nav:
           - Step2 - Setup Parameters: quant/6_msgf_workflow_2_setup_parameters.md
           - Step3 - View and Download Result: quant/6_msgf_workflow_3_view_and_download_results.md
     - MassIVE-KB: massivekb.md
+    - Massive-CA:
+      - Submit Data: massive-ca/submit_data.md
+      - Access Data: massive-ca/access_data.md
     - CoronaMassKB:
       - Introduction: CoronaMassKB/0_CoronaMassKB.md
       - Share Identification Reanalysis: share_reanalyses.md
