@@ -54,6 +54,7 @@ nav:
     - Massive-CA:
       - Submit Data: massive-ca/submit_data.md
       - Access Data: massive-ca/access_data.md
+      - Demo: massive-ca/demo.md
     - CoronaMassKB:
       - Introduction: CoronaMassKB/0_CoronaMassKB.md
       - Share Identification Reanalysis: share_reanalyses.md

@@ -1,1 +1,1 @@
-MassiVE-CA dataset submission documentation coming soon
+MassIVE-CA dataset submission documentation coming soon
